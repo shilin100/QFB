@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5203755F2117F4B90067316B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203755E2117F4B90067316B /* AppDelegate.m */; };
-		520375622117F4B90067316B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375612117F4B90067316B /* ViewController.m */; };
 		520375652117F4B90067316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375632117F4B90067316B /* Main.storyboard */; };
 		520375672117F4BA0067316B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520375662117F4BA0067316B /* Assets.xcassets */; };
 		5203756A2117F4BA0067316B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375682117F4BA0067316B /* LaunchScreen.storyboard */; };
 		5203756D2117F4BA0067316B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203756C2117F4BA0067316B /* main.m */; };
 		520375772117F4BA0067316B /* QFBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375762117F4BA0067316B /* QFBTests.m */; };
 		520375822117F4BA0067316B /* QFBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375812117F4BA0067316B /* QFBUITests.m */; };
+		5203759D211823150067316B /* QFBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203759C211823150067316B /* QFBTool.m */; };
+		520375A2211823650067316B /* QFBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375A1211823650067316B /* QFBMineViewController.m */; };
+		520375A5211823720067316B /* QFBEarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375A4211823720067316B /* QFBEarningViewController.m */; };
+		520375A82118237C0067316B /* QFBAllianceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375A72118237C0067316B /* QFBAllianceViewController.m */; };
+		520375AB211823880067316B /* QFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375AA211823880067316B /* QFBHomeViewController.m */; };
+		520375AE211823930067316B /* QFBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375AD211823930067316B /* QFBLoginViewController.m */; };
+		520375B1211824170067316B /* QFBPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375B0211824170067316B /* QFBPlaceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +44,6 @@
 		5203755A2117F4B90067316B /* QFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5203755D2117F4B90067316B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5203755E2117F4B90067316B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		520375602117F4B90067316B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		520375612117F4B90067316B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		520375642117F4B90067316B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		520375662117F4BA0067316B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		520375692117F4BA0067316B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,23 @@
 		5203757D2117F4BA0067316B /* QFBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520375812117F4BA0067316B /* QFBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBUITests.m; sourceTree = "<group>"; };
 		520375832117F4BA0067316B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520375992117FC800067316B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5203759B211823150067316B /* QFBTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBTool.h; sourceTree = "<group>"; };
+		5203759C211823150067316B /* QFBTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBTool.m; sourceTree = "<group>"; };
+		5203759E2118232F0067316B /* QFBConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBConfig.h; sourceTree = "<group>"; };
+		5203759F2118234D0067316B /* UnitilMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitilMacro.h; sourceTree = "<group>"; };
+		520375A0211823650067316B /* QFBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMineViewController.h; sourceTree = "<group>"; };
+		520375A1211823650067316B /* QFBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMineViewController.m; sourceTree = "<group>"; };
+		520375A3211823720067316B /* QFBEarningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningViewController.h; sourceTree = "<group>"; };
+		520375A4211823720067316B /* QFBEarningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningViewController.m; sourceTree = "<group>"; };
+		520375A62118237C0067316B /* QFBAllianceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAllianceViewController.h; sourceTree = "<group>"; };
+		520375A72118237C0067316B /* QFBAllianceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceViewController.m; sourceTree = "<group>"; };
+		520375A9211823880067316B /* QFBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBHomeViewController.h; sourceTree = "<group>"; };
+		520375AA211823880067316B /* QFBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBHomeViewController.m; sourceTree = "<group>"; };
+		520375AC211823930067316B /* QFBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBLoginViewController.h; sourceTree = "<group>"; };
+		520375AD211823930067316B /* QFBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginViewController.m; sourceTree = "<group>"; };
+		520375AF211824170067316B /* QFBPlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBPlaceViewController.h; sourceTree = "<group>"; };
+		520375B0211824170067316B /* QFBPlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBPlaceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +102,7 @@
 		520375512117F4B90067316B = {
 			isa = PBXGroup;
 			children = (
+				520375932117FB1F0067316B /* NoSpam */,
 				5203755C2117F4B90067316B /* QFB */,
 				520375752117F4BA0067316B /* QFBTests */,
 				520375802117F4BA0067316B /* QFBUITests */,
@@ -101,10 +123,8 @@
 		5203755C2117F4B90067316B /* QFB */ = {
 			isa = PBXGroup;
 			children = (
-				5203755D2117F4B90067316B /* AppDelegate.h */,
-				5203755E2117F4B90067316B /* AppDelegate.m */,
-				520375602117F4B90067316B /* ViewController.h */,
-				520375612117F4B90067316B /* ViewController.m */,
+				520375922117FA790067316B /* Tools */,
+				5203758F2117F6530067316B /* Sections */,
 				520375632117F4B90067316B /* Main.storyboard */,
 				520375662117F4BA0067316B /* Assets.xcassets */,
 				520375682117F4BA0067316B /* LaunchScreen.storyboard */,
@@ -130,6 +150,110 @@
 				520375832117F4BA0067316B /* Info.plist */,
 			);
 			path = QFBUITests;
+			sourceTree = "<group>";
+		};
+		5203758F2117F6530067316B /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				520375982117FC450067316B /* Mine */,
+				520375972117FC380067316B /* Earning */,
+				520375962117FBE00067316B /* Alliance */,
+				520375952117FBDA0067316B /* Home */,
+				520375942117FBD50067316B /* Login */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		520375902117FA6B0067316B /* Venders */ = {
+			isa = PBXGroup;
+			children = (
+				520375AF211824170067316B /* QFBPlaceViewController.h */,
+				520375B0211824170067316B /* QFBPlaceViewController.m */,
+			);
+			path = Venders;
+			sourceTree = "<group>";
+		};
+		520375912117FA720067316B /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				5203759F2118234D0067316B /* UnitilMacro.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		520375922117FA790067316B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5203759B211823150067316B /* QFBTool.h */,
+				5203759C211823150067316B /* QFBTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		520375932117FB1F0067316B /* NoSpam */ = {
+			isa = PBXGroup;
+			children = (
+				5203755D2117F4B90067316B /* AppDelegate.h */,
+				5203755E2117F4B90067316B /* AppDelegate.m */,
+				5203759A2117FD5B0067316B /* Config */,
+				520375902117FA6B0067316B /* Venders */,
+				520375912117FA720067316B /* Macros */,
+			);
+			path = NoSpam;
+			sourceTree = "<group>";
+		};
+		520375942117FBD50067316B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				520375AC211823930067316B /* QFBLoginViewController.h */,
+				520375AD211823930067316B /* QFBLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		520375952117FBDA0067316B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				520375A9211823880067316B /* QFBHomeViewController.h */,
+				520375AA211823880067316B /* QFBHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		520375962117FBE00067316B /* Alliance */ = {
+			isa = PBXGroup;
+			children = (
+				520375A62118237C0067316B /* QFBAllianceViewController.h */,
+				520375A72118237C0067316B /* QFBAllianceViewController.m */,
+			);
+			path = Alliance;
+			sourceTree = "<group>";
+		};
+		520375972117FC380067316B /* Earning */ = {
+			isa = PBXGroup;
+			children = (
+				520375A3211823720067316B /* QFBEarningViewController.h */,
+				520375A4211823720067316B /* QFBEarningViewController.m */,
+			);
+			path = Earning;
+			sourceTree = "<group>";
+		};
+		520375982117FC450067316B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				520375A0211823650067316B /* QFBMineViewController.h */,
+				520375A1211823650067316B /* QFBMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		5203759A2117FD5B0067316B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5203759E2118232F0067316B /* QFBConfig.h */,
+				520375992117FC800067316B /* PrefixHeader.pch */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +318,7 @@
 		520375522117F4B90067316B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QFB;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = qqq;
 				TargetAttributes = {
@@ -262,9 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520375622117F4B90067316B /* ViewController.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
+				520375AB211823880067316B /* QFBHomeViewController.m in Sources */,
+				520375A5211823720067316B /* QFBEarningViewController.m in Sources */,
+				520375B1211824170067316B /* QFBPlaceViewController.m in Sources */,
+				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
+				5203759D211823150067316B /* QFBTool.m in Sources */,
+				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
+				520375A82118237C0067316B /* QFBAllianceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +565,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NOSpam/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = QFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +583,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NOSpam/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = QFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
