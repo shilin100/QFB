@@ -9,10 +9,32 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "Masonry.h"
+//宏
 #import "UnitilMacro.h"
 #import "QFBConfig.h"
+#import "KeyMacro.h"
 
+//基类
+#import "QFBBaseNaviViewController.h"
+
+
+//工具类
+#import "RegularHelperUtil.h"
+#import "QFBTool.h"
+
+
+
+//第三方库
+
+#import <SDCycleScrollView.h>
+//#import <YYKit.h>
+#import <RACSignal.h>
+#import <UIControl+RACSignalSupport.h>
+#import <AFNetworking.h>
+#import <MJExtension.h>
+#import <SVProgressHUD.h>
+//#import <SDAutoLayout.h>
+#import <Masonry.h>
 
 
 

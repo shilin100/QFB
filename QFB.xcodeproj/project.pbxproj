@@ -28,6 +28,9 @@
 		520375BE21196F790067316B /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375BA21196F790067316B /* NSDate+Extension.m */; };
 		520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375C32119732B0067316B /* QFBLoginViewModel.m */; };
 		520375C72119733C0067316B /* QFBLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375C62119733C0067316B /* QFBLoginView.m */; };
+		52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */; };
+		52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */; };
+		52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF94A2119A38F00D54153 /* QFBNetTool.m */; };
 		60EFD315705CE891393FD7AF /* libPods-QFBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69FECB831DB5070567FFBBE /* libPods-QFBTests.a */; };
 		7F53309265D68896E6BF0258 /* libPods-QFBUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D82A00451EA7523D322ADB /* libPods-QFBUITests.a */; };
 /* End PBXBuildFile section */
@@ -95,6 +98,13 @@
 		520375C32119732B0067316B /* QFBLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginViewModel.m; sourceTree = "<group>"; };
 		520375C52119733C0067316B /* QFBLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBLoginView.h; sourceTree = "<group>"; };
 		520375C62119733C0067316B /* QFBLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginView.m; sourceTree = "<group>"; };
+		52EEF94121198B8400D54153 /* KeyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacro.h; sourceTree = "<group>"; };
+		52EEF9432119975B00D54153 /* QFBBaseNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBBaseNaviViewController.h; sourceTree = "<group>"; };
+		52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBBaseNaviViewController.m; sourceTree = "<group>"; };
+		52EEF9462119A2CF00D54153 /* RegularHelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularHelperUtil.h; sourceTree = "<group>"; };
+		52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularHelperUtil.m; sourceTree = "<group>"; };
+		52EEF9492119A38F00D54153 /* QFBNetTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBNetTool.h; sourceTree = "<group>"; };
+		52EEF94A2119A38F00D54153 /* QFBNetTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBNetTool.m; sourceTree = "<group>"; };
 		9E4F3EBD3AE3906A1A672987 /* Pods-QFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QFB/Pods-QFB.debug.xcconfig"; sourceTree = "<group>"; };
 		A5D82A00451EA7523D322ADB /* libPods-QFBUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFBUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DFA66281F293E486ECE2A3 /* Pods-QFBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBTests/Pods-QFBTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +178,7 @@
 		5203755C2117F4B90067316B /* QFB */ = {
 			isa = PBXGroup;
 			children = (
+				52EEF9422119972700D54153 /* Base */,
 				520375922117FA790067316B /* Tools */,
 				5203758F2117F6530067316B /* Sections */,
 				520375632117F4B90067316B /* Main.storyboard */,
@@ -222,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				5203759F2118234D0067316B /* UnitilMacro.h */,
+				52EEF94121198B8400D54153 /* KeyMacro.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -229,8 +241,12 @@
 		520375922117FA790067316B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				52EEF9462119A2CF00D54153 /* RegularHelperUtil.h */,
+				52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */,
 				5203759B211823150067316B /* QFBTool.h */,
 				5203759C211823150067316B /* QFBTool.m */,
+				52EEF9492119A38F00D54153 /* QFBNetTool.h */,
+				52EEF94A2119A38F00D54153 /* QFBNetTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -343,6 +359,15 @@
 				520375AD211823930067316B /* QFBLoginViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		52EEF9422119972700D54153 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52EEF9432119975B00D54153 /* QFBBaseNaviViewController.h */,
+				52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8A674D1B308146ED839EF7E0 /* Pods */ = {
@@ -532,13 +557,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QFB/Pods-QFB-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DXPopover/DXPopover.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DXPopover.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -575,8 +606,11 @@
 				520375AB211823880067316B /* QFBHomeViewController.m in Sources */,
 				520375A5211823720067316B /* QFBEarningViewController.m in Sources */,
 				520375B1211824170067316B /* QFBPlaceViewController.m in Sources */,
+				52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */,
 				520375C72119733C0067316B /* QFBLoginView.m in Sources */,
 				520375BB21196F790067316B /* NSString+Extension.m in Sources */,
+				52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */,
+				52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */,
 				520375BD21196F790067316B /* UIView+Extension.m in Sources */,
 				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,

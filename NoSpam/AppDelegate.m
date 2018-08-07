@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "QFBLoginViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,9 +18,59 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+    
+    if ([kDefault boolForKey:IS_LOGIN]) {
+        //已登陆
+        
+        
+    }else{
+        //未登陆
+        
+        //引导页。。。
+        if ([kDefault boolForKey:IS_FIRST_TOUCH]){
+            
+        }
+        
+        QFBLoginViewController *vc = [[QFBLoginViewController alloc] init];
+        QFBBaseNaviViewController * loginNav = [[QFBBaseNaviViewController alloc]initWithRootViewController:vc];
+        
+        self.window.rootViewController = loginNav;
+    }
+    
+    [self.window makeKeyAndVisible];
+    [self setUpNavigationBarAppearance];//设置Navigationbar样式
 
     return YES;
+}
+
+
+- (void)setUpNavigationBarAppearance {
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    
+    UIImage *backgroundImage = nil;
+    NSDictionary *textAttributes = nil;
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        
+        textAttributes = @{
+                           NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
+                           NSForegroundColorAttributeName : [UIColor whiteColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        textAttributes = @{
+                           UITextAttributeFont : [UIFont boldSystemFontOfSize:18],
+                           UITextAttributeTextColor : [UIColor whiteColor],
+                           UITextAttributeTextShadowColor : [UIColor clearColor],
+                           UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
 }
 
 

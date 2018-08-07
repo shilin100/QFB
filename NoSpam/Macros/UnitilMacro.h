@@ -17,8 +17,23 @@
 
 
 
-#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define kSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define kSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define kDefault [NSUserDefaults standardUserDefaults]
+/**AppDelegate*/
+#define APPLication [UIApplication sharedApplication]
+/**字体*/
+#define XFont(a) [UIFont systemFontOfSize:a]
+#define XBFont(a) [UIFont boldSystemFontOfSize:a]
+/**图片*/
+#define IMAGENAME(a) [UIImage imageNamed:a]
+/**document路径*/
+#define DOC_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+/**颜色*/
+#define HEXCOLOR(a) [UIColor colorWithHexString:a]
+
+#define StrISEMPTY(str) (str == nil || [str isEqual:[NSNull null]] || str.length <= 0)
+
 
 //====
 //////////////////////IM 聊天用通知 //////////////////////////////////////////////

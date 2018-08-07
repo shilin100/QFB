@@ -1,25 +1,23 @@
 //
-//  QFBLoginViewController.m
+//  QFBBaseNaviViewController.m
 //  QFB
 //
-//  Created by qqq on 2018/8/6.
+//  Created by qqq on 2018/8/7.
 //  Copyright © 2018年 qqq. All rights reserved.
 //
 
-#import "QFBLoginViewController.h"
-#import "QFBLoginViewModel.h"
+#import "QFBBaseNaviViewController.h"
 
-@interface QFBLoginViewController ()
+@interface QFBBaseNaviViewController ()
 
 @end
 
-@implementation QFBLoginViewController
+@implementation QFBBaseNaviViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"登陆";
-
-    self.view.backgroundColor = [UIColor lightGrayColor];
+    [self.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     
 }
 
