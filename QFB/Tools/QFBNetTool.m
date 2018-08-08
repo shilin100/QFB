@@ -22,8 +22,6 @@
 }
 
 
-
-
 #pragma mark -基本的GET 和POST请求
 
 static AFHTTPSessionManager * sharedManager ;

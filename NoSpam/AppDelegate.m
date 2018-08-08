@@ -45,7 +45,7 @@
     [self.window makeKeyAndVisible];
     [self setUpNavigationBarAppearance];//设置Navigationbar样式
 
-    
+    [SVProgressHUD setMaximumDismissTimeInterval:1.8];
     
     return YES;
 }

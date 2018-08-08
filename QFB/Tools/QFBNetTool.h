@@ -18,6 +18,7 @@ typedef void(^DownloadSucceed)(NSString * filePath);
 @interface QFBNetTool : NSObject
 
 
+
 //获取视图所属的控制器
 +(UIViewController *)getCurrentVCWithCurrentView:(UIView *)currentView;
 
