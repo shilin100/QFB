@@ -8,6 +8,7 @@
 
 #import "QFBLoginViewController.h"
 #import "QFBLoginViewModel.h"
+#import "QFBLoginView.h"
 
 @interface QFBLoginViewController ()
 
@@ -21,6 +22,11 @@
 
     self.view.backgroundColor = [UIColor lightGrayColor];
     
+    QFBLoginView * containerView = [[QFBLoginView alloc]init];
+    [self.view addSubview:containerView];
+    [containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,9 +23,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
     
-    if (![kDefault boolForKey:IS_LOGIN]) {
+    if ([kDefault boolForKey:IS_LOGIN]) {
         //已登陆
-
         self.window.rootViewController = [QFBTabbarControllerConfig initRootVCWithModules:[QFBTool getDefaultModules]];
 
         
@@ -46,6 +45,8 @@
     [self.window makeKeyAndVisible];
     [self setUpNavigationBarAppearance];//设置Navigationbar样式
 
+    
+    
     return YES;
 }
 
