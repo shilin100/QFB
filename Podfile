@@ -17,7 +17,7 @@ pod 'LBXScan/LBXNative'
 pod 'LBXScan/UI'
 pod 'PNChart'
 pod 'WechatOpenSDK'
-#pod 'CYLTabBarController'
+pod 'CYLTabBarController'
 pod 'ReactiveObjC'
 pod 'IQKeyboardManager'
 #pod 'YYKit'
@@ -25,12 +25,12 @@ pod 'SVProgressHUD'
 pod 'HMSegmentedControl'
 pod 'DXPopover'
 pod 'SDWebImage'
-#  pod 'TZImagePickerController'
+#pod 'TZImagePickerController'
 
- 
- 
- 
-  target 'QFBTests' do
+
+
+
+target 'QFBTests' do
     inherit! :search_paths
     # Pods for testing
   end

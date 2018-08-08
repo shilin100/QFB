@@ -30,7 +30,7 @@
         }];
         
         UIView * line = [UIView new];
-        line.backgroundColor = HEXCOLOR(@"#CCCCCC");
+        line.backgroundColor = HEXCOLOR(0xCCCCCC);
         [self addSubview:line];
         [line mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(@8);

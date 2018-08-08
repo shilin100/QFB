@@ -21,7 +21,7 @@
 //工具类
 #import "RegularHelperUtil.h"
 #import "QFBTool.h"
-
+#import "QFBNetTool.h"
 
 
 //第三方库
@@ -35,7 +35,7 @@
 #import <SVProgressHUD.h>
 //#import <SDAutoLayout.h>
 #import <Masonry.h>
-
+#import <CYLTabBarController.h>
 
 
 #endif /* PrefixHeader_pch */

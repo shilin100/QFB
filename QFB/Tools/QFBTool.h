@@ -10,4 +10,13 @@
 
 @interface QFBTool : NSObject
 
+
+//模块对应类名
++(NSString*)getClassNameFromModule:(NSString*)module;
+//所有模块对应类名
++(NSDictionary*)getAllModuleClassNameDictionary;
+
++(NSArray*)getDefaultModules;
++(NSDictionary*)getAllTabbarItemAttributes;
+
 @end

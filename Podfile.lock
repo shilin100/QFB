@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CYLTabBarController (1.17.14)
   - DXPopover (0.1.1)
   - HMSegmentedControl (1.5.5)
   - IQKeyboardManager (6.1.1)
@@ -41,6 +42,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CYLTabBarController
   - DXPopover
   - HMSegmentedControl
   - IQKeyboardManager
@@ -61,6 +63,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
+    - CYLTabBarController
     - DXPopover
     - HMSegmentedControl
     - IQKeyboardManager
@@ -80,6 +83,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CYLTabBarController: ba33f518d5cc33dc4b6cd29103eda93317c0e40e
   DXPopover: 13e6bbd1a0da4e62b2190de51f43a94850769e0f
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
@@ -97,6 +101,6 @@ SPEC CHECKSUMS:
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
 
-PODFILE CHECKSUM: cd3e04bfb9ec071b40cbde6af0fa2ee385663378
+PODFILE CHECKSUM: 71e898bdc0a7caecf9aa4620dd0601acea74d3ff
 
 COCOAPODS: 1.5.3

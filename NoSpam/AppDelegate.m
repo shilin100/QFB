@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "QFBLoginViewController.h"
-
+#import "QFBTabbarControllerConfig.h"
 
 @interface AppDelegate ()
 
@@ -23,9 +23,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
     
-    if ([kDefault boolForKey:IS_LOGIN]) {
+    if (![kDefault boolForKey:IS_LOGIN]) {
         //已登陆
-        
+
+        self.window.rootViewController = [QFBTabbarControllerConfig initRootVCWithModules:[QFBTool getDefaultModules]];
+
         
     }else{
         //未登陆
