@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface QFBLoginView : UIView
+@property(nonatomic,strong)UITextField *userNameTextfield;
+@property(nonatomic,strong)UITextField *passWordTextfield;
+@property(nonatomic,strong)UIButton *loginBtn;
+@property(nonatomic,strong)UIButton *registerBtn;
+@property(nonatomic,strong)UIButton *forgetPswBtn;
+@property(nonatomic,strong)UIImageView *bgImgView;
+@property(nonatomic,strong)UIImageView *userIcon;
 
 @end

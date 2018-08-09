@@ -21,6 +21,7 @@
         bgImgView.contentMode = UIViewContentModeScaleAspectFill;
         bgImgView.image = [UIImage imageNamed:@"矩形 8"];
         [self addSubview:bgImgView];
+        self.bgImgView = bgImgView;
         
         [bgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
@@ -35,6 +36,7 @@
         userIcon.layer.borderColor = [UIColor whiteColor].CGColor;
         userIcon.layer.borderWidth = 2;
         [self addSubview:userIcon];
+        self.userIcon = userIcon;
         
         [userIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(userIconHeight, userIconHeight));
@@ -78,6 +80,7 @@
         usernameTextField.attributedPlaceholder = attrString;
         usernameTextField.textColor = [UIColor whiteColor];
         [self addSubview:usernameTextField];
+        self.userNameTextfield = usernameTextField;
         
         [usernameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -111,6 +114,7 @@
         pswTextField.secureTextEntry = YES;
         pswTextField.clearsOnBeginEditing = YES;
         [self addSubview:pswTextField];
+        self.passWordTextfield = pswTextField;
         
         [pswTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(pswLine.mas_left).offset(1);
@@ -125,6 +129,8 @@
         forgetPswBtn.titleLabel.font = XFont(12);
         forgetPswBtn.titleLabel.textColor = [UIColor whiteColor];
         [self addSubview:forgetPswBtn];
+        self.forgetPswBtn = forgetPswBtn;
+        
         [forgetPswBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.mas_equalTo(@55);
             make.right.equalTo(pswLine.mas_right).offset(-1);
@@ -141,6 +147,8 @@
         [loginBtn setBackgroundColor:HEXCOLOR(0xFBC059)];
         loginBtn.titleLabel.textColor = [UIColor whiteColor];
         [self addSubview:loginBtn];
+        self.loginBtn = loginBtn;
+        
         [loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(@38);
             make.left.mas_equalTo(@67);
@@ -166,6 +174,8 @@
         registerBtn.titleLabel.font = XFont(12);
         registerBtn.titleLabel.textColor = [UIColor whiteColor];
         [self addSubview:registerBtn];
+        self.registerBtn = registerBtn;
+        
         [registerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.mas_equalTo(@55);
             make.bottom.equalTo(registerLine.mas_top).offset(-1);
