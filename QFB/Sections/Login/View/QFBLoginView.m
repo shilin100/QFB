@@ -19,7 +19,7 @@
         
         UIImageView * bgImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
         bgImgView.contentMode = UIViewContentModeScaleAspectFill;
-        bgImgView.image = [UIImage imageNamed:@"矩形 8"];
+        bgImgView.image = [UIImage imageNamed:@"登录页背景图"];
         [self addSubview:bgImgView];
         self.bgImgView = bgImgView;
         
@@ -30,6 +30,7 @@
         
         UIImageView * userIcon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
         userIcon.contentMode = UIViewContentModeScaleAspectFill;
+        userIcon.image = [UIImage imageNamed:@"登录页默认头像"];
         CGFloat userIconHeight = 106;//头像宽高
         userIcon.layer.cornerRadius = userIconHeight/2;
         userIcon.layer.masksToBounds = YES;
@@ -37,7 +38,13 @@
         userIcon.layer.borderWidth = 2;
         [self addSubview:userIcon];
         self.userIcon = userIcon;
-        
+        if ([kDefault objectForKey:USER_HEAD_IMGk] != nil) {
+            [userIcon sd_setImageWithURL:[NSURL URLWithString:[kDefault objectForKey:USER_HEAD_IMGk]] placeholderImage:[UIImage imageNamed:@"gd"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+
+            }];
+
+        }
+
         [userIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(userIconHeight, userIconHeight));
             make.centerX.equalTo(self);
@@ -50,7 +57,10 @@
         username.textColor = [UIColor whiteColor];
         username.textAlignment = NSTextAlignmentCenter;
         [self addSubview:username];
-        
+        if ([kDefault objectForKey:NICK_NAMEk] != nil) {
+            username.text = [kDefault objectForKey:NICK_NAMEk];
+        }
+
         [username mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.left.mas_equalTo(@50);
@@ -81,7 +91,10 @@
         usernameTextField.textColor = [UIColor whiteColor];
         [self addSubview:usernameTextField];
         self.userNameTextfield = usernameTextField;
-        
+        if ([kDefault objectForKey:USERNAMEk] != nil) {
+            usernameTextField.text = [kDefault objectForKey:USERNAMEk];
+        }
+
         [usernameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.left.equalTo(line.mas_left).offset(1);
@@ -115,7 +128,10 @@
         pswTextField.clearsOnBeginEditing = YES;
         [self addSubview:pswTextField];
         self.passWordTextfield = pswTextField;
-        
+        if ([kDefault objectForKey:PASSWORDk] != nil) {
+            pswTextField.text = [kDefault objectForKey:PASSWORDk];
+        }
+
         [pswTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(pswLine.mas_left).offset(1);
             make.right.equalTo(pswLine.mas_right).offset(-60);

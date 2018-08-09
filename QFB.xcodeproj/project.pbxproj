@@ -35,6 +35,9 @@
 		52EEF952211A86BB00D54153 /* CustomTabbarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF950211A86BB00D54153 /* CustomTabbarTool.m */; };
 		52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF954211A871100D54153 /* TabbarItemAttributesModel.m */; };
 		52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF957211AC21D00D54153 /* UIView+ZFAddRectangBorder.m */; };
+		52EEF971211C2C4600D54153 /* QFBForgetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF970211C2C4600D54153 /* QFBForgetPswViewController.m */; };
+		52EEF976211C3EB300D54153 /* QFBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF974211C3EB300D54153 /* QFBRegisterViewController.m */; };
+		52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EEF975211C3EB300D54153 /* QFBRegisterViewController.xib */; };
 		60EFD315705CE891393FD7AF /* libPods-QFBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69FECB831DB5070567FFBBE /* libPods-QFBTests.a */; };
 		7F53309265D68896E6BF0258 /* libPods-QFBUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D82A00451EA7523D322ADB /* libPods-QFBUITests.a */; };
 /* End PBXBuildFile section */
@@ -118,6 +121,11 @@
 		52EEF957211AC21D00D54153 /* UIView+ZFAddRectangBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZFAddRectangBorder.m"; sourceTree = "<group>"; };
 		52EEF958211AC21D00D54153 /* UIView+ZFAddRectangBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZFAddRectangBorder.h"; sourceTree = "<group>"; };
 		52EEF968211BE7C500D54153 /* NetMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetMacro.h; sourceTree = "<group>"; };
+		52EEF96F211C2C4600D54153 /* QFBForgetPswViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBForgetPswViewController.h; sourceTree = "<group>"; };
+		52EEF970211C2C4600D54153 /* QFBForgetPswViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBForgetPswViewController.m; sourceTree = "<group>"; };
+		52EEF973211C3EB300D54153 /* QFBRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBRegisterViewController.h; sourceTree = "<group>"; };
+		52EEF974211C3EB300D54153 /* QFBRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBRegisterViewController.m; sourceTree = "<group>"; };
+		52EEF975211C3EB300D54153 /* QFBRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBRegisterViewController.xib; sourceTree = "<group>"; };
 		9E4F3EBD3AE3906A1A672987 /* Pods-QFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QFB/Pods-QFB.debug.xcconfig"; sourceTree = "<group>"; };
 		A5D82A00451EA7523D322ADB /* libPods-QFBUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFBUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DFA66281F293E486ECE2A3 /* Pods-QFBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBTests/Pods-QFBTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +290,7 @@
 		520375942117FBD50067316B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				52EEF969211C2BEE00D54153 /* SubSection */,
 				520375C1211973070067316B /* Controller */,
 				520375C0211972FE0067316B /* ViewModel */,
 				520375BF211972F80067316B /* View */,
@@ -408,6 +417,34 @@
 			path = TabbarConfig;
 			sourceTree = "<group>";
 		};
+		52EEF969211C2BEE00D54153 /* SubSection */ = {
+			isa = PBXGroup;
+			children = (
+				52EEF96B211C2C0C00D54153 /* Register */,
+				52EEF96A211C2C0200D54153 /* ForgetPsw */,
+			);
+			path = SubSection;
+			sourceTree = "<group>";
+		};
+		52EEF96A211C2C0200D54153 /* ForgetPsw */ = {
+			isa = PBXGroup;
+			children = (
+				52EEF96F211C2C4600D54153 /* QFBForgetPswViewController.h */,
+				52EEF970211C2C4600D54153 /* QFBForgetPswViewController.m */,
+			);
+			path = ForgetPsw;
+			sourceTree = "<group>";
+		};
+		52EEF96B211C2C0C00D54153 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				52EEF973211C3EB300D54153 /* QFBRegisterViewController.h */,
+				52EEF974211C3EB300D54153 /* QFBRegisterViewController.m */,
+				52EEF975211C3EB300D54153 /* QFBRegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		8A674D1B308146ED839EF7E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +569,7 @@
 				5203756A2117F4BA0067316B /* LaunchScreen.storyboard in Resources */,
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
 				520375652117F4B90067316B /* Main.storyboard in Resources */,
+				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,9 +692,11 @@
 				52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */,
 				520375BD21196F790067316B /* UIView+Extension.m in Sources */,
 				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
+				52EEF971211C2C4600D54153 /* QFBForgetPswViewController.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,
 				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
 				52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */,
+				52EEF976211C3EB300D54153 /* QFBRegisterViewController.m in Sources */,
 				520375BC21196F790067316B /* UIImage+Extension.m in Sources */,
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,

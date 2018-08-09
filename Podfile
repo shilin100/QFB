@@ -27,6 +27,7 @@ pod 'DXPopover'
 pod 'SDWebImage'
 #pod 'TZImagePickerController'
 #pod 'DZNEmptyDataSet'
+pod 'UICKeyChainStore'
 
 
 

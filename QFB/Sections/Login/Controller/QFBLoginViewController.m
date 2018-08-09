@@ -10,6 +10,8 @@
 #import "QFBLoginViewModel.h"
 #import "QFBLoginView.h"
 #import "QFBTabbarControllerConfig.h"
+#import "QFBForgetPswViewController.h"
+#import "QFBRegisterViewController.h"
 
 @interface QFBLoginViewController ()
 @property(nonatomic,strong)QFBLoginView *containerView;
@@ -18,11 +20,17 @@
 @end
 
 @implementation QFBLoginViewController
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"登陆";
-    self.view.backgroundColor = [UIColor lightGrayColor];
     
     [self setupUI];
     
@@ -46,17 +54,32 @@
     
     
     self.containerView.loginBtn.rac_command = self.viewModel.loginCommand;
-    
     [[self.viewModel.loginCommand executionSignals]
      subscribeNext:^(RACSignal *x) {
          
          [x subscribeNext:^(id x) {
              NSLog(@"登录成功返回的数据：%@",x);
 //             @strongify(self);
+             
              __block CYLTabBarController *  vc = [QFBTabbarControllerConfig initRootVCWithModules:[QFBTool getDefaultModules]];
              APPLication.keyWindow.rootViewController = vc;
          }];
      }];
+    
+//    self.containerView.forgetPswBtn.rac_command = self.viewModel.forgetPswCommand;
+//    self.containerView.registerBtn.rac_command = self.viewModel.registerCommand;
+
+    [[self.containerView.forgetPswBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        QFBForgetPswViewController * vc = [QFBForgetPswViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [[self.containerView.registerBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        QFBRegisterViewController * vc = [QFBRegisterViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+
+    
 
     [self.containerView.userNameTextfield.rac_textSignal subscribeNext:^(NSString * x){
         
@@ -84,6 +107,7 @@
 }
 
 -(void)requsetBgImg{
+
     [self.viewModel.getBgImgCommand execute:self.containerView.bgImgView];
 }
 

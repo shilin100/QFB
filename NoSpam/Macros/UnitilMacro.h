@@ -47,11 +47,11 @@
 
 #define Magic_Number 1000000000
 
-#define UserHeadKey @"user_head"
-#define UserNickNameKey @"user_NickName"
-#define UserNameKey @"user_name"
-#define UserPasswordKey @"user_password"
-#define UserTokenKey @"user_token"
+//#define UserHeadKey @"user_head"
+//#define UserNickNameKey @"user_NickName"
+//#define UserNameKey @"user_name"
+//#define UserPasswordKey @"user_password"
+//#define UserTokenKey @"user_token"
 
 
 #define SelectAreaIdKey @"select_areaId"

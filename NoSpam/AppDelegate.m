@@ -55,6 +55,7 @@
 
 - (void)setUpNavigationBarAppearance {
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+
     
     UIImage *backgroundImage = nil;
     NSDictionary *textAttributes = nil;
@@ -64,6 +65,8 @@
                            NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
                            NSForegroundColorAttributeName : [UIColor whiteColor],
                            };
+        backgroundImage = [UIImage imageNamed:@"navigationbar_image"];
+
     } else {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
         textAttributes = @{
@@ -72,9 +75,12 @@
                            UITextAttributeTextShadowColor : [UIColor clearColor],
                            UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetZero],
                            };
+        backgroundImage = [UIImage imageNamed:@"navigationbar_image"];
+
 #endif
     }
-    
+    [navigationBarAppearance setBackgroundImage:backgroundImage
+                                  forBarMetrics:UIBarMetricsDefault];
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
 }
 

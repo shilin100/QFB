@@ -13,11 +13,20 @@
 @end
 
 @implementation QFBBaseNaviViewController
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    viewController.navigationItem.backBarButtonItem = item;
+//    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.1506 green:0.1506 blue:0.1506 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+    [super pushViewController:viewController animated:animated];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationBar setShadowImage:[UIImage new]];
-    [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     
 }
 

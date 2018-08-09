@@ -10,6 +10,7 @@
 
 @interface QFBTool : NSObject
 
++(NSString *) getUUID;
 
 //模块对应类名
 +(NSString*)getClassNameFromModule:(NSString*)module;

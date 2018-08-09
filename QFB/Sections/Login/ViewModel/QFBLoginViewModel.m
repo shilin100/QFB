@@ -10,65 +10,35 @@
 
 @implementation QFBLoginViewModel
 
-- (RACSignal *)getBgImgSignal{
-    
-    return [RACSignal createSignal:^RACDisposable * (id subscriber) {
-        
-        NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
-        parameter[@"oBrandId"] = O_BRAND_ID;
-        
-        [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/appDynamic/selectLoginLogo.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
-            NSString *status;
-            status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
-            int code;
-            if ([status isEqualToString:@"1"]) {
-                code = Response_Success;
-                [subscriber sendNext:responseObject];
-
-            } else {
-                [SVProgressHUD showErrorWithStatus:@"请求失败，请稍后再试。"];
-                code = 999;
-            }
-            [subscriber sendCompleted];
-            
-        } andFaild:^(NSError *error) {
-            [subscriber sendCompleted];
-        }];
-        return nil;
-    }];
-
-}
 
 - (RACSignal *)loginSignal {
 
-    return [RACSignal createSignal:^RACDisposable * (id subscriber) {
-        if (self.userName.length == 0) {
-            [SVProgressHUD showErrorWithStatus:@"请输入用户名或手机号"];
-            [subscriber sendCompleted];
-            return nil;
+    if (self.userName.length == 0) {
+        [SVProgressHUD showErrorWithStatus:@"请输入用户名或手机号"];
+        return [RACSignal empty];
 
-        }
-        if (self.password.length < 6) {
-            [SVProgressHUD showErrorWithStatus:@"密码最少6位"];
-            [subscriber sendCompleted];
-            return nil;
+    }
+    if (self.password.length < 6) {
+        [SVProgressHUD showErrorWithStatus:@"密码最少6位"];
+        return [RACSignal empty];
+    }
+    
+    NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+    parameter[@"phone"] = self.userName;
+    parameter[@"pwd"] = self.password;
+    parameter[@"oBrandId"] = O_BRAND_ID;
+    parameter[@"clientid"] = [QFBTool getUUID];
 
-        }
-        
-        NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
-        parameter[@"phone"] = self.userName;
-        parameter[@"password"] = self.password;
-
-
-        [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/appDynamic/selectLoginLogo.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
-            [subscriber sendNext:responseObject];
-            [subscriber sendCompleted];
-
-        } andFaild:^(NSError *error) {
-            [subscriber sendCompleted];
-        }];
-        return nil;
+    RACSignal * signal = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/user/login.action",BASEURL] withParamater:parameter];
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSDictionary * data = x[@"data"];
+        [kDefault setObject:self.userName forKey:USERNAMEk];
+        [kDefault setObject:self.password forKey:PASSWORDk];
+        [kDefault setObject:data[@"userPicture"] forKey:USER_HEAD_IMGk];
+        [kDefault setObject:data[@"nickName"]  forKey:NICK_NAMEk];
     }];
+    return signal;
+    
 }
 
 -(instancetype)init

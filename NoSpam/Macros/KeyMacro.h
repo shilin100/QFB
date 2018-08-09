@@ -11,6 +11,10 @@
 
 #define IS_LOGIN @"islogin"
 #define IS_FIRST_TOUCH @"isfirsttouch"
+#define USERNAMEk @"user_name"
+#define PASSWORDk @"user_psw"
+#define NICK_NAMEk @"user_nickname"
+#define USER_HEAD_IMGk @"user_headimg"
 
 
 

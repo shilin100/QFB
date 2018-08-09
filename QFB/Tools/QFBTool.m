@@ -8,8 +8,24 @@
 
 #import "QFBTool.h"
 #import "TabbarItemAttributesModel.h"
+#import "UICKeyChainStore.h"
 
 @implementation QFBTool
+
++(NSString *) getUUID {
+    
+    NSString * bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    UICKeyChainStore *keychain = [UICKeyChainStore keyChainStoreWithService:bundleIdentifier];
+    NSString * uuid;
+    if ([keychain stringForKey:@"imeiKeyChain"] != nil) {
+        uuid = [keychain stringForKey:@"imeiKeyChain"];
+    }else {
+        uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString] ;
+        keychain[@"imeiKeyChain"] = uuid;
+    }
+    
+    return uuid;
+}
 
 
 +(NSString *)getClassNameFromModule:(NSString *)module{
