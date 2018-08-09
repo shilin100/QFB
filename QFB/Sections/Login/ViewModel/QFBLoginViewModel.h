@@ -12,6 +12,8 @@
 @property(nonatomic, copy) NSString *userName;
 @property(nonatomic, copy) NSString *password;
 @property(nonatomic, strong, readonly) RACCommand *loginCommand;
+@property(nonatomic, strong, readonly) RACCommand *getBgImgCommand;
+
 @property(nonatomic, strong, readonly) RACSignal *loginBtnEnable;
 
 @end

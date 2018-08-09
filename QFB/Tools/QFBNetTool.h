@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveObjC.h>
+
 typedef void(^Succeed)(NSDictionary * responseObject);
 typedef void(^Failed)(NSError *error);
 
@@ -17,6 +19,12 @@ typedef void(^DownloadSucceed)(NSString * filePath);
 
 @interface QFBNetTool : NSObject
 
+
++ (RACSignal *)getWithURL:(NSString *)uslString
+            withParamater:(NSDictionary *)paramter;
+
++ (RACSignal *)postWithURL:(NSString *)urlString
+             withParamater:(NSDictionary *)parameter;
 
 
 //获取视图所属的控制器

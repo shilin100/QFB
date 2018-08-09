@@ -46,6 +46,8 @@
     [self setUpNavigationBarAppearance];//设置Navigationbar样式
 
     [SVProgressHUD setMaximumDismissTimeInterval:1.8];
+    IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = YES;
+
     
     return YES;
 }

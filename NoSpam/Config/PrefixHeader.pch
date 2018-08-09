@@ -13,6 +13,8 @@
 #import "UnitilMacro.h"
 #import "QFBConfig.h"
 #import "KeyMacro.h"
+#import "NetMacro.h"
+
 
 //基类
 #import "QFBBaseNaviViewController.h"
@@ -37,6 +39,8 @@
 #import <Masonry.h>
 #import <CYLTabBarController.h>
 #import <ReactiveObjC.h>
+#import "IQKeyboardManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 
 #endif /* PrefixHeader_pch */

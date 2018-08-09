@@ -10,12 +10,40 @@
 
 @implementation QFBLoginViewModel
 
+- (RACSignal *)getBgImgSignal{
+    
+    return [RACSignal createSignal:^RACDisposable * (id subscriber) {
+        
+        NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+        parameter[@"oBrandId"] = O_BRAND_ID;
+        
+        [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/appDynamic/selectLoginLogo.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
+            NSString *status;
+            status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
+            int code;
+            if ([status isEqualToString:@"1"]) {
+                code = Response_Success;
+                [subscriber sendNext:responseObject];
+
+            } else {
+                [SVProgressHUD showErrorWithStatus:@"请求失败，请稍后再试。"];
+                code = 999;
+            }
+            [subscriber sendCompleted];
+            
+        } andFaild:^(NSError *error) {
+            [subscriber sendCompleted];
+        }];
+        return nil;
+    }];
+
+}
 
 - (RACSignal *)loginSignal {
 
     return [RACSignal createSignal:^RACDisposable * (id subscriber) {
-        if (self.userName.length != 11) {
-            [SVProgressHUD showErrorWithStatus:@"请输入正确的手机号"];
+        if (self.userName.length == 0) {
+            [SVProgressHUD showErrorWithStatus:@"请输入用户名或手机号"];
             [subscriber sendCompleted];
             return nil;
 
@@ -32,7 +60,7 @@
         parameter[@"password"] = self.password;
 
 
-        [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"url"] withDic:parameter Succeed:^(NSDictionary *responseObject) {
+        [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/appDynamic/selectLoginLogo.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
             [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
 
@@ -64,6 +92,20 @@
             return @([userName boolValue] && [password boolValue]);
         }];
         
+        
+        _getBgImgCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+            parameter[@"oBrandId"] = O_BRAND_ID;
+            
+            RACSignal * signal = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/appDynamic/selectLoginLogo.action",BASEURL] withParamater:parameter];
+            
+            UIImageView * imgV = input;
+            [signal subscribeNext:^(id  _Nullable x) {
+                [imgV sd_setImageWithURL:[NSURL URLWithString:x[@"data"][@"imgUrl"]]];
+            }];
+
+            return [RACSignal empty];
+        }];
         
         _loginCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             return [self loginSignal];

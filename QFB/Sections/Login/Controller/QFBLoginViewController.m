@@ -22,9 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"登陆";
-
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
     [self setupUI];
+    
+    [self requsetBgImg];
     [self bind];
 }
 
@@ -41,7 +43,8 @@
     @weakify(self)
     RAC(self.viewModel, userName) = self.containerView.userNameTextfield.rac_textSignal;
     RAC(self.viewModel, password) = self.containerView.passWordTextfield.rac_textSignal;
-
+    
+    
     self.containerView.loginBtn.rac_command = self.viewModel.loginCommand;
     
     [[self.viewModel.loginCommand executionSignals]
@@ -52,27 +55,25 @@
 //             @strongify(self);
              __block CYLTabBarController *  vc = [QFBTabbarControllerConfig initRootVCWithModules:[QFBTool getDefaultModules]];
              APPLication.keyWindow.rootViewController = vc;
-
          }];
      }];
 
     [self.containerView.userNameTextfield.rac_textSignal subscribeNext:^(NSString * x){
         
-        static NSInteger const maxIntegerlength = 11;
+        static NSInteger const maxIntegerlength = 15;
         if (x.length) {
-            if (x.length > 11) {
+            if (x.length > 15) {
                 @strongify(self);
                 self.containerView.userNameTextfield.text = [self.containerView.userNameTextfield.text substringToIndex:maxIntegerlength];
             }
-            
         }
     }];
     
     [self.containerView.passWordTextfield.rac_textSignal subscribeNext:^(NSString * x){
         
-        static NSInteger const maxIntegerlength = 20;
+        static NSInteger const maxIntegerlength = 15;
         if (x.length) {
-            if (x.length > 20) {
+            if (x.length > 15) {
                 @strongify(self);
                 self.containerView.passWordTextfield.text = [self.containerView.passWordTextfield.text substringToIndex:maxIntegerlength];
             }
@@ -80,6 +81,10 @@
         }
     }];
 
+}
+
+-(void)requsetBgImg{
+    [self.viewModel.getBgImgCommand execute:self.containerView.bgImgView];
 }
 
 -(QFBLoginViewModel *)viewModel{

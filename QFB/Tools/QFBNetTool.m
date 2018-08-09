@@ -21,6 +21,59 @@
     return nil;
 }
 
+#pragma mark -RAC的GET 和POST请求
+
+
++ (RACSignal *)getWithURL:(NSString *)urlString withParamater:(NSDictionary *)paramter
+{
+    AFHTTPSessionManager *manager = [QFBNetTool sharedHTTPSessionManager];
+    [manager.securityPolicy setAllowInvalidCertificates:YES];
+    manager.securityPolicy.validatesDomainName = NO;
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plan",@"text/plain", nil];
+    RACSubject *sub =[ RACSubject subject];
+    [manager GET:urlString parameters:paramter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
+        if ([status isEqualToString:@"1"]) {
+            [sub sendNext:responseObject];
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
+        }
+
+        [sub sendCompleted];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD showErrorWithStatus:ServerError];
+        [sub sendCompleted];
+    }];
+    return sub;
+}
+
++ (RACSignal *)postWithURL:(NSString *)urlString withParamater:(NSDictionary *)parameter
+{
+    AFHTTPSessionManager *manager = [QFBNetTool sharedHTTPSessionManager];
+    [manager.securityPolicy setAllowInvalidCertificates:YES];
+    manager.securityPolicy.validatesDomainName = NO;
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plan",@"text/plain", nil];
+    RACSubject *sub =[ RACSubject subject];
+    [manager POST:urlString parameters:parameter progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
+        if ([status isEqualToString:@"1"]) {
+            [sub sendNext:responseObject];
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
+        }
+        
+        [sub sendCompleted];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD showErrorWithStatus:ServerError];
+        [sub sendCompleted];
+    }];
+    
+    return sub;
+}
+
 
 #pragma mark -基本的GET 和POST请求
 
@@ -29,7 +82,7 @@ static AFHTTPSessionManager * sharedManager ;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedManager = [AFHTTPSessionManager manager];
-        sharedManager.requestSerializer.timeoutInterval = 15;
+        sharedManager.requestSerializer.timeoutInterval = 5;
     });
     return sharedManager;
 }

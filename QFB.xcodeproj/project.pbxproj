@@ -117,6 +117,7 @@
 		52EEF954211A871100D54153 /* TabbarItemAttributesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarItemAttributesModel.m; sourceTree = "<group>"; };
 		52EEF957211AC21D00D54153 /* UIView+ZFAddRectangBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZFAddRectangBorder.m"; sourceTree = "<group>"; };
 		52EEF958211AC21D00D54153 /* UIView+ZFAddRectangBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZFAddRectangBorder.h"; sourceTree = "<group>"; };
+		52EEF968211BE7C500D54153 /* NetMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetMacro.h; sourceTree = "<group>"; };
 		9E4F3EBD3AE3906A1A672987 /* Pods-QFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QFB/Pods-QFB.debug.xcconfig"; sourceTree = "<group>"; };
 		A5D82A00451EA7523D322ADB /* libPods-QFBUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFBUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DFA66281F293E486ECE2A3 /* Pods-QFBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBTests/Pods-QFBTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +248,7 @@
 			children = (
 				5203759F2118234D0067316B /* UnitilMacro.h */,
 				52EEF94121198B8400D54153 /* KeyMacro.h */,
+				52EEF968211BE7C500D54153 /* NetMacro.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";

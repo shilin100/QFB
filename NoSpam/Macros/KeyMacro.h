@@ -14,7 +14,6 @@
 
 
 
-#define ServerError @"网络异常或服务器异常"
 
 
 #endif /* KeyMacro_h */
