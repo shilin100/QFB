@@ -2,7 +2,7 @@
 //  QFBForgetPswViewController.m
 //  QFB
 //
-//  Created by qqq on 2018/8/9.
+//  Created by qqq on 2018/8/10.
 //  Copyright © 2018年 qqq. All rights reserved.
 //
 
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

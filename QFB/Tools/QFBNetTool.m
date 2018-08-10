@@ -26,6 +26,7 @@
 
 + (RACSignal *)getWithURL:(NSString *)urlString withParamater:(NSDictionary *)paramter
 {
+    [SVProgressHUD showWithStatus:@"加载中..."];
     AFHTTPSessionManager *manager = [QFBNetTool sharedHTTPSessionManager];
     [manager.securityPolicy setAllowInvalidCertificates:YES];
     manager.securityPolicy.validatesDomainName = NO;
@@ -34,6 +35,7 @@
     [manager GET:urlString parameters:paramter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
         if ([status isEqualToString:@"1"]) {
+            [SVProgressHUD dismiss];
             [sub sendNext:responseObject];
         } else {
             [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
@@ -50,6 +52,7 @@
 
 + (RACSignal *)postWithURL:(NSString *)urlString withParamater:(NSDictionary *)parameter
 {
+    [SVProgressHUD showWithStatus:@"加载中..."];
     AFHTTPSessionManager *manager = [QFBNetTool sharedHTTPSessionManager];
     [manager.securityPolicy setAllowInvalidCertificates:YES];
     manager.securityPolicy.validatesDomainName = NO;
@@ -60,6 +63,7 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
         if ([status isEqualToString:@"1"]) {
+            [SVProgressHUD dismiss];
             [sub sendNext:responseObject];
         } else {
             [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
@@ -104,6 +108,9 @@ static AFHTTPSessionManager * sharedManager ;
 
 + (void)GetRequestWithUrlString:(NSString *)urlString withDic:(NSDictionary *)dic Succeed:(Succeed)succeed andFaild:(Failed)falid
 {
+    
+    [SVProgressHUD showWithStatus:@"加载中..."];
+
     NSMutableDictionary * params = [QFBNetTool getBaseRequestParams];
     [params addEntriesFromDictionary:dic];
     
@@ -113,10 +120,12 @@ static AFHTTPSessionManager * sharedManager ;
     manager.securityPolicy.validatesDomainName = NO;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plan",@"text/plain", nil];
     [manager GET:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         succeed(responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         falid(error);
+        [SVProgressHUD showErrorWithStatus:ServerError];
     }];
     
 }
@@ -125,6 +134,8 @@ static AFHTTPSessionManager * sharedManager ;
 + (void)GetRequestWithUrlString:(NSString *)urlString Succeed:(Succeed)succeed andFaild:(Failed)falid
 {
     
+    [SVProgressHUD showWithStatus:@"加载中..."];
+
     //    MMLog(@"GET请求链接 == %@ ",urlString);
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
@@ -135,16 +146,19 @@ static AFHTTPSessionManager * sharedManager ;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plan",@"text/plain", nil];
     
     [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         succeed(responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         falid(error);
+        [SVProgressHUD showErrorWithStatus:ServerError];
     }];
 }
 
 + (NSURLSessionDataTask *)PostRequestWithUrlString:(NSString *)urlString withDic:(NSDictionary *)dic Succeed:(Succeed)succeed andFaild:(Failed)falid
 {
-    
+    [SVProgressHUD showWithStatus:@"加载中..."];
+
     NSMutableDictionary * params = [QFBNetTool getBaseRequestParams];
     [params addEntriesFromDictionary:dic];
     
@@ -154,6 +168,7 @@ static AFHTTPSessionManager * sharedManager ;
     manager.securityPolicy.validatesDomainName = NO;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plan",@"text/plain", nil];
     NSURLSessionDataTask *urlSessionDataTask = [manager POST:urlString parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         succeed(responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -166,13 +181,15 @@ static AFHTTPSessionManager * sharedManager ;
 
 + (NSURLSessionDataTask *)ClearPostRequestWithUrlString:(NSString *)urlString withDic:(NSDictionary *)dic Succeed:(Succeed)succeed andFaild:(Failed)falid
 {
-    
+    [SVProgressHUD showWithStatus:@"加载中..."];
+
     //    MMLog(@"POST请求链接 == %@  %@",urlString,dic);
     AFHTTPSessionManager *manager = [QFBNetTool sharedHTTPSessionManager];
     [manager.securityPolicy setAllowInvalidCertificates:YES];
     manager.securityPolicy.validatesDomainName = NO;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript",@"text/plan",@"text/plain", nil];
     NSURLSessionDataTask *urlSessionDataTask = [manager POST:urlString parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         succeed(responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

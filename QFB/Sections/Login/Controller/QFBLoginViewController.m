@@ -10,7 +10,7 @@
 #import "QFBLoginViewModel.h"
 #import "QFBLoginView.h"
 #import "QFBTabbarControllerConfig.h"
-#import "QFBForgetPswViewController.h"
+#import "QFBRegisterStepTwoViewController.h"
 #import "QFBRegisterViewController.h"
 
 @interface QFBLoginViewController ()
@@ -70,7 +70,8 @@
 //    self.containerView.registerBtn.rac_command = self.viewModel.registerCommand;
 
     [[self.containerView.forgetPswBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        QFBForgetPswViewController * vc = [QFBForgetPswViewController new];
+        QFBRegisterStepTwoViewController * vc = [QFBRegisterStepTwoViewController new];
+        vc.vcType = TYPE_FORGET_PSW;
         [self.navigationController pushViewController:vc animated:YES];
     }];
     

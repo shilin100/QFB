@@ -7,8 +7,10 @@
 //
 
 #import "QFBRegisterViewController.h"
+#import "QFBRegisterStepTwoViewController.h"
 
 @interface QFBRegisterViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *recommandTextField;
 
 @end
 
@@ -19,6 +21,42 @@
     self.navigationItem.title = @"立即注册";
     
 }
+- (IBAction)nextBtnAction:(id)sender {
+    if (_recommandTextField.text.length == 0) {
+        [SVProgressHUD showErrorWithStatus:@"请输入推荐码"];
+        return;
+    }
+    
+    [self requestVerifyRecommandCode];
+    
+}
+
+-(void)requestVerifyRecommandCode{
+    NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+    parameter[@"tjm"] = self.recommandTextField.text;
+    parameter[@"oBrandId"] = O_BRAND_ID;
+
+    [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/user/tgmyz.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
+        NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
+        if ([status isEqualToString:@"1"]) {
+            if (!IS_OBJECT_EMPTY([responseObject objectForKey:@"data"])) {
+                QFBRegisterStepTwoViewController * vc = [QFBRegisterStepTwoViewController new];
+                vc.parentId = responseObject[@"data"][@"parentId"];
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                [SVProgressHUD showErrorWithStatus:@"推荐码有误"];
+            }
+
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
+        }
+
+    } andFaild:^(NSError *error) {
+        
+    }];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

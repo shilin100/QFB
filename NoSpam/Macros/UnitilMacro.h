@@ -32,7 +32,8 @@
 /**颜色*/
 #define HEXCOLOR(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
-#define StrISEMPTY(str) (str == nil || [str isEqual:[NSNull null]] || str.length <= 0)
+#define IS_STR_EMPTY(str) (str == nil || [str isEqual:[NSNull null]] || str.length <= 0)
+#define IS_OBJECT_EMPTY(obj) (obj == nil || [obj isEqual:[NSNull null]])
 
 
 //====

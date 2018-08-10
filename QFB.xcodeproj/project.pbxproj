@@ -28,6 +28,10 @@
 		520375BE21196F790067316B /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375BA21196F790067316B /* NSDate+Extension.m */; };
 		520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375C32119732B0067316B /* QFBLoginViewModel.m */; };
 		520375C72119733C0067316B /* QFBLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375C62119733C0067316B /* QFBLoginView.m */; };
+		5249078E211D273200D1317F /* QFBRegisterStepTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5249078C211D273200D1317F /* QFBRegisterStepTwoViewController.m */; };
+		5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5249078D211D273200D1317F /* QFBRegisterStepTwoViewController.xib */; };
+		52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52490791211D42E500D1317F /* QFBForgetPswViewController.m */; };
+		52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52490792211D42E500D1317F /* QFBForgetPswViewController.xib */; };
 		52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */; };
 		52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */; };
 		52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF94A2119A38F00D54153 /* QFBNetTool.m */; };
@@ -35,7 +39,6 @@
 		52EEF952211A86BB00D54153 /* CustomTabbarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF950211A86BB00D54153 /* CustomTabbarTool.m */; };
 		52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF954211A871100D54153 /* TabbarItemAttributesModel.m */; };
 		52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF957211AC21D00D54153 /* UIView+ZFAddRectangBorder.m */; };
-		52EEF971211C2C4600D54153 /* QFBForgetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF970211C2C4600D54153 /* QFBForgetPswViewController.m */; };
 		52EEF976211C3EB300D54153 /* QFBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF974211C3EB300D54153 /* QFBRegisterViewController.m */; };
 		52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EEF975211C3EB300D54153 /* QFBRegisterViewController.xib */; };
 		60EFD315705CE891393FD7AF /* libPods-QFBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69FECB831DB5070567FFBBE /* libPods-QFBTests.a */; };
@@ -105,6 +108,12 @@
 		520375C32119732B0067316B /* QFBLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginViewModel.m; sourceTree = "<group>"; };
 		520375C52119733C0067316B /* QFBLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBLoginView.h; sourceTree = "<group>"; };
 		520375C62119733C0067316B /* QFBLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginView.m; sourceTree = "<group>"; };
+		5249078B211D273200D1317F /* QFBRegisterStepTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBRegisterStepTwoViewController.h; sourceTree = "<group>"; };
+		5249078C211D273200D1317F /* QFBRegisterStepTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBRegisterStepTwoViewController.m; sourceTree = "<group>"; };
+		5249078D211D273200D1317F /* QFBRegisterStepTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBRegisterStepTwoViewController.xib; sourceTree = "<group>"; };
+		52490790211D42E500D1317F /* QFBForgetPswViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBForgetPswViewController.h; sourceTree = "<group>"; };
+		52490791211D42E500D1317F /* QFBForgetPswViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBForgetPswViewController.m; sourceTree = "<group>"; };
+		52490792211D42E500D1317F /* QFBForgetPswViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBForgetPswViewController.xib; sourceTree = "<group>"; };
 		52EEF94121198B8400D54153 /* KeyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacro.h; sourceTree = "<group>"; };
 		52EEF9432119975B00D54153 /* QFBBaseNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBBaseNaviViewController.h; sourceTree = "<group>"; };
 		52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBBaseNaviViewController.m; sourceTree = "<group>"; };
@@ -121,8 +130,6 @@
 		52EEF957211AC21D00D54153 /* UIView+ZFAddRectangBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZFAddRectangBorder.m"; sourceTree = "<group>"; };
 		52EEF958211AC21D00D54153 /* UIView+ZFAddRectangBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZFAddRectangBorder.h"; sourceTree = "<group>"; };
 		52EEF968211BE7C500D54153 /* NetMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetMacro.h; sourceTree = "<group>"; };
-		52EEF96F211C2C4600D54153 /* QFBForgetPswViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBForgetPswViewController.h; sourceTree = "<group>"; };
-		52EEF970211C2C4600D54153 /* QFBForgetPswViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBForgetPswViewController.m; sourceTree = "<group>"; };
 		52EEF973211C3EB300D54153 /* QFBRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBRegisterViewController.h; sourceTree = "<group>"; };
 		52EEF974211C3EB300D54153 /* QFBRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBRegisterViewController.m; sourceTree = "<group>"; };
 		52EEF975211C3EB300D54153 /* QFBRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBRegisterViewController.xib; sourceTree = "<group>"; };
@@ -319,8 +326,9 @@
 		520375972117FC380067316B /* Earning */ = {
 			isa = PBXGroup;
 			children = (
-				520375A3211823720067316B /* QFBEarningViewController.h */,
-				520375A4211823720067316B /* QFBEarningViewController.m */,
+				52490797211D692600D1317F /* ViewModel */,
+				52490796211D692000D1317F /* View */,
+				52490795211D691400D1317F /* Controller */,
 			);
 			path = Earning;
 			sourceTree = "<group>";
@@ -387,6 +395,29 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		52490795211D691400D1317F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				520375A3211823720067316B /* QFBEarningViewController.h */,
+				520375A4211823720067316B /* QFBEarningViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52490796211D692000D1317F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52490797211D692600D1317F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		52EEF9422119972700D54153 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,8 +460,9 @@
 		52EEF96A211C2C0200D54153 /* ForgetPsw */ = {
 			isa = PBXGroup;
 			children = (
-				52EEF96F211C2C4600D54153 /* QFBForgetPswViewController.h */,
-				52EEF970211C2C4600D54153 /* QFBForgetPswViewController.m */,
+				52490790211D42E500D1317F /* QFBForgetPswViewController.h */,
+				52490791211D42E500D1317F /* QFBForgetPswViewController.m */,
+				52490792211D42E500D1317F /* QFBForgetPswViewController.xib */,
 			);
 			path = ForgetPsw;
 			sourceTree = "<group>";
@@ -441,6 +473,9 @@
 				52EEF973211C3EB300D54153 /* QFBRegisterViewController.h */,
 				52EEF974211C3EB300D54153 /* QFBRegisterViewController.m */,
 				52EEF975211C3EB300D54153 /* QFBRegisterViewController.xib */,
+				5249078B211D273200D1317F /* QFBRegisterStepTwoViewController.h */,
+				5249078C211D273200D1317F /* QFBRegisterStepTwoViewController.m */,
+				5249078D211D273200D1317F /* QFBRegisterStepTwoViewController.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -567,6 +602,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5203756A2117F4BA0067316B /* LaunchScreen.storyboard in Resources */,
+				5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */,
+				52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */,
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
 				520375652117F4B90067316B /* Main.storyboard in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
@@ -677,6 +714,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
 				520375AB211823880067316B /* QFBHomeViewController.m in Sources */,
@@ -691,8 +729,8 @@
 				52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */,
 				52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */,
 				520375BD21196F790067316B /* UIView+Extension.m in Sources */,
+				5249078E211D273200D1317F /* QFBRegisterStepTwoViewController.m in Sources */,
 				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
-				52EEF971211C2C4600D54153 /* QFBForgetPswViewController.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,
 				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
 				52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */,
