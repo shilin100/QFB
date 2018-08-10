@@ -7,8 +7,12 @@
 //
 
 #import "QFBEarningViewController.h"
+#import "QFBEarningView.h"
+#import "QFBEarningViewModel.h"
 
 @interface QFBEarningViewController ()
+@property(nonatomic,strong)QFBEarningView *containerView;
+@property(nonatomic,strong)QFBEarningViewModel *viewModel;
 
 @end
 
@@ -16,8 +20,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"收益";
+    [self setupUI];
+
 }
+-(void)setupUI{
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    QFBEarningView * containerView = [[QFBEarningView alloc]init];
+    [self.view addSubview:containerView];
+    [containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
+    self.containerView = containerView;
+}
+
+
+-(QFBEarningViewModel *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [[QFBEarningViewModel alloc]init];
+    }
+    return _viewModel;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

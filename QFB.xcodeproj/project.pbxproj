@@ -32,6 +32,9 @@
 		5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5249078D211D273200D1317F /* QFBRegisterStepTwoViewController.xib */; };
 		52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52490791211D42E500D1317F /* QFBForgetPswViewController.m */; };
 		52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52490792211D42E500D1317F /* QFBForgetPswViewController.xib */; };
+		5249079A211D6DFD00D1317F /* QFBEarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52490799211D6DFD00D1317F /* QFBEarningView.m */; };
+		5249079D211D6E0B00D1317F /* QFBEarningViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5249079C211D6E0B00D1317F /* QFBEarningViewModel.m */; };
+		524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */ = {isa = PBXBuildFile; fileRef = 524907A2211D852400D1317F /* PNPieChart+InnerRadius80Percent.m */; };
 		52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */; };
 		52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */; };
 		52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF94A2119A38F00D54153 /* QFBNetTool.m */; };
@@ -114,6 +117,12 @@
 		52490790211D42E500D1317F /* QFBForgetPswViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBForgetPswViewController.h; sourceTree = "<group>"; };
 		52490791211D42E500D1317F /* QFBForgetPswViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBForgetPswViewController.m; sourceTree = "<group>"; };
 		52490792211D42E500D1317F /* QFBForgetPswViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBForgetPswViewController.xib; sourceTree = "<group>"; };
+		52490798211D6DFD00D1317F /* QFBEarningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningView.h; sourceTree = "<group>"; };
+		52490799211D6DFD00D1317F /* QFBEarningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningView.m; sourceTree = "<group>"; };
+		5249079B211D6E0B00D1317F /* QFBEarningViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningViewModel.h; sourceTree = "<group>"; };
+		5249079C211D6E0B00D1317F /* QFBEarningViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningViewModel.m; sourceTree = "<group>"; };
+		524907A1211D852400D1317F /* PNPieChart+InnerRadius80Percent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNPieChart+InnerRadius80Percent.h"; sourceTree = "<group>"; };
+		524907A2211D852400D1317F /* PNPieChart+InnerRadius80Percent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PNPieChart+InnerRadius80Percent.m"; sourceTree = "<group>"; };
 		52EEF94121198B8400D54153 /* KeyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacro.h; sourceTree = "<group>"; };
 		52EEF9432119975B00D54153 /* QFBBaseNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBBaseNaviViewController.h; sourceTree = "<group>"; };
 		52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBBaseNaviViewController.m; sourceTree = "<group>"; };
@@ -364,6 +373,8 @@
 				52EEF957211AC21D00D54153 /* UIView+ZFAddRectangBorder.m */,
 				520375B621196F790067316B /* UIView+Extension.h */,
 				520375B921196F790067316B /* UIView+Extension.m */,
+				524907A1211D852400D1317F /* PNPieChart+InnerRadius80Percent.h */,
+				524907A2211D852400D1317F /* PNPieChart+InnerRadius80Percent.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -407,6 +418,8 @@
 		52490796211D692000D1317F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52490798211D6DFD00D1317F /* QFBEarningView.h */,
+				52490799211D6DFD00D1317F /* QFBEarningView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -414,6 +427,8 @@
 		52490797211D692600D1317F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5249079B211D6E0B00D1317F /* QFBEarningViewModel.h */,
+				5249079C211D6E0B00D1317F /* QFBEarningViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -714,11 +729,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */,
 				52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
 				520375AB211823880067316B /* QFBHomeViewController.m in Sources */,
 				520375A5211823720067316B /* QFBEarningViewController.m in Sources */,
+				5249079A211D6DFD00D1317F /* QFBEarningView.m in Sources */,
 				52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */,
 				520375B1211824170067316B /* QFBPlaceViewController.m in Sources */,
 				52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */,
@@ -734,6 +751,7 @@
 				5203759D211823150067316B /* QFBTool.m in Sources */,
 				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
 				52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */,
+				5249079D211D6E0B00D1317F /* QFBEarningViewModel.m in Sources */,
 				52EEF976211C3EB300D54153 /* QFBRegisterViewController.m in Sources */,
 				520375BC21196F790067316B /* UIImage+Extension.m in Sources */,
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,

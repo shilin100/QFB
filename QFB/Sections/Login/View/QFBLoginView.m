@@ -15,8 +15,6 @@
 -(instancetype)init{
     if (self = [super init]) {
         
-        self.backgroundColor = [UIColor blueColor];
-        
         UIImageView * bgImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
         bgImgView.contentMode = UIViewContentModeScaleAspectFill;
         bgImgView.image = [UIImage imageNamed:@"登录页背景图"];

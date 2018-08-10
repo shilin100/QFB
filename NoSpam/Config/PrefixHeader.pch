@@ -41,6 +41,7 @@
 #import <ReactiveObjC.h>
 #import "IQKeyboardManager.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "PNChart.h"
 
 
 #endif /* PrefixHeader_pch */

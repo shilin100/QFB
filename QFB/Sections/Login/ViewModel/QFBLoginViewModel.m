@@ -36,6 +36,8 @@
         [kDefault setObject:self.password forKey:PASSWORDk];
         [kDefault setObject:data[@"userPicture"] forKey:USER_HEAD_IMGk];
         [kDefault setObject:data[@"nickName"]  forKey:NICK_NAMEk];
+        [kDefault setObject:data[@"id"]  forKey:USER_IDk];
+        [kDefault setBool:YES forKey:IS_LOGIN];
     }];
     return signal;
     

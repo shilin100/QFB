@@ -15,6 +15,7 @@
 #define PASSWORDk @"user_psw"
 #define NICK_NAMEk @"user_nickname"
 #define USER_HEAD_IMGk @"user_headimg"
+#define USER_IDk @"user_id"
 
 
 
