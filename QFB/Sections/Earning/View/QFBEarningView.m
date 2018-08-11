@@ -56,7 +56,7 @@
             make.centerX.equalTo(self);
             make.left.mas_equalTo(@50);
             make.height.mas_equalTo(@15);
-
+            
         }];
 
         
