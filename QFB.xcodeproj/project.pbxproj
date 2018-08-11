@@ -35,6 +35,9 @@
 		5249079A211D6DFD00D1317F /* QFBEarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52490799211D6DFD00D1317F /* QFBEarningView.m */; };
 		5249079D211D6E0B00D1317F /* QFBEarningViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5249079C211D6E0B00D1317F /* QFBEarningViewModel.m */; };
 		524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */ = {isa = PBXBuildFile; fileRef = 524907A2211D852400D1317F /* PNPieChart+InnerRadius80Percent.m */; };
+		524907A6211E7BBF00D1317F /* QFBEarningTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524907A5211E7BBF00D1317F /* QFBEarningTypeView.m */; };
+		524907AA211E8F1800D1317F /* QFBEarningTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524907A8211E8F1800D1317F /* QFBEarningTableViewCell.m */; };
+		524907AB211E8F1800D1317F /* QFBEarningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524907A9211E8F1800D1317F /* QFBEarningTableViewCell.xib */; };
 		52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */; };
 		52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */; };
 		52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF94A2119A38F00D54153 /* QFBNetTool.m */; };
@@ -123,6 +126,11 @@
 		5249079C211D6E0B00D1317F /* QFBEarningViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningViewModel.m; sourceTree = "<group>"; };
 		524907A1211D852400D1317F /* PNPieChart+InnerRadius80Percent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNPieChart+InnerRadius80Percent.h"; sourceTree = "<group>"; };
 		524907A2211D852400D1317F /* PNPieChart+InnerRadius80Percent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PNPieChart+InnerRadius80Percent.m"; sourceTree = "<group>"; };
+		524907A4211E7BBF00D1317F /* QFBEarningTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningTypeView.h; sourceTree = "<group>"; };
+		524907A5211E7BBF00D1317F /* QFBEarningTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningTypeView.m; sourceTree = "<group>"; };
+		524907A7211E8F1800D1317F /* QFBEarningTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningTableViewCell.h; sourceTree = "<group>"; };
+		524907A8211E8F1800D1317F /* QFBEarningTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningTableViewCell.m; sourceTree = "<group>"; };
+		524907A9211E8F1800D1317F /* QFBEarningTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBEarningTableViewCell.xib; sourceTree = "<group>"; };
 		52EEF94121198B8400D54153 /* KeyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacro.h; sourceTree = "<group>"; };
 		52EEF9432119975B00D54153 /* QFBBaseNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBBaseNaviViewController.h; sourceTree = "<group>"; };
 		52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBBaseNaviViewController.m; sourceTree = "<group>"; };
@@ -420,6 +428,11 @@
 			children = (
 				52490798211D6DFD00D1317F /* QFBEarningView.h */,
 				52490799211D6DFD00D1317F /* QFBEarningView.m */,
+				524907A4211E7BBF00D1317F /* QFBEarningTypeView.h */,
+				524907A5211E7BBF00D1317F /* QFBEarningTypeView.m */,
+				524907A7211E8F1800D1317F /* QFBEarningTableViewCell.h */,
+				524907A8211E8F1800D1317F /* QFBEarningTableViewCell.m */,
+				524907A9211E8F1800D1317F /* QFBEarningTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -622,6 +635,7 @@
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
 				520375652117F4B90067316B /* Main.storyboard in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
+				524907AB211E8F1800D1317F /* QFBEarningTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +748,8 @@
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
 				520375AB211823880067316B /* QFBHomeViewController.m in Sources */,
+				524907A6211E7BBF00D1317F /* QFBEarningTypeView.m in Sources */,
+				524907AA211E8F1800D1317F /* QFBEarningTableViewCell.m in Sources */,
 				520375A5211823720067316B /* QFBEarningViewController.m in Sources */,
 				5249079A211D6DFD00D1317F /* QFBEarningView.m in Sources */,
 				52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */,

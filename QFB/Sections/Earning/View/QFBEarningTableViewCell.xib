@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QFBEarningTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="收益方块" translatesAutoresizingMaskIntoConstraints="NO" id="kP0-0c-lH2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ra8-cS-qeD">
+                        <rect key="frame" x="15" y="10.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fg5-Sc-ufG"/>
+                            <constraint firstAttribute="width" constant="20" id="pqi-OB-nZ9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="收益更多" translatesAutoresizingMaskIntoConstraints="NO" id="h9N-bh-x4X">
+                        <rect key="frame" x="300" y="12.5" width="9" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="9bE-mQ-vmF"/>
+                            <constraint firstAttribute="width" constant="9" id="Z3a-YY-ifj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="654-62-zni">
+                        <rect key="frame" x="46" y="10.5" width="214" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="h9N-bh-x4X" secondAttribute="trailing" constant="11" id="1en-m7-n1d"/>
+                    <constraint firstAttribute="bottom" secondItem="kP0-0c-lH2" secondAttribute="bottom" constant="3" id="63K-X6-f9D"/>
+                    <constraint firstAttribute="trailing" secondItem="kP0-0c-lH2" secondAttribute="trailing" id="7So-GJ-aB8"/>
+                    <constraint firstItem="654-62-zni" firstAttribute="leading" secondItem="Ra8-cS-qeD" secondAttribute="trailing" constant="11" id="L5C-PK-85n"/>
+                    <constraint firstItem="Ra8-cS-qeD" firstAttribute="centerY" secondItem="kP0-0c-lH2" secondAttribute="centerY" id="SjB-uk-ZNB"/>
+                    <constraint firstItem="654-62-zni" firstAttribute="centerY" secondItem="Ra8-cS-qeD" secondAttribute="centerY" id="aiL-nS-BYx"/>
+                    <constraint firstItem="kP0-0c-lH2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fXe-jv-I8p"/>
+                    <constraint firstItem="h9N-bh-x4X" firstAttribute="leading" secondItem="654-62-zni" secondAttribute="trailing" constant="40" id="kQj-la-W3R"/>
+                    <constraint firstItem="h9N-bh-x4X" firstAttribute="centerY" secondItem="654-62-zni" secondAttribute="centerY" id="tyj-pT-BzA"/>
+                    <constraint firstItem="kP0-0c-lH2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xo4-Og-aVd"/>
+                    <constraint firstItem="Ra8-cS-qeD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yhY-So-w41"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="titleIcon" destination="Ra8-cS-qeD" id="OId-es-nUs"/>
+                <outlet property="titleLabel" destination="654-62-zni" id="Lz9-rH-t0J"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="收益方块" width="327" height="41"/>
+        <image name="收益更多" width="9" height="16"/>
+    </resources>
+</document>

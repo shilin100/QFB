@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QFBEarningTypeView.h"
 
 @interface QFBEarningView : UIView
 
 @property(nonatomic)PNPieChart * pieChart;
-
+@property(nonatomic,strong)QFBEarningTypeView * earningTypeView;
+@property(nonatomic,strong)UITableView * tableView;
 @end
