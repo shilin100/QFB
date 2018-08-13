@@ -10,10 +10,25 @@
 #import "QFBEarningTypeView.h"
 
 @class QFBEarningTableView;
+@class QFBEarningLevelView;
 
 @interface QFBEarningView : UIView
 
 @property(nonatomic)PNPieChart * pieChart;
 @property(nonatomic,strong)QFBEarningTypeView * earningTypeView;
 @property(nonatomic,strong)QFBEarningTableView * tableView;
+@property(nonatomic,strong)QFBEarningLevelView * levelView;
+
+@property(nonatomic,strong)UIButton *extendBtn;
+@property(nonatomic,strong)UIButton *inviteBtn;
+@property(nonatomic,strong)UIButton *buyDeviceBtn;
+
+@property(nonatomic,strong)NSString *beyondPartnerStr;
+@property(nonatomic,strong)NSString *totalEarningCountStr;
+
+
+-(void)creatChartWith:(float)personal :(float)team :(float)brand;
+-(void)setTableViewModel:(id)viewModel;
+-(void)changeLevel:(NSString *)level;
 @end
+

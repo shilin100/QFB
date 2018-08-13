@@ -7,11 +7,16 @@
 //
 
 #import "QFBEarningView.h"
-#import "QFBEarningTableViewCell.h"
 #import "QFBEarningTableView.h"
-
+#import "QFBEarningLevelView.h"
 
 @interface QFBEarningView ()
+
+@property(nonatomic,strong)UILabel *beyondPartner;
+@property(nonatomic,strong)UILabel *totalEarningCount;
+@property(nonatomic,strong)QFBEarningTypeView * personalEarning;
+@property(nonatomic,strong)QFBEarningTypeView * teamEarning;
+@property(nonatomic,strong)QFBEarningTypeView * brandEarning;
 
 
 @end
@@ -31,36 +36,14 @@
             make.height.mas_equalTo(375);
         }];
         
-        NSArray *items = @[[PNPieChartDataItem dataItemWithValue:10 color:PNRed],
-                           [PNPieChartDataItem dataItemWithValue:20 color:PNBlue],
-                           [PNPieChartDataItem dataItemWithValue:40 color:PNGreen],
-                           ];
-
-        PNPieChart *pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake(40.0, 155.0, 240.0, 240.0) items:items];
-        pieChart.descriptionTextColor = [UIColor whiteColor];
-        pieChart.descriptionTextFont  = [UIFont fontWithName:@"Avenir-Medium" size:14.0];
-        [pieChart strokeChart];
-        self.pieChart = pieChart;
-        [self addSubview:pieChart];
-        
-        pieChart.hideValues = YES;
-        pieChart.duration = 0.5;
-        pieChart.shouldHighlightSectorOnTouch = NO;
-        pieChart.innerCircleRadius = 120;
-        [pieChart strokeChart];
-
-        [pieChart mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self);
-            make.top.mas_equalTo(@75);
-            make.size.mas_equalTo(CGSizeMake(166, 166));
-        }];
         
         UILabel * totalEarningCount = [UILabel new];
-        totalEarningCount.text = @"12345676";
+        totalEarningCount.text = @"¥0.00";
         totalEarningCount.font = XFont(27);
         totalEarningCount.textColor = [UIColor whiteColor];
         totalEarningCount.textAlignment = NSTextAlignmentCenter;
         [self addSubview:totalEarningCount];
+        self.totalEarningCount = totalEarningCount;
         
         [totalEarningCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -103,6 +86,7 @@
         QFBEarningTypeView * personalEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0xFDE3B6)];
         [personalEarning setTitle:@"个人收益" andPercent:@"%50"];
         [self addSubview:personalEarning];
+        self.personalEarning = personalEarning;
         
         [personalEarning mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(@40);
@@ -110,11 +94,11 @@
             make.height.mas_equalTo(@40);
             make.top.mas_equalTo(@260);
         }];
-
         
-        QFBEarningTypeView * teamEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0xFDE3B6)];
+        QFBEarningTypeView * teamEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0xF3C0FD)];
         [teamEarning setTitle:@"团队收益" andPercent:@"%25"];
         [self addSubview:teamEarning];
+        self.teamEarning = teamEarning;
         
         [teamEarning mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -123,9 +107,10 @@
             make.top.mas_equalTo(@260);
         }];
 
-        QFBEarningTypeView * brandEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0xFDE3B6)];
+        QFBEarningTypeView * brandEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0x7134FD)];
         [brandEarning setTitle:@"品牌收益" andPercent:@"%25"];
         [self addSubview:brandEarning];
+        self.brandEarning = brandEarning;
         
         [brandEarning mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(@-40);
@@ -134,6 +119,35 @@
             make.top.mas_equalTo(@260);
         }];
         
+        QFBEarningLevelView * levelView = [QFBEarningLevelView initWithLevel:@"0"];
+        [self addSubview:levelView];
+        self.levelView = levelView;
+        
+        [levelView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.mas_equalTo(@0);
+            make.height.mas_equalTo(@27);
+            make.top.equalTo(brandEarning.mas_bottom).offset(30);
+        }];
+
+        UILabel * beyondPartner = [UILabel new];
+        beyondPartner.text = @"恭喜您已超越 15 个伙伴";
+        beyondPartner.font = XFont(11);
+        beyondPartner.textColor = [UIColor whiteColor];
+        beyondPartner.textAlignment = NSTextAlignmentCenter;
+        beyondPartner.backgroundColor = HEXCOLOR_ALPHA(0x010100, 0.24);
+        beyondPartner.layer.cornerRadius = 10;
+        beyondPartner.layer.masksToBounds = YES;
+
+        [self addSubview:beyondPartner];
+        self.beyondPartner = beyondPartner;
+        
+        [beyondPartner mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(@150);
+            make.centerX.equalTo(self);
+            make.height.mas_equalTo(@20);
+            make.top.equalTo(levelView.mas_bottom).offset(5);
+        }];
+
         
         QFBEarningTableView * tableView = [[QFBEarningTableView alloc]initWithFrame:CGRectMake(0, 0, 19, 19)];
         self.tableView = tableView;
@@ -170,10 +184,109 @@
             make.left.right.mas_equalTo(28);
         }];
 
+        UIButton * extendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:extendBtn];
+        [extendBtn setImage:[UIImage imageNamed:@"扩展商户"] forState:UIControlStateNormal];
+        self.extendBtn = extendBtn;
+        
+        [extendBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(upPathway.mas_bottom).offset(10);
+            make.left.mas_equalTo(@45);
+            make.size.mas_equalTo(CGSizeMake(76, 76));
+        }];
+        
+        UIButton * inviteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:inviteBtn];
+        [inviteBtn setImage:[UIImage imageNamed:@"邀请伙伴"] forState:UIControlStateNormal];
+        self.inviteBtn = inviteBtn;
+        
+        [inviteBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(upPathway.mas_bottom).offset(10);
+            make.centerX.equalTo(self);
+            make.size.mas_equalTo(CGSizeMake(76, 76));
+        }];
+
+        
+        UIButton * buyDeviceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:buyDeviceBtn];
+        [buyDeviceBtn setImage:[UIImage imageNamed:@"购买机器"] forState:UIControlStateNormal];
+        self.buyDeviceBtn = buyDeviceBtn;
+        
+        [buyDeviceBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(upPathway.mas_bottom).offset(10);
+            make.right.mas_equalTo(@-45);
+            make.size.mas_equalTo(CGSizeMake(76, 76));
+        }];
+
+
+        
     }
     return self;
 }
 
 
+-(void)setBeyondPartnerStr:(NSString *)beyondPartnerStr{
+    _beyondPartnerStr = beyondPartnerStr;
+    
+    NSString * totalStr = [NSString stringWithFormat:@"恭喜您已超越 %@ 个伙伴",beyondPartnerStr];
+    
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:totalStr];
+    NSRange rang = [totalStr rangeOfString:beyondPartnerStr];
+    
+    [attributeString setAttributes:[NSMutableDictionary dictionaryWithObjectsAndKeys:XFont(12),NSFontAttributeName,HEXCOLOR(0xFBC25D),NSForegroundColorAttributeName, nil] range:rang];
+    self.beyondPartner.attributedText = attributeString;
+
+}
+
+-(void)setTotalEarningCountStr:(NSString *)totalEarningCountStr{
+    _totalEarningCountStr = totalEarningCountStr;
+    self.totalEarningCount.text = [NSString stringWithFormat:@"¥%@",totalEarningCountStr];
+}
+
+-(void)creatChartWith:(float)personal :(float)team :(float)brand{
+    if (!self.pieChart) {
+        NSArray *items = @[[PNPieChartDataItem dataItemWithValue:personal color:HEXCOLOR(0xFDE3B6)],
+                           [PNPieChartDataItem dataItemWithValue:team color:HEXCOLOR(0xF3C0FD)],
+                           [PNPieChartDataItem dataItemWithValue:brand color:HEXCOLOR(0x7134FD)],
+                           ];
+        
+        PNPieChart *pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake(40.0, 155.0, 240.0, 240.0) items:items];
+        pieChart.descriptionTextColor = [UIColor whiteColor];
+        pieChart.descriptionTextFont  = [UIFont fontWithName:@"Avenir-Medium" size:14.0];
+        [pieChart strokeChart];
+        self.pieChart = pieChart;
+        [self addSubview:pieChart];
+        
+        pieChart.hideValues = YES;
+        pieChart.duration = 0.5;
+        pieChart.shouldHighlightSectorOnTouch = NO;
+        pieChart.innerCircleRadius = 120;
+        [pieChart strokeChart];
+        
+        [pieChart mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self);
+            make.top.mas_equalTo(@75);
+            make.size.mas_equalTo(CGSizeMake(166, 166));
+        }];
+        
+        float totalSum = personal + team + brand;
+        
+        
+        [_personalEarning setTitle:@"个人收益" andPercent:[NSString stringWithFormat:@"%%%.2f",personal/totalSum*100]];
+        [_teamEarning setTitle:@"团队收益" andPercent:[NSString stringWithFormat:@"%%%.2f",team/totalSum*100]];
+        [_brandEarning setTitle:@"品牌收益" andPercent:[NSString stringWithFormat:@"%%%.2f",brand/totalSum*100]];
+
+        
+    }
+    
+}
+
+-(void)setTableViewModel:(id)viewModel{
+    self.tableView.viewModel = viewModel;
+}
+
+-(void)changeLevel:(NSString *)level{
+    [self.levelView changeLevel:level];
+}
 
 @end
