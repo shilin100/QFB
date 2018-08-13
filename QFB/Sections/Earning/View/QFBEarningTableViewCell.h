@@ -12,4 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *titleIcon;
 
+-(void)setTitleAndIcon:(NSDictionary*)dic;
+
 @end

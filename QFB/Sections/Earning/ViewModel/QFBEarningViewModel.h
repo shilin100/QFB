@@ -10,4 +10,7 @@
 
 @interface QFBEarningViewModel : NSObject
 
+@property(nonatomic,strong)RACCommand   * earningCellCommand;
+
+
 @end

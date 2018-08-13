@@ -22,8 +22,9 @@
 }
 
 
--(void)setTitleAndIcon:(NSArray*)arr{
-    
+-(void)setTitleAndIcon:(NSDictionary*)dic{
+    self.titleIcon.image = [UIImage imageNamed:dic[@"icon"]];
+    self.titleLabel.text = dic[@"title"];
     
     
 }

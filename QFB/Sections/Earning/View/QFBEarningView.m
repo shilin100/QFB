@@ -8,11 +8,11 @@
 
 #import "QFBEarningView.h"
 #import "QFBEarningTableViewCell.h"
+#import "QFBEarningTableView.h"
 
 
-@interface QFBEarningView ()<UITableViewDelegate,UITableViewDataSource>
+@interface QFBEarningView ()
 
-@property(nonatomic,strong)NSArray * dataArray;
 
 @end
 
@@ -135,40 +135,45 @@
         }];
         
         
-        UITableView * tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 19, 19)];
-        tableView.delegate = self;
-        tableView.dataSource = self;
+        QFBEarningTableView * tableView = [[QFBEarningTableView alloc]initWithFrame:CGRectMake(0, 0, 19, 19)];
         self.tableView = tableView;
         [self addSubview:tableView];
 
+        [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(bgImgView.mas_bottom).offset(30);
+            make.left.mas_equalTo(@24);
+            make.right.mas_equalTo(@-24);
+            make.height.mas_equalTo(@140);
+        }];
         
+        UIImageView * upPathway = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
+        upPathway.contentMode = UIViewContentModeScaleAspectFill;
+        upPathway.image = [UIImage imageNamed:@"提升途径背景"];
+        [self addSubview:upPathway];
+        
+        [upPathway mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(tableView.mas_bottom).offset(10);
+            make.height.mas_equalTo(18);
+            make.left.right.mas_equalTo(0);
+        }];
+
+        UILabel * upPathWayLabel = [UILabel new];
+        upPathWayLabel.text = @"提升途径";
+        upPathWayLabel.font = XFont(14);
+        upPathWayLabel.textColor = [UIColor whiteColor];
+        [self addSubview:upPathWayLabel];
+        
+        [upPathWayLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self);
+            make.top.equalTo(tableView.mas_bottom).offset(10);
+            make.height.mas_equalTo(18);
+            make.left.right.mas_equalTo(28);
+        }];
+
     }
     return self;
 }
 
-#pragma mark  ==TableViewDelegate/DataSource
-
-//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-//    return 1;
-//}
-//
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return self.dataArray.count;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//}
-
--(NSArray *)dataArray{
-    if (!_dataArray) {
-        
-        _dataArray = @[@{@"title":@"个人收益",@"icon":@"个人",},
-                       @{@"title":@"团队收益",@"icon":@"团队",},
-                       @{@"title":@"品牌收益",@"icon":@"团队收益",}];
-    }
-    return _dataArray;
-}
 
 
 @end
