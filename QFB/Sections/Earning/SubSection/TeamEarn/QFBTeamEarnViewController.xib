@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QFBTeamEarnViewController">
             <connections>
+                <outlet property="earnLabel" destination="ER9-WM-AsJ" id="bqa-0U-kwO"/>
                 <outlet property="headView" destination="a3c-wd-wIP" id="gR5-ER-2cP"/>
                 <outlet property="tableview" destination="JTB-iy-DJz" id="K5F-v2-pmz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,7 +25,7 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JTB-iy-DJz">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="e6T-Zf-Jqk"/>
                         <outlet property="delegate" destination="-1" id="Pm4-yo-ik1"/>
@@ -53,7 +54,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="ssf-LX-Mdf"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -63,7 +64,7 @@
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="WG4-VO-RIY"/>
                         <constraint firstAttribute="width" constant="50" id="YpT-hm-v7t"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -73,7 +74,7 @@
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="c5p-a0-YYT"/>
                         <constraint firstAttribute="width" constant="70" id="zcT-uZ-Tgw"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -92,7 +93,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="XG9-19-rfd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>

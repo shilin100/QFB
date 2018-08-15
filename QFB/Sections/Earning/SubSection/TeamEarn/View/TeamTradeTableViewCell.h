@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class QFBTeamEarnModel;
+@class QFBBrandEarnModel;
 
 @interface TeamTradeTableViewCell : UITableViewCell
+-(void)setEarnCellWithModel:(QFBTeamEarnModel*)model;
+-(void)setBrandCellWithModel:(QFBBrandEarnModel*)model;
+
 
 
 @end

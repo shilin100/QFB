@@ -11,6 +11,8 @@
 #import "QFBEarningViewModel.h"
 #import "QFBUpgradeRuleViewController.h"
 #import "QFBTeamEarnViewController.h"
+#import "QFBBrandEarnViewController.h"
+#import "QFBPersonalEarnViewController.h"
 
 @interface QFBEarningViewController ()
 @property(nonatomic,strong)QFBEarningView *containerView;
@@ -59,7 +61,7 @@
     [self.viewModel.earningCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         NSString * temp  = x ;
         if ([temp isEqualToString:@"个人收益"]) {
-            QFBEarningViewController * vc = [QFBEarningViewController new];
+            QFBPersonalEarnViewController * vc = [QFBPersonalEarnViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
         if ([temp isEqualToString:@"团队收益"]) {
@@ -67,7 +69,7 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
         if ([temp isEqualToString:@"品牌收益"]) {
-            QFBEarningViewController * vc = [QFBEarningViewController new];
+            QFBBrandEarnViewController * vc = [QFBBrandEarnViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
 

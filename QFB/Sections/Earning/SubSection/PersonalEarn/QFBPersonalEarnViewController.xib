@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QFBPersonalEarnViewController">
+            <connections>
+                <outlet property="earnLabel" destination="cu2-Md-LGe" id="yHU-nS-884"/>
+                <outlet property="headView" destination="SOF-8r-OOV" id="bok-Pi-dQ2"/>
+                <outlet property="tableview" destination="jSH-i1-FBD" id="sNC-gB-Jrd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearLabel" destination="BTT-dq-UtA" id="uhB-eH-fUV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jSH-i1-FBD">
+                    <rect key="frame" x="28" y="106" width="300" height="466"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XT0-Ni-gWi"/>
+                        <outlet property="delegate" destination="-1" id="HmM-wv-Qy2"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="196.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="SOF-8r-OOV">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_back_imag" translatesAutoresizingMaskIntoConstraints="NO" id="tvH-b6-ERW">
+                    <rect key="frame" x="0.0" y="0.0" width="354" height="117"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTT-dq-UtA">
+                    <rect key="frame" x="20" y="122" width="50" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="fYG-CJ-Omm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计个人收益（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-i4-bXC">
+                    <rect key="frame" x="112.5" y="48" width="129" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Dhc-kW-igs"/>
+                        <constraint firstAttribute="width" constant="129" id="Mhe-pD-vF8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31230.14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cu2-Md-LGe">
+                    <rect key="frame" x="50" y="78" width="254" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="6al-90-1M5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DY4-oU-mNl" firstAttribute="bottom" secondItem="BTT-dq-UtA" secondAttribute="bottom" constant="5" id="5ov-ZY-l6W"/>
+                <constraint firstItem="BTT-dq-UtA" firstAttribute="top" secondItem="cu2-Md-LGe" secondAttribute="bottom" constant="24" id="7Iy-Ag-OVz"/>
+                <constraint firstItem="bf2-i4-bXC" firstAttribute="centerX" secondItem="SOF-8r-OOV" secondAttribute="centerX" id="9Zc-JN-bGl"/>
+                <constraint firstItem="DY4-oU-mNl" firstAttribute="bottom" secondItem="tvH-b6-ERW" secondAttribute="bottom" constant="25" id="Uvn-jg-YEb"/>
+                <constraint firstItem="tvH-b6-ERW" firstAttribute="leading" secondItem="SOF-8r-OOV" secondAttribute="leading" id="ZvC-qa-IAq"/>
+                <constraint firstItem="tvH-b6-ERW" firstAttribute="top" secondItem="DY4-oU-mNl" secondAttribute="top" id="aKj-gv-TFr"/>
+                <constraint firstItem="cu2-Md-LGe" firstAttribute="top" secondItem="bf2-i4-bXC" secondAttribute="bottom" constant="9" id="aOY-90-916"/>
+                <constraint firstItem="cu2-Md-LGe" firstAttribute="leading" secondItem="DY4-oU-mNl" secondAttribute="leading" constant="50" id="dFP-h3-ASo"/>
+                <constraint firstAttribute="trailing" secondItem="tvH-b6-ERW" secondAttribute="trailing" id="fQU-2K-yQ7"/>
+                <constraint firstItem="BTT-dq-UtA" firstAttribute="top" secondItem="tvH-b6-ERW" secondAttribute="bottom" constant="5" id="p55-fy-H4z"/>
+                <constraint firstItem="cu2-Md-LGe" firstAttribute="centerX" secondItem="SOF-8r-OOV" secondAttribute="centerX" id="qOV-80-M17"/>
+                <constraint firstItem="BTT-dq-UtA" firstAttribute="leading" secondItem="DY4-oU-mNl" secondAttribute="leading" constant="20" id="vMm-jS-ZgF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="DY4-oU-mNl"/>
+            <point key="canvasLocation" x="502" y="-98"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_back_imag" width="375" height="153"/>
+    </resources>
+</document>
