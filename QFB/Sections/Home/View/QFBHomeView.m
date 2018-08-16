@@ -355,4 +355,7 @@
     self.ranking.text = [NSString stringWithFormat:@"%@",MyRankingStr];
     self.activation.text = [NSString stringWithFormat:@"%@名",AddUserStr];
 }
+-(void)setQFBHomeFunctionButtonViewModel:(id)viewModel{
+    self.functionButtonView.viewModel = viewModel;
+}
 @end

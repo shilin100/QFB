@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QFBHomeViewModel.h"
 #import "QFBHomeModel.h"
 
 @interface QFBHomeFunctionButtonView : UICollectionView
 
 @property(nonatomic,strong)NSArray   *dataArray;
+
+@property(nonatomic,strong)QFBHomeViewModel * viewModel;
 
 @end
