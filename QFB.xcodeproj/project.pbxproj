@@ -46,6 +46,7 @@
 		527086C6212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527086C4212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib */; };
 		527086CA2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086C82124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m */; };
 		527086CB2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527086C92124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib */; };
+		527086CF21250C20009FB9F0 /* QFBMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086CE21250C20009FB9F0 /* QFBMineView.m */; };
 		52C701CD2121135E0055C607 /* QFBEarningTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701CC2121135E0055C607 /* QFBEarningTableView.m */; };
 		52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701D121211B4B0055C607 /* QFBEarningCellModel.m */; };
 		52C701D5212133CC0055C607 /* QFBEarningLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701D4212133CC0055C607 /* QFBEarningLevelView.m */; };
@@ -166,6 +167,8 @@
 		527086C72124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBPersonEarnTitleTableViewCell.h; sourceTree = "<group>"; };
 		527086C82124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBPersonEarnTitleTableViewCell.m; sourceTree = "<group>"; };
 		527086C92124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBPersonEarnTitleTableViewCell.xib; sourceTree = "<group>"; };
+		527086CD21250C20009FB9F0 /* QFBMineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMineView.h; sourceTree = "<group>"; };
+		527086CE21250C20009FB9F0 /* QFBMineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMineView.m; sourceTree = "<group>"; };
 		52C701CB2121135E0055C607 /* QFBEarningTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningTableView.h; sourceTree = "<group>"; };
 		52C701CC2121135E0055C607 /* QFBEarningTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningTableView.m; sourceTree = "<group>"; };
 		52C701D021211B4B0055C607 /* QFBEarningCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningCellModel.h; sourceTree = "<group>"; };
@@ -415,6 +418,7 @@
 			children = (
 				520375A0211823650067316B /* QFBMineViewController.h */,
 				520375A1211823650067316B /* QFBMineViewController.m */,
+				527086CC21250BFA009FB9F0 /* View */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -526,6 +530,15 @@
 				527086C92124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib */,
 			);
 			path = PersonalEarn;
+			sourceTree = "<group>";
+		};
+		527086CC21250BFA009FB9F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				527086CD21250C20009FB9F0 /* QFBMineView.h */,
+				527086CE21250C20009FB9F0 /* QFBMineView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		52C701CF21211B350055C607 /* Model */ = {
@@ -945,6 +958,7 @@
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,
 				52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */,
 				520375A82118237C0067316B /* QFBAllianceViewController.m in Sources */,
+				527086CF21250C20009FB9F0 /* QFBMineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
