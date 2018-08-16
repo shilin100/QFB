@@ -33,7 +33,7 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
 
     [self.tableview registerNib:[UINib nibWithNibName:@"TeamTradeTableViewCell" bundle:nil] forCellReuseIdentifier:BrandTradeTableViewCellIdentifier];
     [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(-64, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     self.tableview.tableFooterView = [UIView new];
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;

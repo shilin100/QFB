@@ -17,6 +17,7 @@
 @property(nonatomic,strong)QFBEarningTypeView * personalEarning;
 @property(nonatomic,strong)QFBEarningTypeView * teamEarning;
 @property(nonatomic,strong)QFBEarningTypeView * brandEarning;
+@property(nonatomic,strong)UIView *contentView;
 
 
 @end
@@ -25,11 +26,35 @@
 
 -(instancetype)init{
     if (self = [super init]) {
+        UIScrollView * scrollView = [[UIScrollView alloc] init];
+        scrollView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            scrollView.contentSize = CGSizeMake(ScreenWidth, 750);
+        });
+        
+        [self addSubview:scrollView];
+        
+        [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self).insets(UIEdgeInsetsMake(0, 0, 0, 0));;
+        }];
+
+        
+        UIView * contentView = [[UIView alloc] init];
+        contentView.backgroundColor = [UIColor whiteColor];
+        [scrollView addSubview:contentView];
+        self.contentView = contentView;
+
+        [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(scrollView);
+            make.width.mas_equalTo(scrollView);
+            make.height.mas_equalTo(scrollView);//此处保证容器View高度的动态变化 大于等于0.f的高度
+        }];
+
         
         UIImageView * bgImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
         bgImgView.contentMode = UIViewContentModeScaleAspectFill;
         bgImgView.image = [UIImage imageNamed:@"收益背景图"];
-        [self addSubview:bgImgView];
+        [contentView addSubview:bgImgView];
         
         [bgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.left.right.mas_equalTo(@0);
@@ -42,7 +67,7 @@
         totalEarningCount.font = XFont(27);
         totalEarningCount.textColor = [UIColor whiteColor];
         totalEarningCount.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:totalEarningCount];
+        [contentView addSubview:totalEarningCount];
         self.totalEarningCount = totalEarningCount;
         
         [totalEarningCount mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,7 +83,7 @@
         totalEarningSign.font = XFont(15);
         totalEarningSign.textColor = [UIColor whiteColor];
         totalEarningSign.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:totalEarningSign];
+        [contentView addSubview:totalEarningSign];
         
         [totalEarningSign mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -73,7 +98,7 @@
         monthEarning.font = XFont(12);
         monthEarning.textColor = [UIColor whiteColor];
         monthEarning.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:monthEarning];
+        [contentView addSubview:monthEarning];
         
         [monthEarning mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -85,7 +110,7 @@
         
         QFBEarningTypeView * personalEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0xFDE3B6)];
         [personalEarning setTitle:@"个人收益" andPercent:@"%50"];
-        [self addSubview:personalEarning];
+        [contentView addSubview:personalEarning];
         self.personalEarning = personalEarning;
         
         [personalEarning mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -97,7 +122,7 @@
         
         QFBEarningTypeView * teamEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0xF3C0FD)];
         [teamEarning setTitle:@"团队收益" andPercent:@"%25"];
-        [self addSubview:teamEarning];
+        [contentView addSubview:teamEarning];
         self.teamEarning = teamEarning;
         
         [teamEarning mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -109,7 +134,7 @@
 
         QFBEarningTypeView * brandEarning = [QFBEarningTypeView initWithColor:HEXCOLOR(0x7134FD)];
         [brandEarning setTitle:@"品牌收益" andPercent:@"%25"];
-        [self addSubview:brandEarning];
+        [contentView addSubview:brandEarning];
         self.brandEarning = brandEarning;
         
         [brandEarning mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -120,13 +145,13 @@
         }];
         
         QFBEarningLevelView * levelView = [QFBEarningLevelView initWithLevel:@"0"];
-        [self addSubview:levelView];
+        [contentView addSubview:levelView];
         self.levelView = levelView;
         
         [levelView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.mas_equalTo(@0);
             make.height.mas_equalTo(@27);
-            make.top.equalTo(brandEarning.mas_bottom).offset(30);
+            make.top.equalTo(brandEarning.mas_bottom).offset(10);
         }];
 
         UILabel * beyondPartner = [UILabel new];
@@ -138,7 +163,7 @@
         beyondPartner.layer.cornerRadius = 10;
         beyondPartner.layer.masksToBounds = YES;
 
-        [self addSubview:beyondPartner];
+        [contentView addSubview:beyondPartner];
         self.beyondPartner = beyondPartner;
         
         [beyondPartner mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -151,7 +176,7 @@
         
         QFBEarningTableView * tableView = [[QFBEarningTableView alloc]initWithFrame:CGRectMake(0, 0, 19, 19)];
         self.tableView = tableView;
-        [self addSubview:tableView];
+        [contentView addSubview:tableView];
 
         [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(bgImgView.mas_bottom).offset(30);
@@ -163,7 +188,7 @@
         UIImageView * upPathway = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
         upPathway.contentMode = UIViewContentModeScaleAspectFill;
         upPathway.image = [UIImage imageNamed:@"提升途径背景"];
-        [self addSubview:upPathway];
+        [contentView addSubview:upPathway];
         
         [upPathway mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(tableView.mas_bottom).offset(10);
@@ -175,7 +200,7 @@
         upPathWayLabel.text = @"提升途径";
         upPathWayLabel.font = XFont(14);
         upPathWayLabel.textColor = [UIColor whiteColor];
-        [self addSubview:upPathWayLabel];
+        [contentView addSubview:upPathWayLabel];
         
         [upPathWayLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
@@ -185,7 +210,7 @@
         }];
 
         UIButton * extendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self addSubview:extendBtn];
+        [contentView addSubview:extendBtn];
         [extendBtn setImage:[UIImage imageNamed:@"扩展商户"] forState:UIControlStateNormal];
         self.extendBtn = extendBtn;
         
@@ -196,7 +221,7 @@
         }];
         
         UIButton * inviteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self addSubview:inviteBtn];
+        [contentView addSubview:inviteBtn];
         [inviteBtn setImage:[UIImage imageNamed:@"邀请伙伴"] forState:UIControlStateNormal];
         self.inviteBtn = inviteBtn;
         
@@ -208,7 +233,7 @@
 
         
         UIButton * buyDeviceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self addSubview:buyDeviceBtn];
+        [contentView addSubview:buyDeviceBtn];
         [buyDeviceBtn setImage:[UIImage imageNamed:@"购买机器"] forState:UIControlStateNormal];
         self.buyDeviceBtn = buyDeviceBtn;
         
@@ -255,7 +280,7 @@
         pieChart.descriptionTextFont  = [UIFont fontWithName:@"Avenir-Medium" size:14.0];
         [pieChart strokeChart];
         self.pieChart = pieChart;
-        [self addSubview:pieChart];
+        [self.contentView addSubview:pieChart];
         
         pieChart.hideValues = YES;
         pieChart.duration = 0.5;

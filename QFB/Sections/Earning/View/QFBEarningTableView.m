@@ -21,7 +21,7 @@
     {
         if (!self.dataArray) {
             self.dataArray = [NSMutableArray arrayWithArray:@[@{@"title":@"个人收益",@"icon":@"个人",},
-                                                              @{@"title":@"团队收益",@"icon":@"团队",},
+                                                              @{@"title":@"团队收益",@"icon":@"团队2",},
                                                               @{@"title":@"品牌收益",@"icon":@"团队收益",}]];
         }
         [self configView];
