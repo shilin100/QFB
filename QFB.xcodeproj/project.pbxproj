@@ -21,7 +21,6 @@
 		18CD0C8B21251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7A21251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m */; };
 		18CD0C8C21251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C7C21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib */; };
 		18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7F21251C0D00DECAA7 /* QFBHomeViewModel.m */; };
-		18CD0CA321251C1C00DECAA7 /* ZZCircleProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C9021251C1C00DECAA7 /* ZZCircleProgress.bundle */; };
 		18CD0CA421251C1C00DECAA7 /* ZZCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9221251C1C00DECAA7 /* ZZCountingLabel.m */; };
 		18CD0CA521251C1C00DECAA7 /* ZZCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9421251C1C00DECAA7 /* ZZCircleProgress.m */; };
 		18CD0CA621251C1C00DECAA7 /* QFBAllianceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9721251C1C00DECAA7 /* QFBAllianceViewController.m */; };
@@ -71,6 +70,8 @@
 		527086CA2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086C82124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m */; };
 		527086CB2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527086C92124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib */; };
 		527086CF21250C20009FB9F0 /* QFBMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086CE21250C20009FB9F0 /* QFBMineView.m */; };
+		527086D221257A30009FB9F0 /* QFBMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D121257A30009FB9F0 /* QFBMineTableView.m */; };
+		527086D521257A4D009FB9F0 /* QFBMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D421257A4D009FB9F0 /* QFBMineViewModel.m */; };
 		52C701CD2121135E0055C607 /* QFBEarningTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701CC2121135E0055C607 /* QFBEarningTableView.m */; };
 		52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701D121211B4B0055C607 /* QFBEarningCellModel.m */; };
 		52C701D5212133CC0055C607 /* QFBEarningLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701D4212133CC0055C607 /* QFBEarningLevelView.m */; };
@@ -140,7 +141,6 @@
 		18CD0C7C21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBHomeHotRecommendedTableViewCell.xib; sourceTree = "<group>"; };
 		18CD0C7E21251C0D00DECAA7 /* QFBHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeViewModel.h; sourceTree = "<group>"; };
 		18CD0C7F21251C0D00DECAA7 /* QFBHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeViewModel.m; sourceTree = "<group>"; };
-		18CD0C9021251C1C00DECAA7 /* ZZCircleProgress.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZCircleProgress.bundle; sourceTree = "<group>"; };
 		18CD0C9121251C1C00DECAA7 /* ZZCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCircleProgress.h; sourceTree = "<group>"; };
 		18CD0C9221251C1C00DECAA7 /* ZZCountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCountingLabel.m; sourceTree = "<group>"; };
 		18CD0C9321251C1C00DECAA7 /* ZZCountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCountingLabel.h; sourceTree = "<group>"; };
@@ -234,6 +234,10 @@
 		527086C92124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBPersonEarnTitleTableViewCell.xib; sourceTree = "<group>"; };
 		527086CD21250C20009FB9F0 /* QFBMineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMineView.h; sourceTree = "<group>"; };
 		527086CE21250C20009FB9F0 /* QFBMineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMineView.m; sourceTree = "<group>"; };
+		527086D021257A30009FB9F0 /* QFBMineTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMineTableView.h; sourceTree = "<group>"; };
+		527086D121257A30009FB9F0 /* QFBMineTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMineTableView.m; sourceTree = "<group>"; };
+		527086D321257A4D009FB9F0 /* QFBMineViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMineViewModel.h; sourceTree = "<group>"; };
+		527086D421257A4D009FB9F0 /* QFBMineViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMineViewModel.m; sourceTree = "<group>"; };
 		52C701CB2121135E0055C607 /* QFBEarningTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningTableView.h; sourceTree = "<group>"; };
 		52C701CC2121135E0055C607 /* QFBEarningTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningTableView.m; sourceTree = "<group>"; };
 		52C701D021211B4B0055C607 /* QFBEarningCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningCellModel.h; sourceTree = "<group>"; };
@@ -376,7 +380,6 @@
 		18CD0C8F21251C1C00DECAA7 /* ZZCircleProgress */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0C9021251C1C00DECAA7 /* ZZCircleProgress.bundle */,
 				18CD0C9121251C1C00DECAA7 /* ZZCircleProgress.h */,
 				18CD0C9221251C1C00DECAA7 /* ZZCountingLabel.m */,
 				18CD0C9321251C1C00DECAA7 /* ZZCountingLabel.h */,
@@ -588,6 +591,8 @@
 			children = (
 				520375A0211823650067316B /* QFBMineViewController.h */,
 				520375A1211823650067316B /* QFBMineViewController.m */,
+				527086D321257A4D009FB9F0 /* QFBMineViewModel.h */,
+				527086D421257A4D009FB9F0 /* QFBMineViewModel.m */,
 				527086CC21250BFA009FB9F0 /* View */,
 			);
 			path = Mine;
@@ -707,6 +712,8 @@
 			children = (
 				527086CD21250C20009FB9F0 /* QFBMineView.h */,
 				527086CE21250C20009FB9F0 /* QFBMineView.m */,
+				527086D021257A30009FB9F0 /* QFBMineTableView.h */,
+				527086D121257A30009FB9F0 /* QFBMineTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -982,7 +989,6 @@
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
 				52C701F9212181DB0055C607 /* QFBUpgradeRuleViewController.xib in Resources */,
 				524907AB211E8F1800D1317F /* QFBEarningTableViewCell.xib in Resources */,
-				18CD0CA321251C1C00DECAA7 /* ZZCircleProgress.bundle in Resources */,
 				52C701ED21217E0E0055C607 /* TeamTradeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1118,6 +1124,7 @@
 				52EEF952211A86BB00D54153 /* CustomTabbarTool.m in Sources */,
 				520375C72119733C0067316B /* QFBLoginView.m in Sources */,
 				52EEF94F211A85E900D54153 /* QFBTabbarControllerConfig.m in Sources */,
+				527086D521257A4D009FB9F0 /* QFBMineViewModel.m in Sources */,
 				18CD0C8A21251C0D00DECAA7 /* QFBHomeView.m in Sources */,
 				520375BB21196F790067316B /* NSString+Extension.m in Sources */,
 				52C701E121217D720055C607 /* QFBTeamEarnViewController.m in Sources */,
@@ -1150,9 +1157,9 @@
 				520375BC21196F790067316B /* UIImage+Extension.m in Sources */,
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,
+				527086D221257A30009FB9F0 /* QFBMineTableView.m in Sources */,
 				18CD0CA721251C1C00DECAA7 /* QFBAllianceTableView.m in Sources */,
 				52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */,
-				520375A82118237C0067316B /* QFBAllianceViewController.m in Sources */,
 				527086CF21250C20009FB9F0 /* QFBMineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1324,9 +1331,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S399SDC474;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NOSpam/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = QFB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1343,9 +1352,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S399SDC474;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NOSpam/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = QFB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

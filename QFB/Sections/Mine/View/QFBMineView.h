@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class QFBMineTableView;
 
 @interface QFBMineView : UIView
 @property(nonatomic,strong)UILabel *usernameLabel;
 @property(nonatomic,strong)UILabel *levelLabel;
+@property(nonatomic,strong)UILabel *memberLabel;
+
+
+@property(nonatomic,strong)UIButton *withdrawBtn;
+
+@property(nonatomic,strong)QFBMineTableView *tableView;
 
 
 

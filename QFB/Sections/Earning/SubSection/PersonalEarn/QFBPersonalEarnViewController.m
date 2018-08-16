@@ -39,7 +39,7 @@ static NSString * PersonalEarnTitleCellIdentifier = @"QFBPersonalEarnTitleCellId
     [self.tableview registerNib:[UINib nibWithNibName:@"QFBPersonEarnTitleTableViewCell" bundle:nil] forCellReuseIdentifier:PersonalEarnTitleCellIdentifier];
 
     [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(-64, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     self.tableview.tableFooterView = [UIView new];
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;

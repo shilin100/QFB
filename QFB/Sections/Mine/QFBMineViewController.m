@@ -8,10 +8,11 @@
 
 #import "QFBMineViewController.h"
 #import "QFBMineView.h"
+#import "QFBMineViewModel.h"
 
 @interface QFBMineViewController ()
 @property(nonatomic,strong)QFBMineView *containerView;
-//@property(nonatomic,strong)QFBEarningViewModel *viewModel;
+@property(nonatomic,strong)QFBMineViewModel *viewModel;
 
 @end
 
