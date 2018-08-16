@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18CD0C8021251C0D00DECAA7 /* QFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C6521251C0C00DECAA7 /* QFBHomeViewController.m */; };
+		18CD0C8121251C0D00DECAA7 /* QFBHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C6921251C0C00DECAA7 /* QFBHomeModel.m */; };
+		18CD0C8221251C0D00DECAA7 /* QFBHomeTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C6E21251C0C00DECAA7 /* QFBHomeTitleTableViewCell.xib */; };
+		18CD0C8321251C0D00DECAA7 /* QFBHomeFunctionButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7121251C0C00DECAA7 /* QFBHomeFunctionButtonView.m */; };
+		18CD0C8421251C0D00DECAA7 /* QFBHomeTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7221251C0C00DECAA7 /* QFBHomeTitleTableViewCell.m */; };
+		18CD0C8521251C0D00DECAA7 /* QFBHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7321251C0C00DECAA7 /* QFBHomeTableView.m */; };
+		18CD0C8621251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7421251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m */; };
+		18CD0C8721251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7521251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m */; };
+		18CD0C8821251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C7621251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib */; };
+		18CD0C8921251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C7721251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib */; };
+		18CD0C8A21251C0D00DECAA7 /* QFBHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7821251C0C00DECAA7 /* QFBHomeView.m */; };
+		18CD0C8B21251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7A21251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m */; };
+		18CD0C8C21251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C7C21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib */; };
+		18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C7F21251C0D00DECAA7 /* QFBHomeViewModel.m */; };
+		18CD0CA321251C1C00DECAA7 /* ZZCircleProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C9021251C1C00DECAA7 /* ZZCircleProgress.bundle */; };
+		18CD0CA421251C1C00DECAA7 /* ZZCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9221251C1C00DECAA7 /* ZZCountingLabel.m */; };
+		18CD0CA521251C1C00DECAA7 /* ZZCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9421251C1C00DECAA7 /* ZZCircleProgress.m */; };
+		18CD0CA621251C1C00DECAA7 /* QFBAllianceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9721251C1C00DECAA7 /* QFBAllianceViewController.m */; };
+		18CD0CA721251C1C00DECAA7 /* QFBAllianceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9921251C1C00DECAA7 /* QFBAllianceTableView.m */; };
+		18CD0CA821251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9A21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.m */; };
+		18CD0CA921251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C9B21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib */; };
+		18CD0CAA21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C9C21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m */; };
+		18CD0CAB21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0CA021251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.xib */; };
+		18CD0CAC21251C1C00DECAA7 /* QFBAllianceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CA121251C1C00DECAA7 /* QFBAllianceView.m */; };
+		18CD0CB121251CD100DECAA7 /* NSArray+jlExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CAD21251CD100DECAA7 /* NSArray+jlExtension.m */; };
+		18CD0CB221251CD100DECAA7 /* NSDictionary+jlExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CB021251CD100DECAA7 /* NSDictionary+jlExtension.m */; };
 		4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */; };
 		5203755F2117F4B90067316B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203755E2117F4B90067316B /* AppDelegate.m */; };
 		520375652117F4B90067316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375632117F4B90067316B /* Main.storyboard */; };
@@ -18,8 +44,6 @@
 		5203759D211823150067316B /* QFBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203759C211823150067316B /* QFBTool.m */; };
 		520375A2211823650067316B /* QFBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375A1211823650067316B /* QFBMineViewController.m */; };
 		520375A5211823720067316B /* QFBEarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375A4211823720067316B /* QFBEarningViewController.m */; };
-		520375A82118237C0067316B /* QFBAllianceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375A72118237C0067316B /* QFBAllianceViewController.m */; };
-		520375AB211823880067316B /* QFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375AA211823880067316B /* QFBHomeViewController.m */; };
 		520375AE211823930067316B /* QFBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375AD211823930067316B /* QFBLoginViewController.m */; };
 		520375B1211824170067316B /* QFBPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375B0211824170067316B /* QFBPlaceViewController.m */; };
 		520375BB21196F790067316B /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375B721196F790067316B /* NSString+Extension.m */; };
@@ -91,6 +115,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18CD0C6521251C0C00DECAA7 /* QFBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeViewController.m; sourceTree = "<group>"; };
+		18CD0C6621251C0C00DECAA7 /* QFBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeViewController.h; sourceTree = "<group>"; };
+		18CD0C6821251C0C00DECAA7 /* QFBHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeModel.h; sourceTree = "<group>"; };
+		18CD0C6921251C0C00DECAA7 /* QFBHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeModel.m; sourceTree = "<group>"; };
+		18CD0C6B21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeHotRecommendedTableViewCell.h; sourceTree = "<group>"; };
+		18CD0C6C21251C0C00DECAA7 /* QFBHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeTableView.h; sourceTree = "<group>"; };
+		18CD0C6D21251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeRecentActivitiesTableViewCell.h; sourceTree = "<group>"; };
+		18CD0C6E21251C0C00DECAA7 /* QFBHomeTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBHomeTitleTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0C6F21251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeFunctionalCollectionViewCell.h; sourceTree = "<group>"; };
+		18CD0C7021251C0C00DECAA7 /* QFBHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeView.h; sourceTree = "<group>"; };
+		18CD0C7121251C0C00DECAA7 /* QFBHomeFunctionButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeFunctionButtonView.m; sourceTree = "<group>"; };
+		18CD0C7221251C0C00DECAA7 /* QFBHomeTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeTitleTableViewCell.m; sourceTree = "<group>"; };
+		18CD0C7321251C0C00DECAA7 /* QFBHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeTableView.m; sourceTree = "<group>"; };
+		18CD0C7421251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeHotRecommendedTableViewCell.m; sourceTree = "<group>"; };
+		18CD0C7521251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeRecentActivitiesTableViewCell.m; sourceTree = "<group>"; };
+		18CD0C7621251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBHomeRecentActivitiesTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0C7721251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBHomeFunctionalCollectionViewCell.xib; sourceTree = "<group>"; };
+		18CD0C7821251C0C00DECAA7 /* QFBHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeView.m; sourceTree = "<group>"; };
+		18CD0C7921251C0C00DECAA7 /* QFBHomeFunctionButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeFunctionButtonView.h; sourceTree = "<group>"; };
+		18CD0C7A21251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeFunctionalCollectionViewCell.m; sourceTree = "<group>"; };
+		18CD0C7B21251C0C00DECAA7 /* QFBHomeTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeTitleTableViewCell.h; sourceTree = "<group>"; };
+		18CD0C7C21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBHomeHotRecommendedTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0C7E21251C0D00DECAA7 /* QFBHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeViewModel.h; sourceTree = "<group>"; };
+		18CD0C7F21251C0D00DECAA7 /* QFBHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeViewModel.m; sourceTree = "<group>"; };
+		18CD0C9021251C1C00DECAA7 /* ZZCircleProgress.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZCircleProgress.bundle; sourceTree = "<group>"; };
+		18CD0C9121251C1C00DECAA7 /* ZZCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCircleProgress.h; sourceTree = "<group>"; };
+		18CD0C9221251C1C00DECAA7 /* ZZCountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCountingLabel.m; sourceTree = "<group>"; };
+		18CD0C9321251C1C00DECAA7 /* ZZCountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCountingLabel.h; sourceTree = "<group>"; };
+		18CD0C9421251C1C00DECAA7 /* ZZCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCircleProgress.m; sourceTree = "<group>"; };
+		18CD0C9621251C1C00DECAA7 /* QFBAllianceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBAllianceViewController.h; sourceTree = "<group>"; };
+		18CD0C9721251C1C00DECAA7 /* QFBAllianceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceViewController.m; sourceTree = "<group>"; };
+		18CD0C9921251C1C00DECAA7 /* QFBAllianceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceTableView.m; sourceTree = "<group>"; };
+		18CD0C9A21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceDirectlyTableViewCell.m; sourceTree = "<group>"; };
+		18CD0C9B21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBAllianceDirectlyTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0C9C21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceTeamTableViewCell.m; sourceTree = "<group>"; };
+		18CD0C9D21251C1C00DECAA7 /* QFBAllianceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBAllianceView.h; sourceTree = "<group>"; };
+		18CD0C9E21251C1C00DECAA7 /* QFBAllianceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBAllianceTableView.h; sourceTree = "<group>"; };
+		18CD0C9F21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBAllianceDirectlyTableViewCell.h; sourceTree = "<group>"; };
+		18CD0CA021251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBAllianceTeamTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0CA121251C1C00DECAA7 /* QFBAllianceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceView.m; sourceTree = "<group>"; };
+		18CD0CA221251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBAllianceTeamTableViewCell.h; sourceTree = "<group>"; };
+		18CD0CAD21251CD100DECAA7 /* NSArray+jlExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+jlExtension.m"; sourceTree = "<group>"; };
+		18CD0CAE21251CD100DECAA7 /* NSDictionary+jlExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+jlExtension.h"; sourceTree = "<group>"; };
+		18CD0CAF21251CD100DECAA7 /* NSArray+jlExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+jlExtension.h"; sourceTree = "<group>"; };
+		18CD0CB021251CD100DECAA7 /* NSDictionary+jlExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+jlExtension.m"; sourceTree = "<group>"; };
 		2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		479344092819C9D13E796B75 /* Pods-QFBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBUITests/Pods-QFBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5203755A2117F4B90067316B /* QFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,10 +185,6 @@
 		520375A1211823650067316B /* QFBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMineViewController.m; sourceTree = "<group>"; };
 		520375A3211823720067316B /* QFBEarningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBEarningViewController.h; sourceTree = "<group>"; };
 		520375A4211823720067316B /* QFBEarningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBEarningViewController.m; sourceTree = "<group>"; };
-		520375A62118237C0067316B /* QFBAllianceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAllianceViewController.h; sourceTree = "<group>"; };
-		520375A72118237C0067316B /* QFBAllianceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceViewController.m; sourceTree = "<group>"; };
-		520375A9211823880067316B /* QFBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBHomeViewController.h; sourceTree = "<group>"; };
-		520375AA211823880067316B /* QFBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBHomeViewController.m; sourceTree = "<group>"; };
 		520375AC211823930067316B /* QFBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBLoginViewController.h; sourceTree = "<group>"; };
 		520375AD211823930067316B /* QFBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginViewController.m; sourceTree = "<group>"; };
 		520375AF211824170067316B /* QFBPlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBPlaceViewController.h; sourceTree = "<group>"; };
@@ -245,6 +310,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18CD0C6421251C0C00DECAA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C6521251C0C00DECAA7 /* QFBHomeViewController.m */,
+				18CD0C6621251C0C00DECAA7 /* QFBHomeViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18CD0C6721251C0C00DECAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C6821251C0C00DECAA7 /* QFBHomeModel.h */,
+				18CD0C6921251C0C00DECAA7 /* QFBHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18CD0C6A21251C0C00DECAA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C6B21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.h */,
+				18CD0C6C21251C0C00DECAA7 /* QFBHomeTableView.h */,
+				18CD0C6D21251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.h */,
+				18CD0C6E21251C0C00DECAA7 /* QFBHomeTitleTableViewCell.xib */,
+				18CD0C6F21251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.h */,
+				18CD0C7021251C0C00DECAA7 /* QFBHomeView.h */,
+				18CD0C7121251C0C00DECAA7 /* QFBHomeFunctionButtonView.m */,
+				18CD0C7221251C0C00DECAA7 /* QFBHomeTitleTableViewCell.m */,
+				18CD0C7321251C0C00DECAA7 /* QFBHomeTableView.m */,
+				18CD0C7421251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m */,
+				18CD0C7521251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m */,
+				18CD0C7621251C0C00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib */,
+				18CD0C7721251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib */,
+				18CD0C7821251C0C00DECAA7 /* QFBHomeView.m */,
+				18CD0C7921251C0C00DECAA7 /* QFBHomeFunctionButtonView.h */,
+				18CD0C7A21251C0C00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m */,
+				18CD0C7B21251C0C00DECAA7 /* QFBHomeTitleTableViewCell.h */,
+				18CD0C7C21251C0C00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CD0C7D21251C0D00DECAA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C7E21251C0D00DECAA7 /* QFBHomeViewModel.h */,
+				18CD0C7F21251C0D00DECAA7 /* QFBHomeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18CD0C8E21251C1C00DECAA7 /* SubSection */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C8F21251C1C00DECAA7 /* ZZCircleProgress */,
+			);
+			path = SubSection;
+			sourceTree = "<group>";
+		};
+		18CD0C8F21251C1C00DECAA7 /* ZZCircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C9021251C1C00DECAA7 /* ZZCircleProgress.bundle */,
+				18CD0C9121251C1C00DECAA7 /* ZZCircleProgress.h */,
+				18CD0C9221251C1C00DECAA7 /* ZZCountingLabel.m */,
+				18CD0C9321251C1C00DECAA7 /* ZZCountingLabel.h */,
+				18CD0C9421251C1C00DECAA7 /* ZZCircleProgress.m */,
+			);
+			path = ZZCircleProgress;
+			sourceTree = "<group>";
+		};
+		18CD0C9521251C1C00DECAA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C9621251C1C00DECAA7 /* QFBAllianceViewController.h */,
+				18CD0C9721251C1C00DECAA7 /* QFBAllianceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18CD0C9821251C1C00DECAA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0C9921251C1C00DECAA7 /* QFBAllianceTableView.m */,
+				18CD0C9A21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.m */,
+				18CD0C9B21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib */,
+				18CD0C9C21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m */,
+				18CD0C9D21251C1C00DECAA7 /* QFBAllianceView.h */,
+				18CD0C9E21251C1C00DECAA7 /* QFBAllianceTableView.h */,
+				18CD0C9F21251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.h */,
+				18CD0CA021251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.xib */,
+				18CD0CA121251C1C00DECAA7 /* QFBAllianceView.m */,
+				18CD0CA221251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		46774BB17D9726CEDFAC14CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +515,10 @@
 				5203759C211823150067316B /* QFBTool.m */,
 				52EEF9492119A38F00D54153 /* QFBNetTool.h */,
 				52EEF94A2119A38F00D54153 /* QFBNetTool.m */,
+				18CD0CAF21251CD100DECAA7 /* NSArray+jlExtension.h */,
+				18CD0CAD21251CD100DECAA7 /* NSArray+jlExtension.m */,
+				18CD0CAE21251CD100DECAA7 /* NSDictionary+jlExtension.h */,
+				18CD0CB021251CD100DECAA7 /* NSDictionary+jlExtension.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -383,8 +550,10 @@
 		520375952117FBDA0067316B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				520375A9211823880067316B /* QFBHomeViewController.h */,
-				520375AA211823880067316B /* QFBHomeViewController.m */,
+				18CD0C6421251C0C00DECAA7 /* Controller */,
+				18CD0C6721251C0C00DECAA7 /* Model */,
+				18CD0C6A21251C0C00DECAA7 /* View */,
+				18CD0C7D21251C0D00DECAA7 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -392,8 +561,9 @@
 		520375962117FBE00067316B /* Alliance */ = {
 			isa = PBXGroup;
 			children = (
-				520375A62118237C0067316B /* QFBAllianceViewController.h */,
-				520375A72118237C0067316B /* QFBAllianceViewController.m */,
+				18CD0C9521251C1C00DECAA7 /* Controller */,
+				18CD0C8E21251C1C00DECAA7 /* SubSection */,
+				18CD0C9821251C1C00DECAA7 /* View */,
 			);
 			path = Alliance;
 			sourceTree = "<group>";
@@ -779,20 +949,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CD0CAB21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.xib in Resources */,
 				527086CB2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib in Resources */,
 				5203756A2117F4BA0067316B /* LaunchScreen.storyboard in Resources */,
 				5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */,
 				527086C6212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib in Resources */,
 				52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */,
+				18CD0C8221251C0D00DECAA7 /* QFBHomeTitleTableViewCell.xib in Resources */,
 				52C701E221217D720055C607 /* QFBTeamEarnViewController.xib in Resources */,
+				18CD0C8821251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib in Resources */,
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
 				520375652117F4B90067316B /* Main.storyboard in Resources */,
 				527086BE2123FEA6009FB9F0 /* QFBPersonalEarnViewController.xib in Resources */,
 				52C701F4212181C60055C607 /* QFBUpgradeRuleTableViewCell.xib in Resources */,
+				18CD0C8C21251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib in Resources */,
+				18CD0CA921251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib in Resources */,
+				18CD0C8921251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
 				52C701F9212181DB0055C607 /* QFBUpgradeRuleViewController.xib in Resources */,
 				524907AB211E8F1800D1317F /* QFBEarningTableViewCell.xib in Resources */,
+				18CD0CA321251C1C00DECAA7 /* ZZCircleProgress.bundle in Resources */,
 				52C701ED21217E0E0055C607 /* TeamTradeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -901,16 +1078,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CD0C8121251C0D00DECAA7 /* QFBHomeModel.m in Sources */,
+				18CD0C8B21251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m in Sources */,
 				52C701D5212133CC0055C607 /* QFBEarningLevelView.m in Sources */,
 				524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */,
 				52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
-				520375AB211823880067316B /* QFBHomeViewController.m in Sources */,
+				18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */,
+				18CD0C8521251C0D00DECAA7 /* QFBHomeTableView.m in Sources */,
+				18CD0CA421251C1C00DECAA7 /* ZZCountingLabel.m in Sources */,
 				524907A6211E7BBF00D1317F /* QFBEarningTypeView.m in Sources */,
+				18CD0CA821251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.m in Sources */,
 				524907AA211E8F1800D1317F /* QFBEarningTableViewCell.m in Sources */,
+				18CD0CB221251CD100DECAA7 /* NSDictionary+jlExtension.m in Sources */,
 				520375A5211823720067316B /* QFBEarningViewController.m in Sources */,
 				5249079A211D6DFD00D1317F /* QFBEarningView.m in Sources */,
+				18CD0CAA21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m in Sources */,
 				52C701FC2123C0D80055C607 /* QFBTeamEarnModel.m in Sources */,
 				52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */,
 				520375B1211824170067316B /* QFBPlaceViewController.m in Sources */,
@@ -921,21 +1105,31 @@
 				52EEF952211A86BB00D54153 /* CustomTabbarTool.m in Sources */,
 				520375C72119733C0067316B /* QFBLoginView.m in Sources */,
 				52EEF94F211A85E900D54153 /* QFBTabbarControllerConfig.m in Sources */,
+				18CD0C8A21251C0D00DECAA7 /* QFBHomeView.m in Sources */,
 				520375BB21196F790067316B /* NSString+Extension.m in Sources */,
 				52C701E121217D720055C607 /* QFBTeamEarnViewController.m in Sources */,
 				52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */,
 				527086C5212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.m in Sources */,
 				52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */,
+				18CD0C8421251C0D00DECAA7 /* QFBHomeTitleTableViewCell.m in Sources */,
 				52C701F3212181C60055C607 /* QFBUpgradeRuleTableViewCell.m in Sources */,
+				18CD0CA521251C1C00DECAA7 /* ZZCircleProgress.m in Sources */,
+				18CD0C8021251C0D00DECAA7 /* QFBHomeViewController.m in Sources */,
 				520375BD21196F790067316B /* UIView+Extension.m in Sources */,
 				5249078E211D273200D1317F /* QFBRegisterStepTwoViewController.m in Sources */,
 				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
+				18CD0C8321251C0D00DECAA7 /* QFBHomeFunctionButtonView.m in Sources */,
+				18CD0CA621251C1C00DECAA7 /* QFBAllianceViewController.m in Sources */,
 				527086CA2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m in Sources */,
+				18CD0C8621251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,
+				18CD0CAC21251C1C00DECAA7 /* QFBAllianceView.m in Sources */,
 				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
+				18CD0C8721251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m in Sources */,
 				52C701CD2121135E0055C607 /* QFBEarningTableView.m in Sources */,
 				52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */,
 				5249079D211D6E0B00D1317F /* QFBEarningViewModel.m in Sources */,
+				18CD0CB121251CD100DECAA7 /* NSArray+jlExtension.m in Sources */,
 				52C701EC21217E0E0055C607 /* TeamTradeTableViewCell.m in Sources */,
 				527086BD2123FEA6009FB9F0 /* QFBPersonalEarnViewController.m in Sources */,
 				52C702012123C7FB0055C607 /* QFBBrandEarnViewController.m in Sources */,
@@ -943,8 +1137,8 @@
 				520375BC21196F790067316B /* UIImage+Extension.m in Sources */,
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,
+				18CD0CA721251C1C00DECAA7 /* QFBAllianceTableView.m in Sources */,
 				52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */,
-				520375A82118237C0067316B /* QFBAllianceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
