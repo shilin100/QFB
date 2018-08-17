@@ -8,8 +8,12 @@
 
 #import "QFBAllianceViewController.h"
 #import "QFBAllianceView.h"
+#import "QFBAllianceViewModel.h"
 
 @interface QFBAllianceViewController ()
+
+@property(nonatomic,strong)QFBAllianceView *containerView;
+@property(nonatomic,strong)QFBAllianceViewModel *viewModel;
 
 @end
 
@@ -29,6 +33,7 @@
     // Do any additional setup after loading the view.
     [self setupUI];
     
+    [self bind];
 }
 -(void)setupUI{
     self.title = @"盟友";
@@ -39,12 +44,19 @@
     [containerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
+    
+    self.containerView = containerView;
 }
 -(void)bind{
-    
+    [self.viewModel.getDataCommand execute:self.containerView];
     
 }
-
+-(QFBAllianceViewModel *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [[QFBAllianceViewModel alloc]init];
+    }
+    return _viewModel;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

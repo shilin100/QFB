@@ -27,5 +27,5 @@
 //盟友
 -(void)getAddFriendStr:(NSString *)AddFriendStr MyRankingStr:(NSString *)MyRankingStr AddUserStr:(NSString *)AddUserStr;
 
-
+-(void)setQFBHomeFunctionButtonViewModel:(id)viewModel;
 @end

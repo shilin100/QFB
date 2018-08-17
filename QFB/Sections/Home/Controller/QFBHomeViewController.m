@@ -9,6 +9,10 @@
 #import "QFBHomeViewController.h"
 #import "QFBHomeView.h"
 #import "QFBHomeViewModel.h"
+#import "BusinessInformationViewController.h"
+#import "InviteAlliesViewController.h"
+#import "WantMachineViewController.h"
+#import "MachineActivateViewController.h"
 
 @interface QFBHomeViewController ()
 
@@ -35,6 +39,10 @@
     
     [self bind];
     
+    if (@available(iOS 11.0, *)){
+        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
+    
 }
 -(void)setupUI{
     self.view.backgroundColor = [UIColor whiteColor];
@@ -45,13 +53,34 @@
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     self.containerView = containerView;
-    //[containerView setTableViewModel:self.viewModel];
+    [containerView setQFBHomeFunctionButtonViewModel:self.viewModel];
     
     
 }
 -(void)bind{
     
     [self.viewModel.getDataCommand execute:self.containerView];
+    
+    [self.viewModel.earningCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        NSString * temp  = x ;
+        if ([temp isEqualToString:@"商户信息"]) {
+            BusinessInformationViewController * vc = [BusinessInformationViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"邀请盟友"]) {
+            InviteAlliesViewController * vc = [InviteAlliesViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"我要机器"]) {
+            WantMachineViewController * vc = [WantMachineViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"机器激活"]) {
+            MachineActivateViewController * vc = [MachineActivateViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }];
+
 }
 -(QFBHomeViewModel *)viewModel{
     if (!_viewModel) {
