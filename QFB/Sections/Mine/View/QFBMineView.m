@@ -64,7 +64,7 @@
 
         
         UILabel * usernameLabel = [UILabel new];
-        usernameLabel.text = @"Katahane";
+        usernameLabel.text = [kDefault objectForKey:NICK_NAMEk];
         usernameLabel.font = XFont(18);
         usernameLabel.textColor = HEXCOLOR(0xFDE3B6);
 //        usernameLabel.textAlignment = NSTextAlignmentCenter;
@@ -90,16 +90,23 @@
         }];
 
         
-        UIImageView * memberSign = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
-        memberSign.contentMode = UIViewContentModeScaleAspectFit;
-        memberSign.image = [UIImage imageNamed:@"金牌会员"];
-        [self addSubview:memberSign];
+        UILabel * memberLabel = [UILabel new];
+        memberLabel.text = @"金牌";
+        memberLabel.font = XFont(12);
+        memberLabel.textColor = HEXCOLOR(0xFDE3B6);
+        memberLabel.layer.masksToBounds = YES;
+        memberLabel.layer.cornerRadius = 5;
+        memberLabel.layer.borderWidth = 1;
+        memberLabel.layer.borderColor = HEXCOLOR(0xFDE3B6).CGColor;
+        memberLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:memberLabel];
+        self.memberLabel = memberLabel;
 
-        [memberSign mas_makeConstraints:^(MASConstraintMaker *make) {
+        [memberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(memberIcon);
             make.left.equalTo(memberIcon.mas_right).offset(7);
             make.height.mas_equalTo(@20);
-            make.width.mas_equalTo(@60);
+            make.width.mas_equalTo(@80);
         }];
 
         UIImageView * moreArrow = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
@@ -140,11 +147,12 @@
         }];
 
         UILabel * newParternerCount = [UILabel new];
-        newParternerCount.text = @"Katahane";
+        newParternerCount.text = @"暂无";
         newParternerCount.font = XFont(18);
         newParternerCount.textColor = HEXCOLOR(0xFDE3B6);
         newParternerCount.textAlignment = NSTextAlignmentCenter;
         [self addSubview:newParternerCount];
+        self.parternerCount = newParternerCount;
         
         [newParternerCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(leftLine.mas_left).offset(-20);
@@ -167,7 +175,7 @@
         }];
 
         UILabel * myRank = [UILabel new];
-        myRank.text = @"新增伙伴";
+        myRank.text = @"我的排名";
         myRank.font = XFont(12);
         myRank.textAlignment = NSTextAlignmentCenter;
         [self addSubview:myRank];
@@ -180,11 +188,12 @@
         }];
         
         UILabel * myRackCount = [UILabel new];
-        myRackCount.text = @"Katahane";
+        myRackCount.text = @"暂无";
         myRackCount.font = XFont(18);
         myRackCount.textColor = HEXCOLOR(0xFDE3B6);
         myRackCount.textAlignment = NSTextAlignmentCenter;
         [self addSubview:myRackCount];
+        self.myRankCount = myRackCount;
         
         [myRackCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(rightLine.mas_left).offset(-20);
@@ -209,11 +218,12 @@
         }];
         
         UILabel * activeCommercialCount = [UILabel new];
-        activeCommercialCount.text = @"Katahane";
+        activeCommercialCount.text = @"暂无";
         activeCommercialCount.font = XFont(18);
         activeCommercialCount.textColor = HEXCOLOR(0xFDE3B6);
         activeCommercialCount.textAlignment = NSTextAlignmentCenter;
         [self addSubview:activeCommercialCount];
+        self.activeCommercialCount = activeCommercialCount;
         
         [activeCommercialCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(rightLine.mas_right).offset(20);
@@ -267,10 +277,11 @@
         }];
         
         UILabel * myMoneyCount = [UILabel new];
-        myMoneyCount.text = @"Katahane";
+        myMoneyCount.text = @"暂无";
         myMoneyCount.font = XBFont(30);
         myMoneyCount.textColor = HEXCOLOR(0xFDE3B6);
         [self addSubview:myMoneyCount];
+        self.myMoneyCount = myMoneyCount;
         
         [myMoneyCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(myMoney.mas_left).offset(0);
@@ -299,6 +310,7 @@
         myEarnCount.font = XBFont(30);
         myEarnCount.textColor = HEXCOLOR(0xFDE3B6);
         [self addSubview:myEarnCount];
+        self.myEarnCount = myEarnCount;
         
         [myEarnCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(myEarn.mas_left).offset(0);
@@ -317,11 +329,38 @@
             make.right.mas_equalTo(@0);
             make.height.mas_equalTo(@230);
         }];
-
-        
-        
         
     }
     return self;
 }
+
+-(void)setMyEarnStr:(NSString *)myEarnStr{
+
+    
+    NSString * totalStr = [NSString stringWithFormat:@"%@元",myEarnStr];
+    NSArray *array = [totalStr componentsSeparatedByString:@"."]; //从字符A中分隔成2个元素的数组
+    NSString * rangeStr = [NSString stringWithFormat:@".%@",array.lastObject];
+    
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:totalStr];
+    NSRange rang = [totalStr rangeOfString:rangeStr];
+    
+    [attributeString setAttributes:[NSMutableDictionary dictionaryWithObjectsAndKeys:XFont(15),NSFontAttributeName, nil] range:rang];
+    self.myEarnCount.attributedText = attributeString;
+    
+}
+
+-(void)setMyMoneyStr:(NSString *)myMoneyStr{
+    
+    
+    NSString * totalStr = [NSString stringWithFormat:@"%@元",myMoneyStr];
+    NSArray *array = [totalStr componentsSeparatedByString:@"."]; //从字符A中分隔成2个元素的数组
+    NSString * rangeStr = [NSString stringWithFormat:@".%@",array.lastObject];
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:totalStr];
+    NSRange rang = [totalStr rangeOfString:rangeStr];
+    [attributeString setAttributes:[NSMutableDictionary dictionaryWithObjectsAndKeys:XFont(15),NSFontAttributeName, nil] range:rang];
+    self.myMoneyCount.attributedText = attributeString;
+    
+}
+
+
 @end
