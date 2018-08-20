@@ -1,18 +1,18 @@
 //
-//  QFBPlaceViewController.m
+//  QFBMyProtocolViewController.m
 //  QFB
 //
-//  Created by qqq on 2018/8/6.
+//  Created by qqq on 2018/8/20.
 //  Copyright © 2018年 qqq. All rights reserved.
 //
 
-#import "QFBPlaceViewController.h"
+#import "QFBMyProtocolViewController.h"
 
-@interface QFBPlaceViewController ()
+@interface QFBMyProtocolViewController ()
 
 @end
 
-@implementation QFBPlaceViewController
+@implementation QFBMyProtocolViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

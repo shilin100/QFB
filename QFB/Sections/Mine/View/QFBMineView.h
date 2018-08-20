@@ -28,4 +28,5 @@
 
 -(void)setMyEarnStr:(NSString *)myEarnStr;
 -(void)setMyMoneyStr:(NSString *)myMoneyStr;
+-(void)setTableViewModel:(id)viewModel;
 @end

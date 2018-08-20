@@ -10,6 +10,7 @@
 #import "QFBMineView.h"
 #import "QFBMineViewModel.h"
 #import "QFBMyOrderViewController.h"
+#import "QFBAddressViewController.h"
 
 @interface QFBMineViewController ()
 @property(nonatomic,strong)QFBMineView *containerView;
@@ -36,7 +37,7 @@
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     self.containerView = containerView;
-//    [containerView setTableViewModel:self.viewModel];
+    [containerView setTableViewModel:self.viewModel];
 }
 
 -(void)bind{
@@ -46,7 +47,10 @@
     
     [self.viewModel.mineCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         NSString * temp  = x ;
-        if ([temp isEqualToString:@"个人收益"]) {
+        if ([temp isEqualToString:@"我的收货地址"]) {
+            
+            QFBAddressViewController * vc = [QFBAddressViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
 
         }
         if ([temp isEqualToString:@"我的订单"]) {

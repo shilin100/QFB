@@ -334,6 +334,13 @@
     return self;
 }
 
+
+-(void)setTableViewModel:(id)viewModel{
+    self.tableView.viewModel = viewModel;
+}
+
+
+
 -(void)setMyEarnStr:(NSString *)myEarnStr{
 
     

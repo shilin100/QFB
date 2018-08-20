@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QFBMyOrderViewController">
             <connections>
+                <outlet property="searchTextField" destination="jMW-iS-ZNH" id="m0s-Ne-gdQ"/>
+                <outlet property="segmentContent" destination="2Ng-In-dkD" id="zv2-1l-X7b"/>
+                <outlet property="tableview" destination="1Be-Dx-ouC" id="aQd-lp-zUr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,48 +23,86 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" placeholder="请输入订单编号" translatesAutoresizingMaskIntoConstraints="NO" id="Lwo-DJ-aLW">
-                    <rect key="frame" x="0.0" y="20" width="375" height="53"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="53" id="cJ6-PP-Zkp"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                    <scopeButtonTitles>
-                        <string>Title</string>
-                        <string>Title</string>
-                    </scopeButtonTitles>
-                </searchBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ng-In-dkD">
-                    <rect key="frame" x="0.0" y="83" width="375" height="20"/>
+                    <rect key="frame" x="0.0" y="83" width="375" height="28"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="liL-Ii-T7D"/>
+                        <constraint firstAttribute="height" constant="28" id="liL-Ii-T7D"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-Dx-ouC">
-                    <rect key="frame" x="0.0" y="113" width="375" height="554"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="xzc-Yg-mve"/>
                         <outlet property="delegate" destination="-1" id="3zZ-zU-f6r"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-9h-DVl">
+                    <rect key="frame" x="0.0" y="20" width="375" height="53"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-g6-fCU">
+                            <rect key="frame" x="20" y="10.5" width="334" height="32"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入订单编号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-iS-ZNH">
+                                    <rect key="frame" x="30" y="0.0" width="294" height="32"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="jMW-iS-ZNH" firstAttribute="height" secondItem="JRe-g6-fCU" secondAttribute="height" id="2Pf-hp-FVy"/>
+                                <constraint firstAttribute="height" constant="32" id="L4c-cW-Egg"/>
+                                <constraint firstItem="jMW-iS-ZNH" firstAttribute="centerY" secondItem="JRe-g6-fCU" secondAttribute="centerY" id="WwR-5k-5gX"/>
+                                <constraint firstAttribute="trailing" secondItem="jMW-iS-ZNH" secondAttribute="trailing" constant="10" id="xrC-AN-IQV"/>
+                                <constraint firstItem="jMW-iS-ZNH" firstAttribute="leading" secondItem="JRe-g6-fCU" secondAttribute="leading" constant="30" id="zgF-67-k3d"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fc9-ZF-JBR">
+                            <rect key="frame" x="31" y="18" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="Ivh-l5-TCP"/>
+                                <constraint firstAttribute="width" constant="16" id="dZc-F3-Olj"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Fc9-ZF-JBR" firstAttribute="leading" secondItem="4Rg-9h-DVl" secondAttribute="leading" constant="31" id="0YE-0k-DAF"/>
+                        <constraint firstItem="JRe-g6-fCU" firstAttribute="leading" secondItem="4Rg-9h-DVl" secondAttribute="leading" constant="20" id="JdG-GR-Icz"/>
+                        <constraint firstItem="JRe-g6-fCU" firstAttribute="centerY" secondItem="4Rg-9h-DVl" secondAttribute="centerY" id="JpY-eA-0Hk"/>
+                        <constraint firstAttribute="height" constant="53" id="Xi8-8k-2b4"/>
+                        <constraint firstItem="JRe-g6-fCU" firstAttribute="centerX" secondItem="4Rg-9h-DVl" secondAttribute="centerX" id="igQ-tD-yHa"/>
+                        <constraint firstItem="Fc9-ZF-JBR" firstAttribute="centerY" secondItem="JRe-g6-fCU" secondAttribute="centerY" id="vXh-CS-63s"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2Ng-In-dkD" secondAttribute="trailing" id="4PR-PF-rpU"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1Be-Dx-ouC" secondAttribute="trailing" id="4rx-rm-ecx"/>
-                <constraint firstItem="Lwo-DJ-aLW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="91F-dJ-ahV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4Rg-9h-DVl" secondAttribute="trailing" id="608-1n-KNb"/>
+                <constraint firstItem="4Rg-9h-DVl" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="A2G-Ic-oUL"/>
                 <constraint firstItem="1Be-Dx-ouC" firstAttribute="top" secondItem="2Ng-In-dkD" secondAttribute="bottom" constant="10" id="NPx-KJ-m27"/>
-                <constraint firstItem="Lwo-DJ-aLW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Zja-R2-YFq"/>
-                <constraint firstItem="2Ng-In-dkD" firstAttribute="top" secondItem="Lwo-DJ-aLW" secondAttribute="bottom" constant="10" id="eKd-L8-vNn"/>
+                <constraint firstItem="2Ng-In-dkD" firstAttribute="top" secondItem="4Rg-9h-DVl" secondAttribute="bottom" constant="10" id="idr-sK-5QL"/>
                 <constraint firstItem="1Be-Dx-ouC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="mIu-up-6QR"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="1Be-Dx-ouC" secondAttribute="bottom" id="nos-u3-ReL"/>
-                <constraint firstItem="Lwo-DJ-aLW" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="uny-nn-HLb"/>
+                <constraint firstItem="4Rg-9h-DVl" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="tpB-EH-xaA"/>
                 <constraint firstItem="2Ng-In-dkD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xMY-nj-u3s"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="search_icon" width="15" height="16"/>
+    </resources>
 </document>
