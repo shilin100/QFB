@@ -15,6 +15,7 @@
 
 @interface QFBHomeView : UIView
 
+@property(nonatomic,strong)UIScrollView * scrollview;
 
 @property(nonatomic,strong)NSArray * rootingArray;
 

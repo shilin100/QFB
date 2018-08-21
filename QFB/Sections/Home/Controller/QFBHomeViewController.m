@@ -39,9 +39,9 @@
     
     [self bind];
     
-    if (@available(iOS 11.0, *)){
-        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-    }
+//    if (@available(iOS 11.0, *)){
+//        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+//    }
     
 }
 -(void)setupUI{
@@ -54,7 +54,8 @@
     }];
     self.containerView = containerView;
     [containerView setQFBHomeFunctionButtonViewModel:self.viewModel];
-    
+    AdjustsScrollViewInsetNever(self, containerView.scrollview)
+
     
 }
 -(void)bind{

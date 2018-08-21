@@ -51,6 +51,8 @@
     }];
     self.containerView = containerView;
     [containerView setTableViewModel:self.viewModel];
+    AdjustsScrollViewInsetNever(self, containerView.scrollview)
+
 }
 
 -(void)bind{
