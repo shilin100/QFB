@@ -26,3 +26,25 @@
 
 
 @end
+
+@interface BuyMachine : NSObject
+@property(nonatomic,strong) NSString * roleId;
+@property(nonatomic,strong) NSString * remarks;
+@property(nonatomic,strong) NSString * id;
+@property(nonatomic,strong) NSString * price;
+@property(nonatomic,strong) NSString * count;
+@property(nonatomic,strong) NSString * remarksTwo;
+@property(nonatomic,strong) NSString * posTypeId;
+@property(nonatomic,strong) NSString * remarksThree;
+@property(nonatomic,strong) NSString * oBrandId;
+@end
+
+@interface PosMachine : NSObject
+@property(nonatomic,strong) NSString * checkCode;
+@property(nonatomic,strong) NSString * id;
+@property(nonatomic,strong) NSString * oBrandId;
+@property(nonatomic,strong) NSString * posName;
+@property(nonatomic,strong) NSString * remarks;
+@property(nonatomic,strong) NSString * reserve;
+@end
+

@@ -37,6 +37,7 @@
         
         
         [self addSubview:scrollView];
+        self.scrollview = scrollView;
         
         [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self).insets(UIEdgeInsetsMake(0, 0, 0, 0));;

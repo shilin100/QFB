@@ -10,6 +10,8 @@
 
 @interface QFBAllianceView : UIView
 
+@property(nonatomic,strong)UIScrollView *scrollview;
+
 //获取累计盟友数、直接盟友、间接盟友
 -(void)getTransactionDict:(NSDictionary*)dict;
 /**

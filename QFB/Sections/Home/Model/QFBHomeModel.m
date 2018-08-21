@@ -14,3 +14,11 @@
 @implementation MenuModel
 
 @end
+
+@implementation BuyMachine
+
+@end
+@implementation PosMachine
+
+@end
+

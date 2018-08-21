@@ -10,7 +10,7 @@
 #import "QFBHomeView.h"
 #import "QFBHomeViewModel.h"
 #import "BusinessInformationViewController.h"
-#import "InviteAlliesViewController.h"
+#import "QFBInvitingAnAllyController.h"
 #import "WantMachineViewController.h"
 #import "MachineActivateViewController.h"
 
@@ -69,7 +69,7 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
         if ([temp isEqualToString:@"邀请盟友"]) {
-            InviteAlliesViewController * vc = [InviteAlliesViewController new];
+            QFBInvitingAnAllyController * vc = [QFBInvitingAnAllyController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
         if ([temp isEqualToString:@"我要机器"]) {

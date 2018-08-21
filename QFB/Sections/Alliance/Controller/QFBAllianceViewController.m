@@ -46,6 +46,8 @@
     }];
     
     self.containerView = containerView;
+    
+    AdjustsScrollViewInsetNever(self, containerView.scrollview)
 }
 -(void)bind{
     [self.viewModel.getDataCommand execute:self.containerView];

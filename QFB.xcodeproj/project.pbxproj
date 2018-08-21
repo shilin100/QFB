@@ -31,16 +31,40 @@
 		18CD0CB121251CD100DECAA7 /* NSArray+jlExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CAD21251CD100DECAA7 /* NSArray+jlExtension.m */; };
 		18CD0CB221251CD100DECAA7 /* NSDictionary+jlExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CB021251CD100DECAA7 /* NSDictionary+jlExtension.m */; };
 		18CD0CC02125484700DECAA7 /* QFBAllianceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CBF2125484700DECAA7 /* QFBAllianceViewModel.m */; };
-		18CD0CC6212574CC00DECAA7 /* BusinessInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CC4212574CC00DECAA7 /* BusinessInformationViewController.m */; };
 		18CD0CCC21257B2400DECAA7 /* InviteAlliesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CCA21257B2400DECAA7 /* InviteAlliesViewController.m */; };
-		18CD0CD221257CD000DECAA7 /* WantMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CD021257CD000DECAA7 /* WantMachineViewController.m */; };
-		18CD0CD821257E0B00DECAA7 /* MachineActivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CD621257E0B00DECAA7 /* MachineActivateViewController.m */; };
-		18CD0CDE2125872A00DECAA7 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CDC2125872A00DECAA7 /* AuthenticationViewController.m */; };
 		18CD0CE02125911400DECAA7 /* QFBMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086CE21250C20009FB9F0 /* QFBMineView.m */; };
 		18CD0CE12125913C00DECAA7 /* QFBMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D121257A30009FB9F0 /* QFBMineTableView.m */; };
 		18CD0CFA212BA83500DECAA7 /* ZZCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CF5212BA83400DECAA7 /* ZZCountingLabel.m */; };
 		18CD0CFB212BA83500DECAA7 /* ZZCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CF6212BA83400DECAA7 /* ZZCircleProgress.m */; };
 		18CD0CFC212BA83500DECAA7 /* ZZCircleProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0CF8212BA83500DECAA7 /* ZZCircleProgress.bundle */; };
+		18CD0D53212C191000DECAA7 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D51212C190F00DECAA7 /* AuthenticationViewController.m */; };
+		18CD0D54212C191000DECAA7 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D52212C191000DECAA7 /* AuthenticationViewController.xib */; };
+		18CD0D5E212C196600DECAA7 /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D55212C196500DECAA7 /* NoDataView.m */; };
+		18CD0D5F212C196600DECAA7 /* BusinessInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D56212C196500DECAA7 /* BusinessInformationViewController.m */; };
+		18CD0D60212C196600DECAA7 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D57212C196500DECAA7 /* NoDataView.xib */; };
+		18CD0D61212C196600DECAA7 /* ShopMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D58212C196500DECAA7 /* ShopMessageTableViewCell.m */; };
+		18CD0D62212C196600DECAA7 /* ShopMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D5A212C196600DECAA7 /* ShopMessageTableViewCell.xib */; };
+		18CD0D63212C196600DECAA7 /* BusinessInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D5C212C196600DECAA7 /* BusinessInformationViewController.xib */; };
+		18CD0D7D212C19BA00DECAA7 /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D65212C19BA00DECAA7 /* DCSpeedy.m */; };
+		18CD0D7E212C19BA00DECAA7 /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D66212C19BA00DECAA7 /* UIView+DCExtension.m */; };
+		18CD0D7F212C19BA00DECAA7 /* QFBInvitingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D6B212C19BA00DECAA7 /* QFBInvitingModel.m */; };
+		18CD0D80212C19BA00DECAA7 /* QFBInvitingAnAllyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D6D212C19BA00DECAA7 /* QFBInvitingAnAllyController.m */; };
+		18CD0D81212C19BA00DECAA7 /* QFBInvitingTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D72212C19BA00DECAA7 /* QFBInvitingTitleView.xib */; };
+		18CD0D82212C19BA00DECAA7 /* QFBNavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D73212C19BA00DECAA7 /* QFBNavBarView.xib */; };
+		18CD0D83212C19BA00DECAA7 /* QFBNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D75212C19BA00DECAA7 /* QFBNavBarView.m */; };
+		18CD0D84212C19BA00DECAA7 /* QFBInvitingTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D76212C19BA00DECAA7 /* QFBInvitingTitleView.m */; };
+		18CD0D85212C19BA00DECAA7 /* QFBInvitingBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D77212C19BA00DECAA7 /* QFBInvitingBottomCell.xib */; };
+		18CD0D86212C19BA00DECAA7 /* QFBInvitingBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D78212C19BA00DECAA7 /* QFBInvitingBottomView.m */; };
+		18CD0D87212C19BA00DECAA7 /* QFBInvitingBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D79212C19BA00DECAA7 /* QFBInvitingBottomCell.m */; };
+		18CD0D88212C19BA00DECAA7 /* QFBInvitingBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D7A212C19BA00DECAA7 /* QFBInvitingBackView.m */; };
+		18CD0D8F212C1A1C00DECAA7 /* BuyMachineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D8B212C1A1B00DECAA7 /* BuyMachineTableViewCell.xib */; };
+		18CD0D90212C1A1C00DECAA7 /* WantMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D8C212C1A1C00DECAA7 /* WantMachineViewController.m */; };
+		18CD0D91212C1A1C00DECAA7 /* WantMachineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D8D212C1A1C00DECAA7 /* WantMachineViewController.xib */; };
+		18CD0D92212C1A1C00DECAA7 /* BuyMachineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D8E212C1A1C00DECAA7 /* BuyMachineTableViewCell.m */; };
+		18CD0D99212C1AA900DECAA7 /* MachineActivateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D93212C1AA800DECAA7 /* MachineActivateViewController.xib */; };
+		18CD0D9A212C1AA900DECAA7 /* MachineActivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D95212C1AA800DECAA7 /* MachineActivateViewController.m */; };
+		18CD0D9B212C1AA900DECAA7 /* SubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D97212C1AA900DECAA7 /* SubmitView.m */; };
+		18CD0D9C212C1AA900DECAA7 /* SubmitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D98212C1AA900DECAA7 /* SubmitView.xib */; };
 		4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */; };
 		5203755F2117F4B90067316B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203755E2117F4B90067316B /* AppDelegate.m */; };
 		520375652117F4B90067316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375632117F4B90067316B /* Main.storyboard */; };
@@ -192,26 +216,59 @@
 		18CD0CB021251CD100DECAA7 /* NSDictionary+jlExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+jlExtension.m"; sourceTree = "<group>"; };
 		18CD0CBE2125484700DECAA7 /* QFBAllianceViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAllianceViewModel.h; sourceTree = "<group>"; };
 		18CD0CBF2125484700DECAA7 /* QFBAllianceViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAllianceViewModel.m; sourceTree = "<group>"; };
-		18CD0CC3212574CC00DECAA7 /* BusinessInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessInformationViewController.h; sourceTree = "<group>"; };
-		18CD0CC4212574CC00DECAA7 /* BusinessInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessInformationViewController.m; sourceTree = "<group>"; };
-		18CD0CC5212574CC00DECAA7 /* BusinessInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessInformationViewController.xib; sourceTree = "<group>"; };
 		18CD0CC921257B2400DECAA7 /* InviteAlliesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteAlliesViewController.h; sourceTree = "<group>"; };
 		18CD0CCA21257B2400DECAA7 /* InviteAlliesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteAlliesViewController.m; sourceTree = "<group>"; };
 		18CD0CCB21257B2400DECAA7 /* InviteAlliesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteAlliesViewController.xib; sourceTree = "<group>"; };
-		18CD0CCF21257CD000DECAA7 /* WantMachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WantMachineViewController.h; sourceTree = "<group>"; };
-		18CD0CD021257CD000DECAA7 /* WantMachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WantMachineViewController.m; sourceTree = "<group>"; };
-		18CD0CD121257CD000DECAA7 /* WantMachineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WantMachineViewController.xib; sourceTree = "<group>"; };
-		18CD0CD521257E0B00DECAA7 /* MachineActivateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineActivateViewController.h; sourceTree = "<group>"; };
-		18CD0CD621257E0B00DECAA7 /* MachineActivateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachineActivateViewController.m; sourceTree = "<group>"; };
-		18CD0CD721257E0B00DECAA7 /* MachineActivateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MachineActivateViewController.xib; sourceTree = "<group>"; };
-		18CD0CDB2125872A00DECAA7 /* AuthenticationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
-		18CD0CDC2125872A00DECAA7 /* AuthenticationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
-		18CD0CDD2125872A00DECAA7 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 		18CD0CF5212BA83400DECAA7 /* ZZCountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCountingLabel.m; sourceTree = "<group>"; };
 		18CD0CF6212BA83400DECAA7 /* ZZCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCircleProgress.m; sourceTree = "<group>"; };
 		18CD0CF7212BA83400DECAA7 /* ZZCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCircleProgress.h; sourceTree = "<group>"; };
 		18CD0CF8212BA83500DECAA7 /* ZZCircleProgress.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZCircleProgress.bundle; sourceTree = "<group>"; };
 		18CD0CF9212BA83500DECAA7 /* ZZCountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCountingLabel.h; sourceTree = "<group>"; };
+		18CD0D50212C190F00DECAA7 /* AuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
+		18CD0D51212C190F00DECAA7 /* AuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
+		18CD0D52212C191000DECAA7 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		18CD0D55212C196500DECAA7 /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
+		18CD0D56212C196500DECAA7 /* BusinessInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessInformationViewController.m; sourceTree = "<group>"; };
+		18CD0D57212C196500DECAA7 /* NoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
+		18CD0D58212C196500DECAA7 /* ShopMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopMessageTableViewCell.m; sourceTree = "<group>"; };
+		18CD0D59212C196600DECAA7 /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
+		18CD0D5A212C196600DECAA7 /* ShopMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopMessageTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0D5B212C196600DECAA7 /* BusinessInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessInformationViewController.h; sourceTree = "<group>"; };
+		18CD0D5C212C196600DECAA7 /* BusinessInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessInformationViewController.xib; sourceTree = "<group>"; };
+		18CD0D5D212C196600DECAA7 /* ShopMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopMessageTableViewCell.h; sourceTree = "<group>"; };
+		18CD0D65212C19BA00DECAA7 /* DCSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSpeedy.m; sourceTree = "<group>"; };
+		18CD0D66212C19BA00DECAA7 /* UIView+DCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCExtension.m"; sourceTree = "<group>"; };
+		18CD0D67212C19BA00DECAA7 /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
+		18CD0D68212C19BA00DECAA7 /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
+		18CD0D6A212C19BA00DECAA7 /* QFBInvitingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBInvitingModel.h; sourceTree = "<group>"; };
+		18CD0D6B212C19BA00DECAA7 /* QFBInvitingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBInvitingModel.m; sourceTree = "<group>"; };
+		18CD0D6D212C19BA00DECAA7 /* QFBInvitingAnAllyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBInvitingAnAllyController.m; sourceTree = "<group>"; };
+		18CD0D6E212C19BA00DECAA7 /* QFBInvitingAnAllyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBInvitingAnAllyController.h; sourceTree = "<group>"; };
+		18CD0D70212C19BA00DECAA7 /* QFBInvitingBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBInvitingBottomView.h; sourceTree = "<group>"; };
+		18CD0D71212C19BA00DECAA7 /* QFBInvitingBottomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBInvitingBottomCell.h; sourceTree = "<group>"; };
+		18CD0D72212C19BA00DECAA7 /* QFBInvitingTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBInvitingTitleView.xib; sourceTree = "<group>"; };
+		18CD0D73212C19BA00DECAA7 /* QFBNavBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBNavBarView.xib; sourceTree = "<group>"; };
+		18CD0D74212C19BA00DECAA7 /* QFBInvitingBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBInvitingBackView.h; sourceTree = "<group>"; };
+		18CD0D75212C19BA00DECAA7 /* QFBNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBNavBarView.m; sourceTree = "<group>"; };
+		18CD0D76212C19BA00DECAA7 /* QFBInvitingTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBInvitingTitleView.m; sourceTree = "<group>"; };
+		18CD0D77212C19BA00DECAA7 /* QFBInvitingBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QFBInvitingBottomCell.xib; sourceTree = "<group>"; };
+		18CD0D78212C19BA00DECAA7 /* QFBInvitingBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBInvitingBottomView.m; sourceTree = "<group>"; };
+		18CD0D79212C19BA00DECAA7 /* QFBInvitingBottomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBInvitingBottomCell.m; sourceTree = "<group>"; };
+		18CD0D7A212C19BA00DECAA7 /* QFBInvitingBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBInvitingBackView.m; sourceTree = "<group>"; };
+		18CD0D7B212C19BA00DECAA7 /* QFBInvitingTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBInvitingTitleView.h; sourceTree = "<group>"; };
+		18CD0D7C212C19BA00DECAA7 /* QFBNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBNavBarView.h; sourceTree = "<group>"; };
+		18CD0D89212C1A1B00DECAA7 /* BuyMachineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMachineTableViewCell.h; sourceTree = "<group>"; };
+		18CD0D8A212C1A1B00DECAA7 /* WantMachineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WantMachineViewController.h; sourceTree = "<group>"; };
+		18CD0D8B212C1A1B00DECAA7 /* BuyMachineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyMachineTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0D8C212C1A1C00DECAA7 /* WantMachineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WantMachineViewController.m; sourceTree = "<group>"; };
+		18CD0D8D212C1A1C00DECAA7 /* WantMachineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WantMachineViewController.xib; sourceTree = "<group>"; };
+		18CD0D8E212C1A1C00DECAA7 /* BuyMachineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMachineTableViewCell.m; sourceTree = "<group>"; };
+		18CD0D93212C1AA800DECAA7 /* MachineActivateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineActivateViewController.xib; sourceTree = "<group>"; };
+		18CD0D94212C1AA800DECAA7 /* MachineActivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineActivateViewController.h; sourceTree = "<group>"; };
+		18CD0D95212C1AA800DECAA7 /* MachineActivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineActivateViewController.m; sourceTree = "<group>"; };
+		18CD0D96212C1AA900DECAA7 /* SubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitView.h; sourceTree = "<group>"; };
+		18CD0D97212C1AA900DECAA7 /* SubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitView.m; sourceTree = "<group>"; };
+		18CD0D98212C1AA900DECAA7 /* SubmitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitView.xib; sourceTree = "<group>"; };
 		2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		479344092819C9D13E796B75 /* Pods-QFBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBUITests/Pods-QFBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5203755A2117F4B90067316B /* QFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -527,9 +584,15 @@
 		18CD0CC2212573CA00DECAA7 /* BusinessInformation */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0CC3212574CC00DECAA7 /* BusinessInformationViewController.h */,
-				18CD0CC4212574CC00DECAA7 /* BusinessInformationViewController.m */,
-				18CD0CC5212574CC00DECAA7 /* BusinessInformationViewController.xib */,
+				18CD0D5B212C196600DECAA7 /* BusinessInformationViewController.h */,
+				18CD0D56212C196500DECAA7 /* BusinessInformationViewController.m */,
+				18CD0D5C212C196600DECAA7 /* BusinessInformationViewController.xib */,
+				18CD0D59212C196600DECAA7 /* NoDataView.h */,
+				18CD0D55212C196500DECAA7 /* NoDataView.m */,
+				18CD0D57212C196500DECAA7 /* NoDataView.xib */,
+				18CD0D5D212C196600DECAA7 /* ShopMessageTableViewCell.h */,
+				18CD0D58212C196500DECAA7 /* ShopMessageTableViewCell.m */,
+				18CD0D5A212C196600DECAA7 /* ShopMessageTableViewCell.xib */,
 			);
 			path = BusinessInformation;
 			sourceTree = "<group>";
@@ -537,6 +600,7 @@
 		18CD0CC821257B0300DECAA7 /* InviteAllies */ = {
 			isa = PBXGroup;
 			children = (
+				18CD0D64212C19BA00DECAA7 /* 二维码 */,
 				18CD0CC921257B2400DECAA7 /* InviteAlliesViewController.h */,
 				18CD0CCA21257B2400DECAA7 /* InviteAlliesViewController.m */,
 				18CD0CCB21257B2400DECAA7 /* InviteAlliesViewController.xib */,
@@ -547,9 +611,12 @@
 		18CD0CCE21257CAD00DECAA7 /* WantMachine */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0CCF21257CD000DECAA7 /* WantMachineViewController.h */,
-				18CD0CD021257CD000DECAA7 /* WantMachineViewController.m */,
-				18CD0CD121257CD000DECAA7 /* WantMachineViewController.xib */,
+				18CD0D89212C1A1B00DECAA7 /* BuyMachineTableViewCell.h */,
+				18CD0D8E212C1A1C00DECAA7 /* BuyMachineTableViewCell.m */,
+				18CD0D8B212C1A1B00DECAA7 /* BuyMachineTableViewCell.xib */,
+				18CD0D8A212C1A1B00DECAA7 /* WantMachineViewController.h */,
+				18CD0D8C212C1A1C00DECAA7 /* WantMachineViewController.m */,
+				18CD0D8D212C1A1C00DECAA7 /* WantMachineViewController.xib */,
 			);
 			path = WantMachine;
 			sourceTree = "<group>";
@@ -557,9 +624,12 @@
 		18CD0CD421257DD900DECAA7 /* MachineActivate */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0CD521257E0B00DECAA7 /* MachineActivateViewController.h */,
-				18CD0CD621257E0B00DECAA7 /* MachineActivateViewController.m */,
-				18CD0CD721257E0B00DECAA7 /* MachineActivateViewController.xib */,
+				18CD0D94212C1AA800DECAA7 /* MachineActivateViewController.h */,
+				18CD0D95212C1AA800DECAA7 /* MachineActivateViewController.m */,
+				18CD0D93212C1AA800DECAA7 /* MachineActivateViewController.xib */,
+				18CD0D96212C1AA900DECAA7 /* SubmitView.h */,
+				18CD0D97212C1AA900DECAA7 /* SubmitView.m */,
+				18CD0D98212C1AA900DECAA7 /* SubmitView.xib */,
 			);
 			path = MachineActivate;
 			sourceTree = "<group>";
@@ -567,9 +637,9 @@
 		18CD0CDA2125870A00DECAA7 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0CDB2125872A00DECAA7 /* AuthenticationViewController.h */,
-				18CD0CDC2125872A00DECAA7 /* AuthenticationViewController.m */,
-				18CD0CDD2125872A00DECAA7 /* AuthenticationViewController.xib */,
+				18CD0D50212C190F00DECAA7 /* AuthenticationViewController.h */,
+				18CD0D51212C190F00DECAA7 /* AuthenticationViewController.m */,
+				18CD0D52212C191000DECAA7 /* AuthenticationViewController.xib */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -584,6 +654,58 @@
 				18CD0CF5212BA83400DECAA7 /* ZZCountingLabel.m */,
 			);
 			path = ZZCircleProgress;
+			sourceTree = "<group>";
+		};
+		18CD0D64212C19BA00DECAA7 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0D65212C19BA00DECAA7 /* DCSpeedy.m */,
+				18CD0D66212C19BA00DECAA7 /* UIView+DCExtension.m */,
+				18CD0D67212C19BA00DECAA7 /* UIView+DCExtension.h */,
+				18CD0D68212C19BA00DECAA7 /* DCSpeedy.h */,
+				18CD0D69212C19BA00DECAA7 /* M */,
+				18CD0D6C212C19BA00DECAA7 /* C */,
+				18CD0D6F212C19BA00DECAA7 /* V */,
+			);
+			path = "二维码";
+			sourceTree = "<group>";
+		};
+		18CD0D69212C19BA00DECAA7 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0D6A212C19BA00DECAA7 /* QFBInvitingModel.h */,
+				18CD0D6B212C19BA00DECAA7 /* QFBInvitingModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		18CD0D6C212C19BA00DECAA7 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0D6D212C19BA00DECAA7 /* QFBInvitingAnAllyController.m */,
+				18CD0D6E212C19BA00DECAA7 /* QFBInvitingAnAllyController.h */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		18CD0D6F212C19BA00DECAA7 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0D70212C19BA00DECAA7 /* QFBInvitingBottomView.h */,
+				18CD0D71212C19BA00DECAA7 /* QFBInvitingBottomCell.h */,
+				18CD0D72212C19BA00DECAA7 /* QFBInvitingTitleView.xib */,
+				18CD0D73212C19BA00DECAA7 /* QFBNavBarView.xib */,
+				18CD0D74212C19BA00DECAA7 /* QFBInvitingBackView.h */,
+				18CD0D75212C19BA00DECAA7 /* QFBNavBarView.m */,
+				18CD0D76212C19BA00DECAA7 /* QFBInvitingTitleView.m */,
+				18CD0D77212C19BA00DECAA7 /* QFBInvitingBottomCell.xib */,
+				18CD0D78212C19BA00DECAA7 /* QFBInvitingBottomView.m */,
+				18CD0D79212C19BA00DECAA7 /* QFBInvitingBottomCell.m */,
+				18CD0D7A212C19BA00DECAA7 /* QFBInvitingBackView.m */,
+				18CD0D7B212C19BA00DECAA7 /* QFBInvitingTitleView.h */,
+				18CD0D7C212C19BA00DECAA7 /* QFBNavBarView.h */,
+			);
+			path = V;
 			sourceTree = "<group>";
 		};
 		46774BB17D9726CEDFAC14CC /* Frameworks */ = {
@@ -1271,14 +1393,19 @@
 				52C80069212AB79C00D321E5 /* QFBAccountViewController.xib in Resources */,
 				527086CB2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib in Resources */,
 				5203756A2117F4BA0067316B /* LaunchScreen.storyboard in Resources */,
+				18CD0D63212C196600DECAA7 /* BusinessInformationViewController.xib in Resources */,
+				18CD0D91212C1A1C00DECAA7 /* WantMachineViewController.xib in Resources */,
 				522B740E212A652F00500B03 /* QFBAddAddressTableViewCell.xib in Resources */,
 				522B73F1212A56EE00500B03 /* QFBAddressViewController.xib in Resources */,
+				18CD0D85212C19BA00DECAA7 /* QFBInvitingBottomCell.xib in Resources */,
 				5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */,
+				18CD0D54212C191000DECAA7 /* AuthenticationViewController.xib in Resources */,
 				527086E42126A6FA009FB9F0 /* QFBOrderTableViewCell.xib in Resources */,
 				527086C6212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib in Resources */,
 				52C80073212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib in Resources */,
 				52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */,
 				522B7418212A6CC200500B03 /* city.plist in Resources */,
+				18CD0D81212C19BA00DECAA7 /* QFBInvitingTitleView.xib in Resources */,
 				18CD0C8221251C0D00DECAA7 /* QFBHomeTitleTableViewCell.xib in Resources */,
 				522B7409212A637000500B03 /* QFBAddAddressViewController.xib in Resources */,
 				527086DD21269B20009FB9F0 /* QFBMyOrderViewController.xib in Resources */,
@@ -1287,18 +1414,24 @@
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
 				520375652117F4B90067316B /* Main.storyboard in Resources */,
 				527086BE2123FEA6009FB9F0 /* QFBPersonalEarnViewController.xib in Resources */,
+				18CD0D9C212C1AA900DECAA7 /* SubmitView.xib in Resources */,
 				522B73F6212A57F900500B03 /* QFBAddressTableViewCell.xib in Resources */,
 				52C701F4212181C60055C607 /* QFBUpgradeRuleTableViewCell.xib in Resources */,
 				18CD0C8C21251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib in Resources */,
 				18CD0CA921251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib in Resources */,
 				18CD0C8921251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib in Resources */,
+				18CD0D99212C1AA900DECAA7 /* MachineActivateViewController.xib in Resources */,
+				18CD0D62212C196600DECAA7 /* ShopMessageTableViewCell.xib in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
+				18CD0D8F212C1A1C00DECAA7 /* BuyMachineTableViewCell.xib in Resources */,
 				52C701F9212181DB0055C607 /* QFBUpgradeRuleViewController.xib in Resources */,
 				5208ED30212C0DAB005B3959 /* 组 1@3x.png in Resources */,
 				524907AB211E8F1800D1317F /* QFBEarningTableViewCell.xib in Resources */,
 				18CD0CFC212BA83500DECAA7 /* ZZCircleProgress.bundle in Resources */,
+				18CD0D82212C19BA00DECAA7 /* QFBNavBarView.xib in Resources */,
 				52C701ED21217E0E0055C607 /* TeamTradeTableViewCell.xib in Resources */,
+				18CD0D60212C196600DECAA7 /* NoDataView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1412,11 +1545,11 @@
 				18CD0CFB212BA83500DECAA7 /* ZZCircleProgress.m in Sources */,
 				18CD0C8B21251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m in Sources */,
 				52C701D5212133CC0055C607 /* QFBEarningLevelView.m in Sources */,
-				18CD0CDE2125872A00DECAA7 /* AuthenticationViewController.m in Sources */,
 				524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */,
 				52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
+				18CD0D53212C191000DECAA7 /* AuthenticationViewController.m in Sources */,
 				52C80077212BB18500D321E5 /* QFBAccountHeadView.m in Sources */,
 				52C8006D212AC47F00D321E5 /* QFBAccountTableViewCell.m in Sources */,
 				18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */,
@@ -1426,16 +1559,24 @@
 				524907AA211E8F1800D1317F /* QFBEarningTableViewCell.m in Sources */,
 				18CD0CB221251CD100DECAA7 /* NSDictionary+jlExtension.m in Sources */,
 				520375A5211823720067316B /* QFBEarningViewController.m in Sources */,
+				18CD0D9A212C1AA900DECAA7 /* MachineActivateViewController.m in Sources */,
 				5249079A211D6DFD00D1317F /* QFBEarningView.m in Sources */,
 				527086E32126A6FA009FB9F0 /* QFBOrderTableViewCell.m in Sources */,
+				18CD0D7D212C19BA00DECAA7 /* DCSpeedy.m in Sources */,
+				18CD0D84212C19BA00DECAA7 /* QFBInvitingTitleView.m in Sources */,
 				18CD0CAA21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m in Sources */,
 				52C80068212AB79C00D321E5 /* QFBAccountViewController.m in Sources */,
 				52C701FC2123C0D80055C607 /* QFBTeamEarnModel.m in Sources */,
 				522B741B212A6CC200500B03 /* UIView+CZHExtension.m in Sources */,
+				18CD0D87212C19BA00DECAA7 /* QFBInvitingBottomCell.m in Sources */,
+				18CD0D88212C19BA00DECAA7 /* QFBInvitingBackView.m in Sources */,
 				52C80072212BA57B00D321E5 /* QFBAccountTextTableViewCell.m in Sources */,
+				18CD0D83212C19BA00DECAA7 /* QFBNavBarView.m in Sources */,
+				18CD0D5F212C196600DECAA7 /* BusinessInformationViewController.m in Sources */,
 				52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */,
 				527086B82123F88E009FB9F0 /* QFBBrandEarnModel.m in Sources */,
-				18CD0CD221257CD000DECAA7 /* WantMachineViewController.m in Sources */,
+				18CD0D7F212C19BA00DECAA7 /* QFBInvitingModel.m in Sources */,
+				18CD0D90212C1A1C00DECAA7 /* WantMachineViewController.m in Sources */,
 				52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */,
 				522B741A212A6CC200500B03 /* UIButton+CZHExtension.m in Sources */,
 				527086C1212400ED009FB9F0 /* QFBPersonalEarnModel.m in Sources */,
@@ -1446,7 +1587,9 @@
 				52EEF94F211A85E900D54153 /* QFBTabbarControllerConfig.m in Sources */,
 				527086D521257A4D009FB9F0 /* QFBMineViewModel.m in Sources */,
 				18CD0C8A21251C0D00DECAA7 /* QFBHomeView.m in Sources */,
+				18CD0D7E212C19BA00DECAA7 /* UIView+DCExtension.m in Sources */,
 				520375BB21196F790067316B /* NSString+Extension.m in Sources */,
+				18CD0D86212C19BA00DECAA7 /* QFBInvitingBottomView.m in Sources */,
 				52C701E121217D720055C607 /* QFBTeamEarnViewController.m in Sources */,
 				52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */,
 				527086C5212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.m in Sources */,
@@ -1454,7 +1597,6 @@
 				18CD0C8421251C0D00DECAA7 /* QFBHomeTitleTableViewCell.m in Sources */,
 				52C701F3212181C60055C607 /* QFBUpgradeRuleTableViewCell.m in Sources */,
 				18CD0C8021251C0D00DECAA7 /* QFBHomeViewController.m in Sources */,
-				18CD0CC6212574CC00DECAA7 /* BusinessInformationViewController.m in Sources */,
 				520375BD21196F790067316B /* UIView+Extension.m in Sources */,
 				5249078E211D273200D1317F /* QFBRegisterStepTwoViewController.m in Sources */,
 				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
@@ -1462,14 +1604,17 @@
 				18CD0C8321251C0D00DECAA7 /* QFBHomeFunctionButtonView.m in Sources */,
 				522B7419212A6CC200500B03 /* CZHAddressPickerView.m in Sources */,
 				18CD0CA621251C1C00DECAA7 /* QFBAllianceViewController.m in Sources */,
-				18CD0CD821257E0B00DECAA7 /* MachineActivateViewController.m in Sources */,
 				527086CA2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m in Sources */,
 				18CD0C8621251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m in Sources */,
+				18CD0D61212C196600DECAA7 /* ShopMessageTableViewCell.m in Sources */,
 				18CD0CC02125484700DECAA7 /* QFBAllianceViewModel.m in Sources */,
+				18CD0D5E212C196600DECAA7 /* NoDataView.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,
 				18CD0CAC21251C1C00DECAA7 /* QFBAllianceView.m in Sources */,
 				522B740D212A652F00500B03 /* QFBAddAddressTableViewCell.m in Sources */,
+				18CD0D80212C19BA00DECAA7 /* QFBInvitingAnAllyController.m in Sources */,
 				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
+				18CD0D92212C1A1C00DECAA7 /* BuyMachineTableViewCell.m in Sources */,
 				18CD0C8721251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m in Sources */,
 				522B741F212AA20A00500B03 /* QFBMyProtocolViewController.m in Sources */,
 				52C701CD2121135E0055C607 /* QFBEarningTableView.m in Sources */,
@@ -1480,6 +1625,7 @@
 				52C701EC21217E0E0055C607 /* TeamTradeTableViewCell.m in Sources */,
 				527086BD2123FEA6009FB9F0 /* QFBPersonalEarnViewController.m in Sources */,
 				527086E72126AD4F009FB9F0 /* OrderModel.m in Sources */,
+				18CD0D9B212C1AA900DECAA7 /* SubmitView.m in Sources */,
 				522B7408212A637000500B03 /* QFBAddAddressViewController.m in Sources */,
 				52C702012123C7FB0055C607 /* QFBBrandEarnViewController.m in Sources */,
 				52EEF976211C3EB300D54153 /* QFBRegisterViewController.m in Sources */,

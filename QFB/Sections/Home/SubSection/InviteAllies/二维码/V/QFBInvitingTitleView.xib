@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="QFBInvitingTitleView" id="iN0-l3-epB" customClass="QFBInvitingTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXM-jp-px3">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="UKk-b6-wG7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18888888888" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxd-TV-HCW">
+                    <rect key="frame" x="60" y="0.0" width="315" height="106"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vc-oJ-DCe">
+                    <rect key="frame" x="0.0" y="104" width="375" height="2"/>
+                    <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="6uz-GO-qeI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Vc-oJ-DCe" secondAttribute="trailing" id="0eU-hY-GVf"/>
+                <constraint firstItem="cxd-TV-HCW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0yk-Lk-X6F"/>
+                <constraint firstItem="pXM-jp-px3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4a5-YZ-mcq"/>
+                <constraint firstItem="cxd-TV-HCW" firstAttribute="leading" secondItem="pXM-jp-px3" secondAttribute="trailing" id="56E-Dy-qeT"/>
+                <constraint firstItem="8Vc-oJ-DCe" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="QeC-77-HPN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cxd-TV-HCW" secondAttribute="trailing" id="Xdx-yA-8gS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cxd-TV-HCW" secondAttribute="bottom" id="a3a-So-ivZ"/>
+                <constraint firstItem="pXM-jp-px3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nda-vL-U7l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pXM-jp-px3" secondAttribute="bottom" id="onT-4Z-nz8"/>
+                <constraint firstItem="8Vc-oJ-DCe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tHe-K7-1Kh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label_left" destination="pXM-jp-px3" id="WZy-aT-p8i"/>
+                <outlet property="label_right" destination="cxd-TV-HCW" id="ZzP-BI-bRb"/>
+                <outlet property="view_line" destination="8Vc-oJ-DCe" id="4iz-0w-qIs"/>
+            </connections>
+            <point key="canvasLocation" x="-529" y="-169"/>
+        </view>
+    </objects>
+</document>
