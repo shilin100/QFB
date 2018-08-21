@@ -26,13 +26,14 @@
     if ([kDefault boolForKey:IS_LOGIN]) {
         //已登陆
         self.window.rootViewController = [QFBTabbarControllerConfig initRootVCWithModules:[QFBTool getDefaultModules]];
-
-        
     }else{
         //未登陆
         
         //引导页。。。
         if ([kDefault boolForKey:IS_FIRST_TOUCH]){
+            
+            
+            
             
         }
         
