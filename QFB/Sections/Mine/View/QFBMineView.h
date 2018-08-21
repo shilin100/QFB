@@ -14,11 +14,18 @@
 @property(nonatomic,strong)UILabel *levelLabel;
 @property(nonatomic,strong)UILabel *memberLabel;
 
+@property(nonatomic,strong)UILabel *parternerCount;
+@property(nonatomic,strong)UILabel *myRankCount;
+@property(nonatomic,strong)UILabel *activeCommercialCount;
+
+@property(nonatomic,strong)UILabel *myEarnCount;
+@property(nonatomic,strong)UILabel *myMoneyCount;
+
 
 @property(nonatomic,strong)UIButton *withdrawBtn;
 
 @property(nonatomic,strong)QFBMineTableView *tableView;
 
-
-
+-(void)setMyEarnStr:(NSString *)myEarnStr;
+-(void)setMyMoneyStr:(NSString *)myMoneyStr;
 @end

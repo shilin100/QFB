@@ -9,6 +9,7 @@
 #import "QFBMineViewController.h"
 #import "QFBMineView.h"
 #import "QFBMineViewModel.h"
+#import "QFBMyOrderViewController.h"
 
 @interface QFBMineViewController ()
 @property(nonatomic,strong)QFBMineView *containerView;
@@ -23,6 +24,8 @@
     self.navigationItem.title = @"我的";
     
     [self setupUI];
+    [self bind];
+
 }
 -(void)setupUI{
     self.view.backgroundColor = [UIColor whiteColor];
@@ -34,6 +37,30 @@
     }];
     self.containerView = containerView;
 //    [containerView setTableViewModel:self.viewModel];
+}
+
+-(void)bind{
+    //    @weakify(self)
+    
+    [self.viewModel.getDataCommand execute:self.containerView];
+    
+    [self.viewModel.mineCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        NSString * temp  = x ;
+        if ([temp isEqualToString:@"个人收益"]) {
+
+        }
+        if ([temp isEqualToString:@"我的订单"]) {
+            QFBMyOrderViewController * vc = [QFBMyOrderViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+
+        }
+        if ([temp isEqualToString:@"品牌收益"]) {
+            QFBMineViewController * vc = [QFBMineViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,14 +78,11 @@
     [self.navigationController.navigationBar setShadowImage:nil];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(QFBMineViewModel *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [QFBMineViewModel new];
+    }
+    return _viewModel;
 }
-*/
-
 @end
