@@ -25,7 +25,7 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"品牌收益";
+    self.navigationItem.title = @"账号信息";
     self.dataArray = [NSMutableArray arrayWithArray:@[@[@{@"title":@"头像"},@{@"title":@"昵称",@"detail":[kDefault objectForKey:NICK_NAMEk]}],
                                                       @[@{@"title":@"真实姓名",@"detail":[kDefault objectForKey:USER_REALNAMEk]},@{@"title":@"证件号码",@"detail":[kDefault objectForKey:USER_IDCARDk]}],
                                                       @[@{@"title":@"真实姓名",@"detail":[kDefault objectForKey:ALIPAY_NAMEk]},@{@"title":@"支付宝账号",@"detail":[kDefault objectForKey:ALIPAY_ACCOUNTk]}]]];
@@ -97,7 +97,8 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
 
     }else{
         QFBAccountTextTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:AccountTextTableViewCellIdentifier forIndexPath:indexPath];
-        cell.mydetail.text = temp[@"detail"];
+        NSString * detail = temp[@"detail"];
+        cell.mydetail.text = IS_STR_EMPTY(detail) ? @"尚未实名认证" : detail;
         cell.mytitile.text = temp[@"title"];
 
         
