@@ -9,6 +9,7 @@
 #import "QFBMyOrderViewController.h"
 #import "QFBOrderTableViewCell.h"
 #import "OrderModel.h"
+#import "WantMachineViewController.h"
 
 @interface QFBMyOrderViewController ()<UITextFieldDelegate,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 @property (strong, nonatomic)  NSMutableArray *dataArray;
@@ -182,6 +183,9 @@ static NSString * orderTableViewCellIdentifier = @"OrderTableViewCellIdentifier"
 
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button {
     // button clicked...
+    WantMachineViewController * vc = [WantMachineViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 - (void)emptyDataSetWillAppear:(UIScrollView *)scrollView {

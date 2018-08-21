@@ -13,6 +13,11 @@
 #import "QFBTeamEarnViewController.h"
 #import "QFBBrandEarnViewController.h"
 #import "QFBPersonalEarnViewController.h"
+#import "MachineActivateViewController.h"
+#import "InviteAlliesViewController.h"
+#import "WantMachineViewController.h"
+
+
 
 @interface QFBEarningViewController ()
 @property(nonatomic,strong)QFBEarningView *containerView;
@@ -52,11 +57,31 @@
     self.containerView = containerView;
     [containerView setTableViewModel:self.viewModel];
     AdjustsScrollViewInsetNever(self, containerView.scrollview)
-
+    
+    
+    
+    
 }
 
 -(void)bind{
 //    @weakify(self)
+    
+    [[self.containerView.extendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        MachineActivateViewController * vc = [MachineActivateViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+
+    [[self.containerView.inviteBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        InviteAlliesViewController * vc = [InviteAlliesViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+
+    [[self.containerView.buyDeviceBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        WantMachineViewController * vc = [WantMachineViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+
+    
     
     [self.viewModel.getDataCommand execute:self.containerView];
     
