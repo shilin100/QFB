@@ -68,10 +68,10 @@
 //初始化数据
 - (void)initialization {
     self.backgroundColor = [UIColor clearColor];
-    _pathBackColor = [UIColor whiteColor];
+    _pathBackColor = [UIColor lightGrayColor];
     _pathFillColor = [UIColor redColor];
     
-    _strokeWidth = 8;//线宽默认为10
+    _strokeWidth = 10;//线宽默认为10
     _startAngle = ZZCircleDegreeToRadian(0);//圆起点位置
     _reduceAngle = ZZCircleDegreeToRadian(0);//整个圆缺少的角度
     
@@ -121,13 +121,12 @@
 - (UIImageView *)pointImage {
     if (!_pointImage) {
         _pointImage = [[UIImageView alloc] init];
-        _pointImage.contentMode = UIViewContentModeScaleToFill;
-//        
-//        NSBundle *mainBundle = [NSBundle bundleForClass:[self class]];
-//        NSBundle *resourcesBundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"ZZCircleProgress" ofType:@"bundle"]];
-        _pointImage.image = [UIImage imageNamed:@"yellow_circle_point"];
         
-        _pointImage.frame = CGRectMake(0, 0, 12 * screen_height / 667., 12 * screen_height / 667.);
+        NSBundle *mainBundle = [NSBundle bundleForClass:[self class]];
+        NSBundle *resourcesBundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"ZZCircleProgress" ofType:@"bundle"]];
+        _pointImage.image = [UIImage imageNamed:@"circle_point1" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
+        
+        _pointImage.frame = CGRectMake(0, 0, _strokeWidth, _strokeWidth);
         //定位起点位置
         [self updatePointPosition];
         
@@ -217,7 +216,7 @@
         }
         
         if (_pointImage) {
-            _pointImage.frame = CGRectMake(0, 0, 12, 12);
+            _pointImage.frame = CGRectMake(0, 0, _strokeWidth, _strokeWidth);
             //更新圆点位置
             [self updatePointPosition];
             

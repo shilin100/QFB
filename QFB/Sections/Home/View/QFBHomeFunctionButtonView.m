@@ -57,4 +57,9 @@
     NSLog(@"%@",model.value);
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MenuModel * model=self.dataArray[indexPath.row];
+    [self.viewModel.earningCellCommand execute:model.value];
+}
 @end
