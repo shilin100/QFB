@@ -47,7 +47,7 @@
     QFBEarningView * containerView = [[QFBEarningView alloc]init];
     [self.view addSubview:containerView];
     [containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(-SafeAreaTopHeight, 0, 54, 0));
     }];
     self.containerView = containerView;
     [containerView setTableViewModel:self.viewModel];

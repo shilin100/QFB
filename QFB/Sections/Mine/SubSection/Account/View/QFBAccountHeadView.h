@@ -1,5 +1,5 @@
 //
-//  QFBAccountTextTableViewCell.h
+//  QFBAccountHeadView.h
 //  QFB
 //
 //  Created by qqq on 2018/8/21.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QFBAccountTextTableViewCell : UITableViewCell
+@interface QFBAccountHeadView : UIView
+
+@property(nonatomic,strong)UILabel *titleLabel;
 
 @end

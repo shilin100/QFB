@@ -17,6 +17,10 @@
 #define USER_HEAD_IMGk @"user_headimg"
 #define USER_IDk @"user_id"
 #define ROLE_IDk @"role_id"
+#define ALIPAY_ACCOUNTk @"alipay_account"
+#define ALIPAY_NAMEk @"alipay_name"
+#define USER_IDCARDk @"user_idcard"
+#define USER_REALNAMEk @"user_realname"
 
 
 

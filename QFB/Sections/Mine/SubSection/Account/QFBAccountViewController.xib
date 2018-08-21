@@ -12,8 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QFBAccountViewController">
             <connections>
-                <outlet property="headTitle" destination="xTd-eX-khf" id="Mce-Jw-V1j"/>
-                <outlet property="headview" destination="h7b-xW-2gc" id="93F-cR-cFk"/>
                 <outlet property="tableview" destination="HtX-9h-z4V" id="tyf-lx-rEH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,6 +29,25 @@
                         <outlet property="delegate" destination="-1" id="sGc-L0-tUh"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEa-o0-lec">
+                    <rect key="frame" x="20" y="597" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.6588235294117647" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="N9D-db-e6S"/>
+                    </constraints>
+                    <state key="normal" title="退出登陆">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="logoutBtnAction:" destination="-1" eventType="touchUpInside" id="iZ6-lH-gOe"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -38,31 +55,11 @@
                 <constraint firstItem="HtX-9h-z4V" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="DTB-OS-peX"/>
                 <constraint firstItem="HtX-9h-z4V" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Ic8-zc-6Xg"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="HtX-9h-z4V" secondAttribute="bottom" id="ORu-Z4-D4G"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="PEa-o0-lec" secondAttribute="bottom" constant="30" id="Vk9-AX-yur"/>
+                <constraint firstItem="PEa-o0-lec" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="ZOf-Qb-dRK"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PEa-o0-lec" secondAttribute="trailing" constant="20" id="jKb-5h-2bC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-        </view>
-        <view contentMode="scaleToFill" id="h7b-xW-2gc">
-            <rect key="frame" x="0.0" y="0.0" width="367" height="37"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人资料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-eX-khf">
-                    <rect key="frame" x="20" y="11.5" width="100" height="14.5"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="Ct5-KZ-0T3"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="xTd-eX-khf" firstAttribute="leading" secondItem="oLw-0q-BGt" secondAttribute="leading" constant="20" id="6eC-E3-HOx"/>
-                <constraint firstItem="xTd-eX-khf" firstAttribute="centerY" secondItem="h7b-xW-2gc" secondAttribute="centerY" id="Ypz-dD-zvb"/>
-            </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="oLw-0q-BGt"/>
-            <point key="canvasLocation" x="500" y="-112"/>
         </view>
     </objects>
 </document>

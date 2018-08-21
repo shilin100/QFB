@@ -117,8 +117,17 @@
             
             return signal;
             
-            
-            
+        }];
+        
+        _accountCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+                [subscriber sendNext:input];
+                [subscriber sendCompleted];
+                
+                return [RACDisposable disposableWithBlock:^{
+                    //                    NSLog(@"结束了");
+                }];
+            }];
         }];
 
         

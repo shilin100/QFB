@@ -49,9 +49,6 @@
     [SVProgressHUD setMaximumDismissTimeInterval:1.8];
     IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = YES;
     
-    if (@available(iOS 11.0, *)){
-        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
-    }
     
     return YES;
 }

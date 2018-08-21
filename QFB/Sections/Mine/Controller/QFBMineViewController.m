@@ -12,6 +12,7 @@
 #import "QFBMyOrderViewController.h"
 #import "QFBAddressViewController.h"
 #import "QFBMyProtocolViewController.h"
+#import "QFBAccountViewController.h"
 
 @interface QFBMineViewController ()
 @property(nonatomic,strong)QFBMineView *containerView;
@@ -49,6 +50,18 @@
 
 -(void)bind{
     //    @weakify(self)
+    
+    self.containerView.accountBtn.rac_command = self.viewModel.accountCommand;
+    [[self.viewModel.accountCommand executionSignals]
+     subscribeNext:^(RACSignal *x) {
+         
+         [x subscribeNext:^(id x) {
+             QFBAccountViewController * vc = [QFBAccountViewController new];
+             [self.navigationController pushViewController:vc animated:YES];
+
+         }];
+     }];
+
     
     [self.viewModel.getDataCommand execute:self.containerView];
     

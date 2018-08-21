@@ -118,6 +118,7 @@
 #define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
 
 #define SafeAreaTopHeight ([UIScreen mainScreen].bounds.size.height == 812.0 ? 88 : 64)
+#define SafeAreaBottomHeight ([UIScreen mainScreen].bounds.size.height == 812.0 ? 83 : 49)
 
 ///weakSelf
 #define CZHWeakSelf(type)  __weak typeof(type) weak##type = type;

@@ -110,6 +110,7 @@
 		52C8006E212AC47F00D321E5 /* QFBAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C8006C212AC47F00D321E5 /* QFBAccountTableViewCell.xib */; };
 		52C80072212BA57B00D321E5 /* QFBAccountTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C80070212BA57B00D321E5 /* QFBAccountTextTableViewCell.m */; };
 		52C80073212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C80071212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib */; };
+		52C80077212BB18500D321E5 /* QFBAccountHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C80076212BB18500D321E5 /* QFBAccountHeadView.m */; };
 		52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */; };
 		52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF9472119A2CF00D54153 /* RegularHelperUtil.m */; };
 		52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EEF94A2119A38F00D54153 /* QFBNetTool.m */; };
@@ -324,6 +325,8 @@
 		52C8006F212BA57B00D321E5 /* QFBAccountTextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAccountTextTableViewCell.h; sourceTree = "<group>"; };
 		52C80070212BA57B00D321E5 /* QFBAccountTextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAccountTextTableViewCell.m; sourceTree = "<group>"; };
 		52C80071212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBAccountTextTableViewCell.xib; sourceTree = "<group>"; };
+		52C80075212BB18500D321E5 /* QFBAccountHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAccountHeadView.h; sourceTree = "<group>"; };
+		52C80076212BB18500D321E5 /* QFBAccountHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAccountHeadView.m; sourceTree = "<group>"; };
 		52EEF94121198B8400D54153 /* KeyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyMacro.h; sourceTree = "<group>"; };
 		52EEF9432119975B00D54153 /* QFBBaseNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBBaseNaviViewController.h; sourceTree = "<group>"; };
 		52EEF9442119975B00D54153 /* QFBBaseNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBBaseNaviViewController.m; sourceTree = "<group>"; };
@@ -950,14 +953,24 @@
 				52C80065212AB79C00D321E5 /* QFBAccountViewController.h */,
 				52C80066212AB79C00D321E5 /* QFBAccountViewController.m */,
 				52C80067212AB79C00D321E5 /* QFBAccountViewController.xib */,
+				52C80074212BB16400D321E5 /* View */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		52C80074212BB16400D321E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				52C8006A212AC47F00D321E5 /* QFBAccountTableViewCell.h */,
 				52C8006B212AC47F00D321E5 /* QFBAccountTableViewCell.m */,
 				52C8006C212AC47F00D321E5 /* QFBAccountTableViewCell.xib */,
 				52C8006F212BA57B00D321E5 /* QFBAccountTextTableViewCell.h */,
 				52C80070212BA57B00D321E5 /* QFBAccountTextTableViewCell.m */,
 				52C80071212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib */,
+				52C80075212BB18500D321E5 /* QFBAccountHeadView.h */,
+				52C80076212BB18500D321E5 /* QFBAccountHeadView.m */,
 			);
-			path = Account;
+			path = View;
 			sourceTree = "<group>";
 		};
 		52EEF9422119972700D54153 /* Base */ = {
@@ -1288,6 +1301,7 @@
 				52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
+				52C80077212BB18500D321E5 /* QFBAccountHeadView.m in Sources */,
 				52C8006D212AC47F00D321E5 /* QFBAccountTableViewCell.m in Sources */,
 				18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */,
 				18CD0C8521251C0D00DECAA7 /* QFBHomeTableView.m in Sources */,

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface QFBAccountTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *mytitile;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 
 @end

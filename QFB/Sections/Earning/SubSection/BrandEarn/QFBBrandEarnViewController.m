@@ -176,5 +176,4 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
 
 
 
-
 @end

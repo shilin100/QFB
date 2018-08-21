@@ -37,14 +37,14 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
         <view contentMode="scaleToFill" id="SYY-Lr-eZb">
-            <rect key="frame" x="0.0" y="0.0" width="354" height="162"/>
+            <rect key="frame" x="0.0" y="0.0" width="354" height="171"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_back_imag" translatesAutoresizingMaskIntoConstraints="NO" id="BXA-0Z-sab">
-                    <rect key="frame" x="0.0" y="0.0" width="354" height="102"/>
+                    <rect key="frame" x="0.0" y="0.0" width="354" height="111"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计品牌收益（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcj-kX-Mc8">
-                    <rect key="frame" x="112.5" y="35" width="129" height="21"/>
+                    <rect key="frame" x="112.5" y="44" width="129" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="129" id="TQI-Ok-1U2"/>
                         <constraint firstAttribute="height" constant="21" id="hig-Gw-GD0"/>
@@ -54,7 +54,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31230.14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxZ-Lb-s4r">
-                    <rect key="frame" x="50" y="65" width="254" height="20"/>
+                    <rect key="frame" x="50" y="74" width="254" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="eYN-F8-8Ws"/>
                     </constraints>
@@ -63,14 +63,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiY-pN-yy9">
-                    <rect key="frame" x="0.0" y="102" width="354" height="35"/>
+                    <rect key="frame" x="0.0" y="111" width="354" height="35"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="aJT-06-xRv"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盟友姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jST-dO-x6W">
-                    <rect key="frame" x="20" y="142" width="50" height="15"/>
+                    <rect key="frame" x="20" y="151" width="50" height="15"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Nka-tZ-2Ub"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="kjI-Ee-aaZ"/>
@@ -80,7 +80,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收益（元）" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X6-Os-aSw">
-                    <rect key="frame" x="264" y="142" width="70" height="15"/>
+                    <rect key="frame" x="264" y="151" width="70" height="15"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="4It-ph-O40"/>
                     </constraints>
@@ -112,7 +112,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="EbB-1F-9Oe"/>
-            <point key="canvasLocation" x="501" y="-145"/>
+            <point key="canvasLocation" x="501" y="-140.5"/>
         </view>
     </objects>
     <resources>

@@ -38,6 +38,12 @@
         [kDefault setObject:data[@"nickName"]  forKey:NICK_NAMEk];
         [kDefault setObject:data[@"id"]  forKey:USER_IDk];
         [kDefault setObject:data[@"roleId"]  forKey:ROLE_IDk];
+        [kDefault setObject:data[@"blackAccountName"]  forKey:ALIPAY_NAMEk];
+        [kDefault setObject:data[@"blackNum"]  forKey:ALIPAY_ACCOUNTk];
+        [kDefault setObject:data[@"card"]  forKey:USER_IDCARDk];
+        [kDefault setObject:data[@"realName"]  forKey:USER_REALNAMEk];
+
+        
         [kDefault setBool:YES forKey:IS_LOGIN];
     }];
     return signal;

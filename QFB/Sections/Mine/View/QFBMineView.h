@@ -22,6 +22,7 @@
 @property(nonatomic,strong)UILabel *myMoneyCount;
 
 
+@property(nonatomic,strong)UIButton *accountBtn;
 @property(nonatomic,strong)UIButton *withdrawBtn;
 
 @property(nonatomic,strong)QFBMineTableView *tableView;

@@ -26,6 +26,8 @@
 @property(nonatomic,strong)NSString *beyondPartnerStr;
 @property(nonatomic,strong)NSString *totalEarningCountStr;
 
+@property(nonatomic,strong)UIScrollView *scrollview;
+
 
 -(void)creatChartWith:(float)personal :(float)team :(float)brand;
 -(void)setTableViewModel:(id)viewModel;

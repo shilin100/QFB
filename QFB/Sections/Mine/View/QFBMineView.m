@@ -122,6 +122,18 @@
         }];
 
         
+        UIButton * accountBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:accountBtn];
+        self.accountBtn = accountBtn;
+        
+        [accountBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(userIconHeight);
+            make.top.mas_equalTo(@77);
+            make.left.right.mas_equalTo(0);
+        }];
+
+        
+        
         UIView * leftLine = [UIView new];
         leftLine.backgroundColor = HEXCOLOR(0x4D4F5A);
         [self addSubview:leftLine];
