@@ -51,6 +51,13 @@
 -(void)bind{
     //    @weakify(self)
     
+    [[self.containerView.withdrawBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [SVProgressHUD showErrorWithStatus:@"暂未开放"];
+        
+        
+//        WantMachineViewController * vc = [WantMachineViewController new];
+//        [self.navigationController pushViewController:vc animated:YES];
+    }];
     self.containerView.accountBtn.rac_command = self.viewModel.accountCommand;
     [[self.viewModel.accountCommand executionSignals]
      subscribeNext:^(RACSignal *x) {
