@@ -71,7 +71,6 @@
             
             [signal4 subscribeNext:^(id  _Nullable x) {
                 containerView.levelLabel.text = [NSString stringWithFormat:@"V%@",x[@"data"]];
-
                 
             }];
 
@@ -109,7 +108,19 @@
             
             
         }];
-        
+        _myServiceCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+
+            parameter[@"oBrandId"] = O_BRAND_ID;
+
+            RACSignal * signal = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/obrand/selectById.action",BASEURL] withParamater:parameter];
+            
+            return signal;
+            
+            
+            
+        }];
+
         
     }
     

@@ -9,6 +9,9 @@
 #ifndef NetMacro_h
 #define NetMacro_h
 
+#define APP_checkUp @"http://itunes.apple.com/cn/lookup?"
+
+
 #define BASEURL @"http://fxapp.fengzhuan.org/payment_union"   //正式环境地址
 //#define BASEURL @"http://122.114.217.161:8080/payment_union"
 //#define BASEURL @"http://192.168.0.111:8080/payment_union"   //李周测试环境

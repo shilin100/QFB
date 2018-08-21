@@ -11,5 +11,6 @@
 @interface QFBMineViewModel : NSObject
 @property(nonatomic,strong)RACCommand   * mineCellCommand;
 @property(nonatomic,strong)RACCommand   * getDataCommand;
+@property(nonatomic,strong)RACCommand   * myServiceCommand;
 
 @end

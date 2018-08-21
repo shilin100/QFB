@@ -52,10 +52,10 @@
 
 +(NSDictionary*)getAllTabbarItemAttributes{
     return @{
-             @"首页":[TabbarItemAttributesModel AttributesToolTitle:@"首页" imageName:@"tabbar_check_nor" selectedImageName:@"tabbar_check_sel"],
-             @"盟友":[TabbarItemAttributesModel AttributesToolTitle:@"盟友" imageName:@"tabbar_history_nor" selectedImageName:@"tabbar_history_sel"],
-             @"收益":[TabbarItemAttributesModel AttributesToolTitle:@"收益" imageName:@"tabbar_report_nor" selectedImageName:@"tabbar_report_sel"],
-             @"我的":[TabbarItemAttributesModel AttributesToolTitle:@"我的" imageName:@"tabbar_function_nor" selectedImageName:@"tabbar_function_sel"]
+             @"首页":[TabbarItemAttributesModel AttributesToolTitle:@"首页" imageName:@"首页未选中" selectedImageName:@"首页选中"],
+             @"盟友":[TabbarItemAttributesModel AttributesToolTitle:@"盟友" imageName:@"parterner_unselected" selectedImageName:@"盟友选中"],
+             @"收益":[TabbarItemAttributesModel AttributesToolTitle:@"收益" imageName:@"收益未选中" selectedImageName:@"收益选中"],
+             @"我的":[TabbarItemAttributesModel AttributesToolTitle:@"我的" imageName:@"mine_unselected" selectedImageName:@"我的选中"]
              };;
 }
 
