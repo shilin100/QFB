@@ -25,6 +25,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>当您激活机器或者上传头像时可能需要使用相机，您是否允许打开您的相机？</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>当您激活机器或者上传头像时可能需要相册，您是否同意访问您的相册</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>当您激活机器或者上传头像时可能需要相册，您是否同意访问您的相册</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

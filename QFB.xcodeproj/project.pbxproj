@@ -35,9 +35,7 @@
 		18CD0CCC21257B2400DECAA7 /* InviteAlliesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CCA21257B2400DECAA7 /* InviteAlliesViewController.m */; };
 		18CD0CD221257CD000DECAA7 /* WantMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CD021257CD000DECAA7 /* WantMachineViewController.m */; };
 		18CD0CD821257E0B00DECAA7 /* MachineActivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CD621257E0B00DECAA7 /* MachineActivateViewController.m */; };
-		18CD0CD921257E0B00DECAA7 /* MachineActivateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0CD721257E0B00DECAA7 /* MachineActivateViewController.xib */; };
 		18CD0CDE2125872A00DECAA7 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CDC2125872A00DECAA7 /* AuthenticationViewController.m */; };
-		18CD0CDF2125872A00DECAA7 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0CDD2125872A00DECAA7 /* AuthenticationViewController.xib */; };
 		18CD0CE02125911400DECAA7 /* QFBMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086CE21250C20009FB9F0 /* QFBMineView.m */; };
 		18CD0CE12125913C00DECAA7 /* QFBMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D121257A30009FB9F0 /* QFBMineTableView.m */; };
 		18CD0CFA212BA83500DECAA7 /* ZZCountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CF5212BA83400DECAA7 /* ZZCountingLabel.m */; };
@@ -61,6 +59,7 @@
 		520375BE21196F790067316B /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375BA21196F790067316B /* NSDate+Extension.m */; };
 		520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375C32119732B0067316B /* QFBLoginViewModel.m */; };
 		520375C72119733C0067316B /* QFBLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520375C62119733C0067316B /* QFBLoginView.m */; };
+		5208ED30212C0DAB005B3959 /* 组 1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5208ED2F212C0DAB005B3959 /* 组 1@3x.png */; };
 		522B73F0212A56EE00500B03 /* QFBAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522B73EE212A56EE00500B03 /* QFBAddressViewController.m */; };
 		522B73F1212A56EE00500B03 /* QFBAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B73EF212A56EE00500B03 /* QFBAddressViewController.xib */; };
 		522B73F5212A57F900500B03 /* QFBAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 522B73F3212A57F900500B03 /* QFBAddressTableViewCell.m */; };
@@ -252,6 +251,7 @@
 		520375C32119732B0067316B /* QFBLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginViewModel.m; sourceTree = "<group>"; };
 		520375C52119733C0067316B /* QFBLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBLoginView.h; sourceTree = "<group>"; };
 		520375C62119733C0067316B /* QFBLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBLoginView.m; sourceTree = "<group>"; };
+		5208ED2F212C0DAB005B3959 /* 组 1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组 1@3x.png"; sourceTree = "<group>"; };
 		522B73ED212A56EE00500B03 /* QFBAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAddressViewController.h; sourceTree = "<group>"; };
 		522B73EE212A56EE00500B03 /* QFBAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAddressViewController.m; sourceTree = "<group>"; };
 		522B73EF212A56EE00500B03 /* QFBAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBAddressViewController.xib; sourceTree = "<group>"; };
@@ -628,6 +628,7 @@
 				5203758F2117F6530067316B /* Sections */,
 				520375632117F4B90067316B /* Main.storyboard */,
 				520375662117F4BA0067316B /* Assets.xcassets */,
+				5208ED2F212C0DAB005B3959 /* 组 1@3x.png */,
 				520375682117F4BA0067316B /* LaunchScreen.storyboard */,
 				5203756B2117F4BA0067316B /* Info.plist */,
 				5203756C2117F4BA0067316B /* main.m */,
@@ -1294,6 +1295,7 @@
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
 				52C701F9212181DB0055C607 /* QFBUpgradeRuleViewController.xib in Resources */,
+				5208ED30212C0DAB005B3959 /* 组 1@3x.png in Resources */,
 				524907AB211E8F1800D1317F /* QFBEarningTableViewCell.xib in Resources */,
 				18CD0CFC212BA83500DECAA7 /* ZZCircleProgress.bundle in Resources */,
 				52C701ED21217E0E0055C607 /* TeamTradeTableViewCell.xib in Resources */,
@@ -1485,7 +1487,6 @@
 				520375BC21196F790067316B /* UIImage+Extension.m in Sources */,
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,
-				527086D221257A30009FB9F0 /* QFBMineTableView.m in Sources */,
 				522B73F9212A5E4200500B03 /* QFBAddressModel.m in Sources */,
 				18CD0CA721251C1C00DECAA7 /* QFBAllianceTableView.m in Sources */,
 				52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */,

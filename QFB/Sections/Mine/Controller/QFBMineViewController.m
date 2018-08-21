@@ -63,7 +63,6 @@
      }];
 
     
-    [self.viewModel.getDataCommand execute:self.containerView];
     
     [self.viewModel.mineCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         NSString * temp  = x ;
@@ -158,6 +157,8 @@
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
+    [self.viewModel.getDataCommand execute:self.containerView];
+
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];

@@ -25,6 +25,10 @@
 @property(nonatomic,strong)UIButton *accountBtn;
 @property(nonatomic,strong)UIButton *withdrawBtn;
 
+@property(nonatomic,strong)UIImageView *userIcon;
+
+
+
 @property(nonatomic,strong)QFBMineTableView *tableView;
 
 -(void)setMyEarnStr:(NSString *)myEarnStr;

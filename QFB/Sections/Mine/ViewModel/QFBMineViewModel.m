@@ -88,6 +88,9 @@
                 
             }];
 
+            NSLog(@"%@",[kDefault objectForKey:USER_HEAD_IMGk]);
+            
+            [containerView.userIcon sd_setImageWithURL:[NSURL URLWithString:[kDefault objectForKey:USER_HEAD_IMGk]] placeholderImage:[UIImage imageNamed:@"我的默认头像"]];
             
             return [RACSignal empty];
         }];

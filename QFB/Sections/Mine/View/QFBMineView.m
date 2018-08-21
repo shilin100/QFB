@@ -31,11 +31,11 @@
         userIcon.layer.cornerRadius = userIconHeight/2;
         userIcon.layer.masksToBounds = YES;
         [self addSubview:userIcon];
+        self.userIcon = userIcon;
 
         if ([kDefault objectForKey:USER_HEAD_IMGk] != nil) {
-            [userIcon sd_setImageWithURL:[NSURL URLWithString:[kDefault objectForKey:USER_HEAD_IMGk]] placeholderImage:[UIImage imageNamed:@"我的默认头像"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-            }];
-            
+            [userIcon sd_setImageWithURL:[NSURL URLWithString:[kDefault objectForKey:USER_HEAD_IMGk]] placeholderImage:[UIImage imageNamed:@"我的默认头像"]];
+
         }
         [userIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(userIconHeight, userIconHeight));

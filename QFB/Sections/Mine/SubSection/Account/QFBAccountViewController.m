@@ -12,7 +12,11 @@
 #import "QFBAccountHeadView.h"
 #import "QFBLoginViewController.h"
 
-@interface QFBAccountViewController ()
+@interface QFBAccountViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+{
+    UIImagePickerController *pickerView;
+
+}
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (strong, nonatomic)  NSMutableArray *dataArray;
 @property (strong, nonatomic)  NSArray *headArray;
@@ -66,6 +70,91 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
 
 }
 
+- (void)showActionSheetView
+{
+    WEAKSELF;
+    UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"从相册获取" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [weakSelf startsystemImageLibrary];
+    }];
+    UIAlertAction *actionOne = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [weakSelf startCameraController];
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [alertCtrl addAction:action];
+    [alertCtrl addAction:actionOne];
+    [alertCtrl addAction:cancelAction];
+    [self presentViewController:alertCtrl animated:YES completion:nil];
+}
+#pragma mark - 获取图像
+- (void)startsystemImageLibrary
+{
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        pickerView = nil;
+        pickerView = [[UIImagePickerController alloc] init];
+        pickerView.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        pickerView.delegate = self;
+        pickerView.allowsEditing = YES;
+        if ([self respondsToSelector:@selector(presentViewController:animated:completion:)]){
+            [self presentViewController:pickerView animated:YES completion:^{
+            }];
+        }
+    }
+}
+
+- (void)startCameraController
+{
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        pickerView = nil;
+        pickerView = [[UIImagePickerController alloc] init];
+        pickerView.delegate = self;
+        pickerView.sourceType = UIImagePickerControllerSourceTypeCamera;
+        pickerView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        pickerView.allowsEditing = YES;
+        if ([self respondsToSelector:@selector(presentViewController:animated:completion:)]){
+            [self presentViewController:pickerView animated:YES completion:^{
+                [self->pickerView setShowsCameraControls:YES];
+            }];
+        }
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *pickerImage = [info objectForKey:UIImagePickerControllerEditedImage];
+    NSData *imageData = UIImageJPEGRepresentation(pickerImage, .5f);
+    QFBAccountTableViewCell * cell = [self.tableview cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    cell.icon.image = [UIImage imageWithData:imageData];
+    
+    [self uploadIcon:imageData];
+    [picker dismissViewControllerAnimated:YES completion:nil];//退出照相机视图
+}
+-(void)uploadIcon:(NSData*)iconData{
+    NSString *dataStr = [iconData base64EncodedStringWithOptions:0];
+
+    NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+    parameter[@"userId"] = [kDefault objectForKey:USER_IDk];
+    parameter[@"imgdata"] = dataStr;
+    
+
+    [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/pic/upload.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
+        NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
+        if ([status isEqualToString:@"1"]) {
+            [kDefault setObject:responseObject[@"data"] forKey:USER_HEAD_IMGk];
+            
+            [[SDImageCache sharedImageCache] clearDiskOnCompletion:nil];
+            [SDImageCache.sharedImageCache clearMemory];
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
+        }
+
+    } andFaild:^(NSError *error) {
+
+    }];
+
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -89,8 +178,7 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
 
     if (indexPath.section == 0 && indexPath.row == 0) {
        cell = [tableView dequeueReusableCellWithIdentifier:AccountTableViewCellIdentifier forIndexPath:indexPath];
-        [cell.icon sd_setImageWithURL:[NSURL URLWithString:[kDefault objectForKey:USER_HEAD_IMGk]] placeholderImage:[UIImage imageNamed:@"登录页默认头像"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        }];
+        [cell.icon sd_setImageWithURL:[NSURL URLWithString:[kDefault objectForKey:USER_HEAD_IMGk]] placeholderImage:[UIImage imageNamed:@"我的默认头像"]];
         cell.mytitile.text = temp[@"title"];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         return cell;
@@ -132,7 +220,12 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
     return 0.1;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        [self showActionSheetView];
+    }
+}
 
 
 

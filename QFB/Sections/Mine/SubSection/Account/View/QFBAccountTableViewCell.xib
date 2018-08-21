@@ -29,11 +29,17 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hx6-uK-LU4">
-                        <rect key="frame" x="235" y="0.5" width="65" height="65"/>
+                        <rect key="frame" x="234" y="0.0" width="66" height="66"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="65" id="0uG-Xx-feX"/>
-                            <constraint firstAttribute="height" constant="65" id="B61-KX-21i"/>
+                            <constraint firstAttribute="width" constant="66" id="0uG-Xx-feX"/>
+                            <constraint firstAttribute="height" constant="66" id="B61-KX-21i"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="33"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                 </subviews>
                 <constraints>
