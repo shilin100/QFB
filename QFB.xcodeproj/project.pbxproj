@@ -44,6 +44,8 @@
 		18CD0CD921257E0B00DECAA7 /* MachineActivateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0CD721257E0B00DECAA7 /* MachineActivateViewController.xib */; };
 		18CD0CDE2125872A00DECAA7 /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CDC2125872A00DECAA7 /* AuthenticationViewController.m */; };
 		18CD0CDF2125872A00DECAA7 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0CDD2125872A00DECAA7 /* AuthenticationViewController.xib */; };
+		18CD0CE02125911400DECAA7 /* QFBMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086CE21250C20009FB9F0 /* QFBMineView.m */; };
+		18CD0CE12125913C00DECAA7 /* QFBMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D121257A30009FB9F0 /* QFBMineTableView.m */; };
 		4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */; };
 		5203755F2117F4B90067316B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203755E2117F4B90067316B /* AppDelegate.m */; };
 		520375652117F4B90067316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375632117F4B90067316B /* Main.storyboard */; };
@@ -81,8 +83,6 @@
 		527086C6212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527086C4212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib */; };
 		527086CA2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086C82124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m */; };
 		527086CB2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527086C92124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib */; };
-		527086CF21250C20009FB9F0 /* QFBMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086CE21250C20009FB9F0 /* QFBMineView.m */; };
-		527086D221257A30009FB9F0 /* QFBMineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D121257A30009FB9F0 /* QFBMineTableView.m */; };
 		527086D521257A4D009FB9F0 /* QFBMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 527086D421257A4D009FB9F0 /* QFBMineViewModel.m */; };
 		52C701CD2121135E0055C607 /* QFBEarningTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701CC2121135E0055C607 /* QFBEarningTableView.m */; };
 		52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C701D121211B4B0055C607 /* QFBEarningCellModel.m */; };
@@ -1216,6 +1216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CD0CE12125913C00DECAA7 /* QFBMineTableView.m in Sources */,
+				18CD0CE02125911400DECAA7 /* QFBMineView.m in Sources */,
 				18CD0C8121251C0D00DECAA7 /* QFBHomeModel.m in Sources */,
 				18CD0C8B21251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m in Sources */,
 				52C701D5212133CC0055C607 /* QFBEarningLevelView.m in Sources */,
