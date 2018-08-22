@@ -20,6 +20,8 @@
 @property(nonatomic,strong)UILabel * directlynew;
 @property(nonatomic,strong)UILabel * indirectnew;
 
+@property(nonatomic,strong)QFBAllianceTableView * tableView;
+
 
 
 @end
@@ -229,10 +231,9 @@
         }];
         
         QFBAllianceTableView * QHtableView = [[QFBAllianceTableView alloc]initWithFrame:CGRectZero];
-        //self.tableView = tableView;
         QHtableView.backgroundColor = [UIColor clearColor];
+        self.tableView = QHtableView;
         [contentView addSubview:QHtableView];
-        
         [QHtableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(bgImgView.mas_bottom).offset(86);
             make.left.mas_equalTo(0);
@@ -262,5 +263,8 @@
     self.directlynew.text = [NSString stringWithFormat:@"%ld",result3 ];
     self.indirectnew.text = [NSString stringWithFormat:@"%ld",result4 ];
 }
-
+-(void)setQFBAllianceTableViewModel:(id)viewModel
+{
+    self.tableView.viewModel = viewModel;
+}
 @end

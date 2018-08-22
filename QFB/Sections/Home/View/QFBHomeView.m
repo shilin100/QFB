@@ -275,7 +275,7 @@
         information.layer.masksToBounds = YES;
         information.layer.cornerRadius = 10.f;
         information.layer.borderWidth = 1.f;
-        information.layer.borderColor = [UIColor redColor].CGColor;
+        information.layer.borderColor = [UIColor colorWithRed:34/255.0 green:135/255.0 blue:224/255.0 alpha:1].CGColor;
         [contentView addSubview:information];
         [information mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(functionButtonView.mas_bottom).offset(0);
@@ -288,7 +288,7 @@
         UILabel * informationLab = [UILabel new];
         informationLab.text = @"支付信息";
         informationLab.font = XFont(14);
-        informationLab.textColor = [UIColor colorWithRed:217.997/255.0 green:187.002/255.0 blue:131.998/255.0 alpha:1];
+        informationLab.textColor = [UIColor colorWithRed:34/255.0 green:135/255.0 blue:224/255.0 alpha:1];
         [information addSubview:informationLab];
         [informationLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(information);
