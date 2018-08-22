@@ -68,7 +68,7 @@
             <connections>
                 <outlet property="imageTop" destination="8MR-C3-KRA" id="2vV-bj-knL"/>
             </connections>
-            <point key="canvasLocation" x="-495" y="-454"/>
+            <point key="canvasLocation" x="-610" y="-468"/>
         </view>
     </objects>
     <resources>
