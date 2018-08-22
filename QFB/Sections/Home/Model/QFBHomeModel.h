@@ -48,3 +48,22 @@
 @property(nonatomic,strong) NSString * reserve;
 @end
 
+@interface FriendUpgrade : NSObject
+@property(nonatomic,strong) NSString * id;
+@property(nonatomic,strong) NSString * recommendJurisdiction;
+@property(nonatomic,strong) NSString * reserveOne;
+@property(nonatomic,strong) NSString * reserveFour;
+@property(nonatomic,strong) NSString * reserveFive;
+@property(nonatomic,strong) NSString * oBrandId;
+@property(nonatomic,strong) NSString * reserveTwo;
+@property(nonatomic,strong) NSString * activeJurisdiction;
+@property(nonatomic,strong) NSString * proposeJurisdiction;
+@property(nonatomic,strong) NSString * price;
+@property(nonatomic,strong) NSString * profitJurisdiction;
+@property(nonatomic,strong) NSString * createTime;
+@property(nonatomic,strong) NSString * roleName;
+@property(nonatomic,strong) NSString * modifyTime;
+@property(nonatomic,strong) NSString * remarks;
+@property(nonatomic,strong) NSString * reserve;
+@property(nonatomic,strong) NSString * reserveThree;
+@end

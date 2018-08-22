@@ -13,6 +13,9 @@
 #import "QFBInvitingAnAllyController.h"
 #import "WantMachineViewController.h"
 #import "MachineActivateViewController.h"
+#import "FriendUpgradeViewController.h"
+#import "FriendContactViewController.h"
+#import "AccounMessageViewController.h"
 
 @interface QFBHomeViewController ()
 
@@ -78,6 +81,18 @@
         }
         if ([temp isEqualToString:@"机器激活"]) {
             MachineActivateViewController * vc = [MachineActivateViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"盟友升级"]) {
+            FriendUpgradeViewController * vc = [FriendUpgradeViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"盟友通讯"]) {
+            FriendContactViewController * vc = [FriendContactViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"实名认证"]) {
+            AccounMessageViewController * vc = [AccounMessageViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
     }];

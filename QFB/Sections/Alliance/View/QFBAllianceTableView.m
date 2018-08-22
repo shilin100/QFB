@@ -19,6 +19,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame])
     {
+        self.dataArray = [NSMutableArray arrayWithObjects:@"团队",@"直营", nil];
         [self configView];
     }
     return self;
@@ -68,8 +69,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+     [self.viewModel.earningCellCommand execute:self.dataArray[indexPath.row]];
 }
 
 

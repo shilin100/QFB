@@ -65,6 +65,23 @@
 		18CD0D9A212C1AA900DECAA7 /* MachineActivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D95212C1AA800DECAA7 /* MachineActivateViewController.m */; };
 		18CD0D9B212C1AA900DECAA7 /* SubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D97212C1AA900DECAA7 /* SubmitView.m */; };
 		18CD0D9C212C1AA900DECAA7 /* SubmitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0D98212C1AA900DECAA7 /* SubmitView.xib */; };
+		18CD0DA1212D024400DECAA7 /* AccounMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0D9F212D024400DECAA7 /* AccounMessageViewController.m */; };
+		18CD0DA2212D024400DECAA7 /* AccounMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DA0212D024400DECAA7 /* AccounMessageViewController.xib */; };
+		18CD0DA7212D040100DECAA7 /* FriendUpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DA5212D040100DECAA7 /* FriendUpgradeViewController.m */; };
+		18CD0DA8212D040100DECAA7 /* FriendUpgradeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DA6212D040100DECAA7 /* FriendUpgradeViewController.xib */; };
+		18CD0DAC212D05BA00DECAA7 /* FriendUpgradeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DAA212D05BA00DECAA7 /* FriendUpgradeViewCell.m */; };
+		18CD0DAD212D05BA00DECAA7 /* FriendUpgradeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DAB212D05BA00DECAA7 /* FriendUpgradeViewCell.xib */; };
+		18CD0DB1212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DAF212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.m */; };
+		18CD0DB2212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DB0212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.xib */; };
+		18CD0DB5212D0D2F00DECAA7 /* FBWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DB3212D0D2F00DECAA7 /* FBWebProgressLayer.m */; };
+		18CD0DB8212D335B00DECAA7 /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DB7212D335B00DECAA7 /* NSTimer+addition.m */; };
+		18CD0DBD212D374300DECAA7 /* FriendContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DBB212D374300DECAA7 /* FriendContactViewController.m */; };
+		18CD0DBE212D374300DECAA7 /* FriendContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DBC212D374300DECAA7 /* FriendContactViewController.xib */; };
+		18CD0DC9212D490500DECAA7 /* TransactionDetailViewControllerr.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DC7212D490500DECAA7 /* TransactionDetailViewControllerr.m */; };
+		18CD0DCA212D490500DECAA7 /* TransactionDetailViewControllerr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DC8212D490500DECAA7 /* TransactionDetailViewControllerr.xib */; };
+		18CD0DCE212D4AF300DECAA7 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DCB212D4AF200DECAA7 /* DetailTableViewCell.m */; };
+		18CD0DCF212D4AF300DECAA7 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DCC212D4AF300DECAA7 /* DetailTableViewCell.xib */; };
+		18CD0DD3212D4B4C00DECAA7 /* AllianceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DD2212D4B4C00DECAA7 /* AllianceModel.m */; };
 		4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */; };
 		5203755F2117F4B90067316B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203755E2117F4B90067316B /* AppDelegate.m */; };
 		520375652117F4B90067316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375632117F4B90067316B /* Main.storyboard */; };
@@ -269,6 +286,33 @@
 		18CD0D96212C1AA900DECAA7 /* SubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitView.h; sourceTree = "<group>"; };
 		18CD0D97212C1AA900DECAA7 /* SubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitView.m; sourceTree = "<group>"; };
 		18CD0D98212C1AA900DECAA7 /* SubmitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitView.xib; sourceTree = "<group>"; };
+		18CD0D9E212D024400DECAA7 /* AccounMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccounMessageViewController.h; sourceTree = "<group>"; };
+		18CD0D9F212D024400DECAA7 /* AccounMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccounMessageViewController.m; sourceTree = "<group>"; };
+		18CD0DA0212D024400DECAA7 /* AccounMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccounMessageViewController.xib; sourceTree = "<group>"; };
+		18CD0DA4212D040100DECAA7 /* FriendUpgradeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendUpgradeViewController.h; sourceTree = "<group>"; };
+		18CD0DA5212D040100DECAA7 /* FriendUpgradeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendUpgradeViewController.m; sourceTree = "<group>"; };
+		18CD0DA6212D040100DECAA7 /* FriendUpgradeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendUpgradeViewController.xib; sourceTree = "<group>"; };
+		18CD0DA9212D05B900DECAA7 /* FriendUpgradeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendUpgradeViewCell.h; sourceTree = "<group>"; };
+		18CD0DAA212D05BA00DECAA7 /* FriendUpgradeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendUpgradeViewCell.m; sourceTree = "<group>"; };
+		18CD0DAB212D05BA00DECAA7 /* FriendUpgradeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendUpgradeViewCell.xib; sourceTree = "<group>"; };
+		18CD0DAE212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendUpgradeRuleViewController.h; sourceTree = "<group>"; };
+		18CD0DAF212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendUpgradeRuleViewController.m; sourceTree = "<group>"; };
+		18CD0DB0212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendUpgradeRuleViewController.xib; sourceTree = "<group>"; };
+		18CD0DB3212D0D2F00DECAA7 /* FBWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBWebProgressLayer.m; sourceTree = "<group>"; };
+		18CD0DB4212D0D2F00DECAA7 /* FBWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBWebProgressLayer.h; sourceTree = "<group>"; };
+		18CD0DB6212D335000DECAA7 /* NSTimer+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+addition.h"; sourceTree = "<group>"; };
+		18CD0DB7212D335B00DECAA7 /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
+		18CD0DBA212D374300DECAA7 /* FriendContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendContactViewController.h; sourceTree = "<group>"; };
+		18CD0DBB212D374300DECAA7 /* FriendContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendContactViewController.m; sourceTree = "<group>"; };
+		18CD0DBC212D374300DECAA7 /* FriendContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendContactViewController.xib; sourceTree = "<group>"; };
+		18CD0DC6212D490500DECAA7 /* TransactionDetailViewControllerr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionDetailViewControllerr.h; sourceTree = "<group>"; };
+		18CD0DC7212D490500DECAA7 /* TransactionDetailViewControllerr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewControllerr.m; sourceTree = "<group>"; };
+		18CD0DC8212D490500DECAA7 /* TransactionDetailViewControllerr.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailViewControllerr.xib; sourceTree = "<group>"; };
+		18CD0DCB212D4AF200DECAA7 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		18CD0DCC212D4AF300DECAA7 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		18CD0DCD212D4AF300DECAA7 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		18CD0DD1212D4B4C00DECAA7 /* AllianceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllianceModel.h; sourceTree = "<group>"; };
+		18CD0DD2212D4B4C00DECAA7 /* AllianceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllianceModel.m; sourceTree = "<group>"; };
 		2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		479344092819C9D13E796B75 /* Pods-QFBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBUITests/Pods-QFBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5203755A2117F4B90067316B /* QFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -522,6 +566,7 @@
 		18CD0C8E21251C1C00DECAA7 /* SubSection */ = {
 			isa = PBXGroup;
 			children = (
+				18CD0DC5212D48F100DECAA7 /* Transaction details */,
 				18CD0CF4212BA81700DECAA7 /* ZZCircleProgress */,
 			);
 			path = SubSection;
@@ -562,16 +607,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		18CD0CBD2125476F00DECAA7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		18CD0CC1212573C200DECAA7 /* SubSection */ = {
 			isa = PBXGroup;
 			children = (
+				18CD0DB9212D372D00DECAA7 /* FriendContact */,
+				18CD0DA3212D03C800DECAA7 /* Ally to upgra */,
+				18CD0D9D212D019300DECAA7 /* Real-name authentication */,
 				18CD0CDA2125870A00DECAA7 /* Authentication */,
 				18CD0CD421257DD900DECAA7 /* MachineActivate */,
 				18CD0CCE21257CAD00DECAA7 /* WantMachine */,
@@ -706,6 +747,66 @@
 				18CD0D7C212C19BA00DECAA7 /* QFBNavBarView.h */,
 			);
 			path = V;
+			sourceTree = "<group>";
+		};
+		18CD0D9D212D019300DECAA7 /* Real-name authentication */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0D9E212D024400DECAA7 /* AccounMessageViewController.h */,
+				18CD0D9F212D024400DECAA7 /* AccounMessageViewController.m */,
+				18CD0DA0212D024400DECAA7 /* AccounMessageViewController.xib */,
+			);
+			path = "Real-name authentication";
+			sourceTree = "<group>";
+		};
+		18CD0DA3212D03C800DECAA7 /* Ally to upgra */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0DB4212D0D2F00DECAA7 /* FBWebProgressLayer.h */,
+				18CD0DB3212D0D2F00DECAA7 /* FBWebProgressLayer.m */,
+				18CD0DA4212D040100DECAA7 /* FriendUpgradeViewController.h */,
+				18CD0DA5212D040100DECAA7 /* FriendUpgradeViewController.m */,
+				18CD0DA6212D040100DECAA7 /* FriendUpgradeViewController.xib */,
+				18CD0DA9212D05B900DECAA7 /* FriendUpgradeViewCell.h */,
+				18CD0DAA212D05BA00DECAA7 /* FriendUpgradeViewCell.m */,
+				18CD0DAB212D05BA00DECAA7 /* FriendUpgradeViewCell.xib */,
+				18CD0DAE212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.h */,
+				18CD0DAF212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.m */,
+				18CD0DB0212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.xib */,
+			);
+			path = "Ally to upgra";
+			sourceTree = "<group>";
+		};
+		18CD0DB9212D372D00DECAA7 /* FriendContact */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0DBA212D374300DECAA7 /* FriendContactViewController.h */,
+				18CD0DBB212D374300DECAA7 /* FriendContactViewController.m */,
+				18CD0DBC212D374300DECAA7 /* FriendContactViewController.xib */,
+			);
+			path = FriendContact;
+			sourceTree = "<group>";
+		};
+		18CD0DC5212D48F100DECAA7 /* Transaction details */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0DC6212D490500DECAA7 /* TransactionDetailViewControllerr.h */,
+				18CD0DC7212D490500DECAA7 /* TransactionDetailViewControllerr.m */,
+				18CD0DC8212D490500DECAA7 /* TransactionDetailViewControllerr.xib */,
+				18CD0DCD212D4AF300DECAA7 /* DetailTableViewCell.h */,
+				18CD0DCB212D4AF200DECAA7 /* DetailTableViewCell.m */,
+				18CD0DCC212D4AF300DECAA7 /* DetailTableViewCell.xib */,
+			);
+			path = "Transaction details";
+			sourceTree = "<group>";
+		};
+		18CD0DD0212D4B2A00DECAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18CD0DD1212D4B4C00DECAA7 /* AllianceModel.h */,
+				18CD0DD2212D4B4C00DECAA7 /* AllianceModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		46774BB17D9726CEDFAC14CC /* Frameworks */ = {
@@ -862,11 +963,11 @@
 		520375962117FBE00067316B /* Alliance */ = {
 			isa = PBXGroup;
 			children = (
+				18CD0DD0212D4B2A00DECAA7 /* Model */,
 				18CD0C8E21251C1C00DECAA7 /* SubSection */,
 				18CD0C9521251C1C00DECAA7 /* Controller */,
 				18CD0C9821251C1C00DECAA7 /* View */,
 				18CD0CBC2125475800DECAA7 /* ViewModel */,
-				18CD0CBD2125476F00DECAA7 /* Model */,
 			);
 			path = Alliance;
 			sourceTree = "<group>";
@@ -918,6 +1019,8 @@
 				520375B921196F790067316B /* UIView+Extension.m */,
 				524907A1211D852400D1317F /* PNPieChart+InnerRadius80Percent.h */,
 				524907A2211D852400D1317F /* PNPieChart+InnerRadius80Percent.m */,
+				18CD0DB6212D335000DECAA7 /* NSTimer+addition.h */,
+				18CD0DB7212D335B00DECAA7 /* NSTimer+addition.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1391,6 +1494,8 @@
 				18CD0CAB21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.xib in Resources */,
 				52C8006E212AC47F00D321E5 /* QFBAccountTableViewCell.xib in Resources */,
 				52C80069212AB79C00D321E5 /* QFBAccountViewController.xib in Resources */,
+				18CD0DA8212D040100DECAA7 /* FriendUpgradeViewController.xib in Resources */,
+				18CD0DCF212D4AF300DECAA7 /* DetailTableViewCell.xib in Resources */,
 				527086CB2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.xib in Resources */,
 				5203756A2117F4BA0067316B /* LaunchScreen.storyboard in Resources */,
 				18CD0D63212C196600DECAA7 /* BusinessInformationViewController.xib in Resources */,
@@ -1402,13 +1507,17 @@
 				18CD0D54212C191000DECAA7 /* AuthenticationViewController.xib in Resources */,
 				527086E42126A6FA009FB9F0 /* QFBOrderTableViewCell.xib in Resources */,
 				527086C6212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib in Resources */,
+				18CD0DA2212D024400DECAA7 /* AccounMessageViewController.xib in Resources */,
 				52C80073212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib in Resources */,
 				52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */,
 				522B7418212A6CC200500B03 /* city.plist in Resources */,
+				18CD0DCA212D490500DECAA7 /* TransactionDetailViewControllerr.xib in Resources */,
+				18CD0DB2212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.xib in Resources */,
 				18CD0D81212C19BA00DECAA7 /* QFBInvitingTitleView.xib in Resources */,
 				18CD0C8221251C0D00DECAA7 /* QFBHomeTitleTableViewCell.xib in Resources */,
 				522B7409212A637000500B03 /* QFBAddAddressViewController.xib in Resources */,
 				527086DD21269B20009FB9F0 /* QFBMyOrderViewController.xib in Resources */,
+				18CD0DBE212D374300DECAA7 /* FriendContactViewController.xib in Resources */,
 				52C701E221217D720055C607 /* QFBTeamEarnViewController.xib in Resources */,
 				18CD0C8821251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib in Resources */,
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
@@ -1424,6 +1533,7 @@
 				18CD0D62212C196600DECAA7 /* ShopMessageTableViewCell.xib in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
+				18CD0DAD212D05BA00DECAA7 /* FriendUpgradeViewCell.xib in Resources */,
 				18CD0D8F212C1A1C00DECAA7 /* BuyMachineTableViewCell.xib in Resources */,
 				52C701F9212181DB0055C607 /* QFBUpgradeRuleViewController.xib in Resources */,
 				5208ED30212C0DAB005B3959 /* 组 1@3x.png in Resources */,
@@ -1539,10 +1649,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CD0DD3212D4B4C00DECAA7 /* AllianceModel.m in Sources */,
 				18CD0CE12125913C00DECAA7 /* QFBMineTableView.m in Sources */,
 				18CD0CE02125911400DECAA7 /* QFBMineView.m in Sources */,
 				18CD0C8121251C0D00DECAA7 /* QFBHomeModel.m in Sources */,
+				18CD0DA7212D040100DECAA7 /* FriendUpgradeViewController.m in Sources */,
 				18CD0CFB212BA83500DECAA7 /* ZZCircleProgress.m in Sources */,
+				18CD0DC9212D490500DECAA7 /* TransactionDetailViewControllerr.m in Sources */,
 				18CD0C8B21251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.m in Sources */,
 				52C701D5212133CC0055C607 /* QFBEarningLevelView.m in Sources */,
 				524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */,
@@ -1554,6 +1667,7 @@
 				52C8006D212AC47F00D321E5 /* QFBAccountTableViewCell.m in Sources */,
 				18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */,
 				18CD0C8521251C0D00DECAA7 /* QFBHomeTableView.m in Sources */,
+				18CD0DB5212D0D2F00DECAA7 /* FBWebProgressLayer.m in Sources */,
 				524907A6211E7BBF00D1317F /* QFBEarningTypeView.m in Sources */,
 				18CD0CA821251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.m in Sources */,
 				524907AA211E8F1800D1317F /* QFBEarningTableViewCell.m in Sources */,
@@ -1567,6 +1681,7 @@
 				18CD0CAA21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m in Sources */,
 				52C80068212AB79C00D321E5 /* QFBAccountViewController.m in Sources */,
 				52C701FC2123C0D80055C607 /* QFBTeamEarnModel.m in Sources */,
+				18CD0DA1212D024400DECAA7 /* AccounMessageViewController.m in Sources */,
 				522B741B212A6CC200500B03 /* UIView+CZHExtension.m in Sources */,
 				18CD0D87212C19BA00DECAA7 /* QFBInvitingBottomCell.m in Sources */,
 				18CD0D88212C19BA00DECAA7 /* QFBInvitingBackView.m in Sources */,
@@ -1582,6 +1697,7 @@
 				527086C1212400ED009FB9F0 /* QFBPersonalEarnModel.m in Sources */,
 				52C701F8212181DB0055C607 /* QFBUpgradeRuleViewController.m in Sources */,
 				527086DC21269B20009FB9F0 /* QFBMyOrderViewController.m in Sources */,
+				18CD0DB8212D335B00DECAA7 /* NSTimer+addition.m in Sources */,
 				52EEF952211A86BB00D54153 /* CustomTabbarTool.m in Sources */,
 				520375C72119733C0067316B /* QFBLoginView.m in Sources */,
 				52EEF94F211A85E900D54153 /* QFBTabbarControllerConfig.m in Sources */,
@@ -1610,6 +1726,7 @@
 				18CD0CC02125484700DECAA7 /* QFBAllianceViewModel.m in Sources */,
 				18CD0D5E212C196600DECAA7 /* NoDataView.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,
+				18CD0DBD212D374300DECAA7 /* FriendContactViewController.m in Sources */,
 				18CD0CAC21251C1C00DECAA7 /* QFBAllianceView.m in Sources */,
 				522B740D212A652F00500B03 /* QFBAddAddressTableViewCell.m in Sources */,
 				18CD0D80212C19BA00DECAA7 /* QFBInvitingAnAllyController.m in Sources */,
@@ -1617,12 +1734,14 @@
 				18CD0D92212C1A1C00DECAA7 /* BuyMachineTableViewCell.m in Sources */,
 				18CD0C8721251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m in Sources */,
 				522B741F212AA20A00500B03 /* QFBMyProtocolViewController.m in Sources */,
+				18CD0DCE212D4AF300DECAA7 /* DetailTableViewCell.m in Sources */,
 				52C701CD2121135E0055C607 /* QFBEarningTableView.m in Sources */,
 				52EEF959211AC21E00D54153 /* UIView+ZFAddRectangBorder.m in Sources */,
 				5249079D211D6E0B00D1317F /* QFBEarningViewModel.m in Sources */,
 				18CD0CB121251CD100DECAA7 /* NSArray+jlExtension.m in Sources */,
 				18CD0CFA212BA83500DECAA7 /* ZZCountingLabel.m in Sources */,
 				52C701EC21217E0E0055C607 /* TeamTradeTableViewCell.m in Sources */,
+				18CD0DAC212D05BA00DECAA7 /* FriendUpgradeViewCell.m in Sources */,
 				527086BD2123FEA6009FB9F0 /* QFBPersonalEarnViewController.m in Sources */,
 				527086E72126AD4F009FB9F0 /* OrderModel.m in Sources */,
 				18CD0D9B212C1AA900DECAA7 /* SubmitView.m in Sources */,
@@ -1633,6 +1752,7 @@
 				520375BC21196F790067316B /* UIImage+Extension.m in Sources */,
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,
+				18CD0DB1212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.m in Sources */,
 				522B73F9212A5E4200500B03 /* QFBAddressModel.m in Sources */,
 				18CD0CA721251C1C00DECAA7 /* QFBAllianceTableView.m in Sources */,
 				52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */,

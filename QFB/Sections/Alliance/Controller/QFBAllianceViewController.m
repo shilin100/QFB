@@ -9,6 +9,8 @@
 #import "QFBAllianceViewController.h"
 #import "QFBAllianceView.h"
 #import "QFBAllianceViewModel.h"
+#import "QFBTeamEarnViewController.h"
+#import "TransactionDetailViewControllerr.h"
 
 @interface QFBAllianceViewController ()
 
@@ -46,11 +48,24 @@
     }];
     
     self.containerView = containerView;
+    [containerView setQFBAllianceTableViewModel:self.viewModel];
     
     AdjustsScrollViewInsetNever(self, containerView.scrollview)
 }
 -(void)bind{
     [self.viewModel.getDataCommand execute:self.containerView];
+    [self.viewModel.earningCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        NSString * temp  = x ;
+        if ([temp isEqualToString:@"团队"]) {
+            QFBTeamEarnViewController * vc = [QFBTeamEarnViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if ([temp isEqualToString:@"直营"]) {
+            TransactionDetailViewControllerr * vc = [TransactionDetailViewControllerr new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        
+    }];
     
 }
 -(QFBAllianceViewModel *)viewModel{
