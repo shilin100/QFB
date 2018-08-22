@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *valueLab;
 
 
+@property (weak, nonatomic) IBOutlet UIImageView *moreimg;
+
+
 + (instancetype) QFBHomeFunctionalCollectionViewCell:(UICollectionView *)collectionView WithIndexpath:(NSIndexPath *)indexpath;
 
 @end

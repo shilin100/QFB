@@ -19,4 +19,6 @@
  */
 -(void)getTodayAddFriendsDict:(NSDictionary*)dict;
 
+-(void)setQFBAllianceTableViewModel:(id)viewModel;
+
 @end

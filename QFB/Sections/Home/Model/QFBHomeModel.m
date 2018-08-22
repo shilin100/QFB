@@ -21,4 +21,7 @@
 @implementation PosMachine
 
 @end
+@implementation FriendUpgrade
+
+@end
 

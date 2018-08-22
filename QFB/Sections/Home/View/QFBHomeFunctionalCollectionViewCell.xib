@@ -32,18 +32,28 @@
                             <constraint firstAttribute="width" constant="34" id="lqv-eG-LWS"/>
                         </constraints>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home头部" translatesAutoresizingMaskIntoConstraints="NO" id="55v-2j-AKG">
+                        <rect key="frame" x="45.5" y="28.5" width="33" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="2Zx-t8-4Br"/>
+                            <constraint firstAttribute="height" constant="11" id="YR9-mo-SKd"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="55v-2j-AKG" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="2ae-3g-eyg"/>
                 <constraint firstItem="VvJ-2w-11x" firstAttribute="top" secondItem="LTo-9I-7bj" secondAttribute="bottom" constant="12" id="ElD-Dp-Ddn"/>
                 <constraint firstItem="LTo-9I-7bj" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="J7o-3D-0kD"/>
                 <constraint firstItem="LTo-9I-7bj" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" constant="10" id="btQ-Nr-9Hh"/>
+                <constraint firstItem="55v-2j-AKG" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" constant="-20" id="iyg-yw-tbP"/>
                 <constraint firstItem="VvJ-2w-11x" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="tbV-9t-wG6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="125" height="108"/>
             <connections>
                 <outlet property="img" destination="LTo-9I-7bj" id="0Dd-jm-mfG"/>
+                <outlet property="moreimg" destination="55v-2j-AKG" id="TJ6-gF-JNe"/>
                 <outlet property="valueLab" destination="VvJ-2w-11x" id="GD5-PA-CPJ"/>
             </connections>
             <point key="canvasLocation" x="62.5" y="81"/>

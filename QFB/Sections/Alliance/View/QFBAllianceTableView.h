@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QFBAllianceViewModel.h"
 
 @interface QFBAllianceTableView : UITableView
 
 @property(nonatomic,strong)NSMutableArray   *dataArray;
+
+@property(nonatomic,strong)QFBAllianceViewModel * viewModel;
 
 @end

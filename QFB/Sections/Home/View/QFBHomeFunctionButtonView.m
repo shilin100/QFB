@@ -51,11 +51,22 @@
 {
     
     MenuModel * model=self.dataArray[indexPath.row];
-    QFBHomeFunctionalCollectionViewCell *cell = [QFBHomeFunctionalCollectionViewCell QFBHomeFunctionalCollectionViewCell:collectionView WithIndexpath:indexPath];
-    [cell.img sd_setImageWithURL:[NSURL URLWithString:model.url] placeholderImage:[UIImage imageNamed:@""]];
-    cell.valueLab.text = model.value;
-    NSLog(@"%@",model.value);
-    return cell;
+    if (indexPath.row == 7) {
+        QFBHomeFunctionalCollectionViewCell *cell = [QFBHomeFunctionalCollectionViewCell QFBHomeFunctionalCollectionViewCell:collectionView WithIndexpath:indexPath];
+        cell.img.hidden = YES;
+        cell.valueLab.hidden = YES;
+        [cell.moreimg sd_setImageWithURL:[NSURL URLWithString:model.url] placeholderImage:[UIImage imageNamed:@""]];
+        return cell;
+    }else
+    {
+        
+        QFBHomeFunctionalCollectionViewCell *cell = [QFBHomeFunctionalCollectionViewCell QFBHomeFunctionalCollectionViewCell:collectionView WithIndexpath:indexPath];
+        cell.moreimg.hidden = YES;
+        [cell.img sd_setImageWithURL:[NSURL URLWithString:model.url] placeholderImage:[UIImage imageNamed:@""]];
+        cell.valueLab.text = model.value;
+        return cell;
+    }
+    
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
