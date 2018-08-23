@@ -21,7 +21,7 @@
             self.dataArray = [NSMutableArray arrayWithArray:@[@{@"title":@"我的订单",@"icon":@"我的－订单",},
                                                               @{@"title":@"我的收货地址",@"icon":@"我的地址",},
                                                               @{@"title":@"代理协议",@"icon":@"代理协议",},
-                                                              @{@"title":@"版本检测",@"icon":@"检测",},
+//                                                              @{@"title":@"版本检测",@"icon":@"检测",},
                                                               @{@"title":@"我的专属客服",@"icon":@"我的专属客服",}]];
         }
         [self configView];

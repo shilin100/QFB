@@ -34,20 +34,20 @@
         NSDictionary * data = x[@"data"];
         [kDefault setObject:self.userName forKey:USERNAMEk];
         [kDefault setObject:self.password forKey:PASSWORDk];
-        [kDefault setObject:data[@"userPicture"] forKey:USER_HEAD_IMGk];
-        [kDefault setObject:data[@"nickName"]  forKey:NICK_NAMEk];
-        [kDefault setObject:data[@"id"]  forKey:USER_IDk];
-        [kDefault setObject:data[@"roleId"]  forKey:ROLE_IDk];
-        [kDefault setObject:data[@"blackAccountName"]  forKey:ALIPAY_NAMEk];
-        [kDefault setObject:data[@"blackNum"]  forKey:ALIPAY_ACCOUNTk];
-        [kDefault setObject:data[@"card"]  forKey:USER_IDCARDk];
-        [kDefault setObject:data[@"realName"]  forKey:USER_REALNAMEk];
+        
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"userPicture"]) forKey:USER_HEAD_IMGk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"nickName"])  forKey:NICK_NAMEk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"id"])  forKey:USER_IDk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"roleId"])  forKey:ROLE_IDk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackAccountName"])  forKey:ALIPAY_NAMEk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackNum"])  forKey:ALIPAY_ACCOUNTk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"card"])  forKey:USER_IDCARDk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"realName"])  forKey:USER_REALNAMEk];
 
         
         [kDefault setBool:YES forKey:IS_LOGIN];
     }];
     return signal;
-    
 }
 
 -(instancetype)init

@@ -155,6 +155,7 @@
 #define DLog(...)
 #endif
 
+#define OBJ_EMPTY_OR_OBJ(obj) IS_OBJECT_EMPTY(obj) ? @"" : obj
 
 
 //====
