@@ -82,6 +82,8 @@
 		18CD0DCE212D4AF300DECAA7 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DCB212D4AF200DECAA7 /* DetailTableViewCell.m */; };
 		18CD0DCF212D4AF300DECAA7 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DCC212D4AF300DECAA7 /* DetailTableViewCell.xib */; };
 		18CD0DD3212D4B4C00DECAA7 /* AllianceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DD2212D4B4C00DECAA7 /* AllianceModel.m */; };
+		18CD0DD7212E427000DECAA7 /* AccounMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DD5212E427000DECAA7 /* AccounMessageCell.m */; };
+		18CD0DD8212E427000DECAA7 /* AccounMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DD6212E427000DECAA7 /* AccounMessageCell.xib */; };
 		4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */; };
 		5203755F2117F4B90067316B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5203755E2117F4B90067316B /* AppDelegate.m */; };
 		520375652117F4B90067316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520375632117F4B90067316B /* Main.storyboard */; };
@@ -313,6 +315,9 @@
 		18CD0DCD212D4AF300DECAA7 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
 		18CD0DD1212D4B4C00DECAA7 /* AllianceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllianceModel.h; sourceTree = "<group>"; };
 		18CD0DD2212D4B4C00DECAA7 /* AllianceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllianceModel.m; sourceTree = "<group>"; };
+		18CD0DD4212E427000DECAA7 /* AccounMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccounMessageCell.h; sourceTree = "<group>"; };
+		18CD0DD5212E427000DECAA7 /* AccounMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccounMessageCell.m; sourceTree = "<group>"; };
+		18CD0DD6212E427000DECAA7 /* AccounMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccounMessageCell.xib; sourceTree = "<group>"; };
 		2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QFB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		479344092819C9D13E796B75 /* Pods-QFBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QFBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QFBUITests/Pods-QFBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5203755A2117F4B90067316B /* QFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -755,6 +760,9 @@
 				18CD0D9E212D024400DECAA7 /* AccounMessageViewController.h */,
 				18CD0D9F212D024400DECAA7 /* AccounMessageViewController.m */,
 				18CD0DA0212D024400DECAA7 /* AccounMessageViewController.xib */,
+				18CD0DD4212E427000DECAA7 /* AccounMessageCell.h */,
+				18CD0DD5212E427000DECAA7 /* AccounMessageCell.m */,
+				18CD0DD6212E427000DECAA7 /* AccounMessageCell.xib */,
 			);
 			path = "Real-name authentication";
 			sourceTree = "<group>";
@@ -1531,6 +1539,7 @@
 				18CD0C8921251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib in Resources */,
 				18CD0D99212C1AA900DECAA7 /* MachineActivateViewController.xib in Resources */,
 				18CD0D62212C196600DECAA7 /* ShopMessageTableViewCell.xib in Resources */,
+				18CD0DD8212E427000DECAA7 /* AccounMessageCell.xib in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
 				18CD0DAD212D05BA00DECAA7 /* FriendUpgradeViewCell.xib in Resources */,
@@ -1664,6 +1673,7 @@
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
 				18CD0D53212C191000DECAA7 /* AuthenticationViewController.m in Sources */,
 				52C80077212BB18500D321E5 /* QFBAccountHeadView.m in Sources */,
+				18CD0DD7212E427000DECAA7 /* AccounMessageCell.m in Sources */,
 				52C8006D212AC47F00D321E5 /* QFBAccountTableViewCell.m in Sources */,
 				18CD0C8D21251C0D00DECAA7 /* QFBHomeViewModel.m in Sources */,
 				18CD0C8521251C0D00DECAA7 /* QFBHomeTableView.m in Sources */,
