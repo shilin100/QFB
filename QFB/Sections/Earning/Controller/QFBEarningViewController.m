@@ -35,8 +35,8 @@
 //    self.navigationItem.rightBarButtonItem = doneButtonItem;
 
     [self setupUI];
-
     [self bind];
+    
 }
 
 -(void)clickRuleBtn{
