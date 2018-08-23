@@ -84,7 +84,6 @@
             
             [signal5 subscribeNext:^(id  _Nullable x) {
                 containerView.memberLabel.text = x[@"data"][@"roleName"];
-
                 
             }];
 
