@@ -20,19 +20,31 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recent_head_icon" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-2M-PxE">
-                        <rect key="frame" x="10" y="27" width="16" height="16"/>
+                        <rect key="frame" x="20" y="27" width="16" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="aE2-Vs-YRe"/>
                             <constraint firstAttribute="width" constant="16" id="ppk-Eb-mEY"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身份证认证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWD-yA-WHT">
+                        <rect key="frame" x="46" y="25" width="87" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="IWD-yA-WHT" firstAttribute="leading" secondItem="eWD-2M-PxE" secondAttribute="trailing" constant="10" id="UMM-WR-7ES"/>
                     <constraint firstItem="eWD-2M-PxE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VDG-MB-eFt"/>
-                    <constraint firstItem="eWD-2M-PxE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cs7-4s-M3C"/>
+                    <constraint firstItem="eWD-2M-PxE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cs7-4s-M3C"/>
+                    <constraint firstItem="IWD-yA-WHT" firstAttribute="centerY" secondItem="eWD-2M-PxE" secondAttribute="centerY" id="wp1-Q6-TtK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="img" destination="eWD-2M-PxE" id="UkF-3M-6M4"/>
+                <outlet property="lab" destination="IWD-yA-WHT" id="ihD-xc-2ug"/>
+            </connections>
             <point key="canvasLocation" x="115.5" y="71.5"/>
         </tableViewCell>
     </objects>

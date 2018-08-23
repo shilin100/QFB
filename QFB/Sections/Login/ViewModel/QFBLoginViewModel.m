@@ -42,6 +42,9 @@
         [kDefault setObject:data[@"blackNum"]  forKey:ALIPAY_ACCOUNTk];
         [kDefault setObject:data[@"card"]  forKey:USER_IDCARDk];
         [kDefault setObject:data[@"realName"]  forKey:USER_REALNAMEk];
+        [kDefault setObject:data[@"phone"]  forKey:USER_PHONE];
+        [kDefault setObject:data[@"blackAccountName"]  forKey:USER_BAN];
+        [kDefault setObject:data[@"blackNum"]  forKey:USER_BN];
 
         
         [kDefault setBool:YES forKey:IS_LOGIN];

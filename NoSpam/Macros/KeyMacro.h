@@ -21,6 +21,9 @@
 #define ALIPAY_NAMEk @"alipay_name"
 #define USER_IDCARDk @"user_idcard"
 #define USER_REALNAMEk @"user_realname"
+#define USER_PHONE @"user_phone"
+#define USER_BAN @"user_blackAccountName"
+#define USER_BN @"user_blackNum"
 
 
 
