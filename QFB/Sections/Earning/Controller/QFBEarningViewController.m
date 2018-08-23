@@ -80,7 +80,7 @@
         WantMachineViewController * vc = [WantMachineViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }];
-
+    
     
     
     [self.viewModel.getDataCommand execute:self.containerView];
