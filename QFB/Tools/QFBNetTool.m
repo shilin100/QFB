@@ -66,7 +66,11 @@
             [SVProgressHUD dismiss];
             [sub sendNext:responseObject];
         } else {
-            [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
+            if (!IS_OBJECT_EMPTY([responseObject objectForKey:@"msg"]) ) {
+                [SVProgressHUD showErrorWithStatus:[responseObject objectForKey:@"msg"]];
+            }else{
+                [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
+            }
         }
         
         [sub sendCompleted];

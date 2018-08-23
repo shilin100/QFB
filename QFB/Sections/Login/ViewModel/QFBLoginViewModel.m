@@ -50,7 +50,6 @@
         [kDefault setBool:YES forKey:IS_LOGIN];
     }];
     return signal;
-    
 }
 
 -(instancetype)init

@@ -106,7 +106,7 @@
             make.centerY.equalTo(memberIcon);
             make.left.equalTo(memberIcon.mas_right).offset(7);
             make.height.mas_equalTo(@20);
-            make.width.mas_equalTo(@80);
+            make.width.greaterThanOrEqualTo(@80);
         }];
 
         UIImageView * moreArrow = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
