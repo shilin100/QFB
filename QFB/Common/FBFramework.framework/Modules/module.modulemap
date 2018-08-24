@@ -1,0 +1,6 @@
+framework module FBFramework {
+  umbrella header "FBFramework.h"
+
+  export *
+  module * { export * }
+}

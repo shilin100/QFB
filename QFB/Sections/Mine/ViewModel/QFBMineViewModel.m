@@ -84,7 +84,6 @@
             
             [signal5 subscribeNext:^(id  _Nullable x) {
                 containerView.memberLabel.text = x[@"data"][@"roleName"];
-
                 
             }];
 
@@ -107,10 +106,8 @@
                     //                    NSLog(@"结束了");
                 }];
             }];
-            
-            
-            
         }];
+        
         _myServiceCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
 

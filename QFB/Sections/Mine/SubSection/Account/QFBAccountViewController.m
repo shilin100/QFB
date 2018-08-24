@@ -149,7 +149,7 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
         }
 
     } andFaild:^(NSError *error) {
-
+        
     }];
 
     
