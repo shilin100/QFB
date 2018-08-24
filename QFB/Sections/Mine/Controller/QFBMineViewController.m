@@ -13,6 +13,7 @@
 #import "QFBAddressViewController.h"
 #import "QFBMyProtocolViewController.h"
 #import "QFBAccountViewController.h"
+#import "QFBDrawMoneyController.h"
 
 @interface QFBMineViewController ()
 @property(nonatomic,strong)QFBMineView *containerView;
@@ -52,8 +53,10 @@
     //    @weakify(self)
     
     [[self.containerView.withdrawBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        [SVProgressHUD showErrorWithStatus:@"暂未开放"];
+//        [SVProgressHUD showErrorWithStatus:@"暂未开放"];
         
+        QFBDrawMoneyController *vc = [[QFBDrawMoneyController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
 //        WantMachineViewController * vc = [WantMachineViewController new];
 //        [self.navigationController pushViewController:vc animated:YES];
