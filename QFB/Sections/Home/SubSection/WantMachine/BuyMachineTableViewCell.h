@@ -10,8 +10,8 @@
 #import "QFBHomeModel.h"
 @interface BuyMachineTableViewCell : UITableViewCell
 
-@property (nonatomic, copy) void (^addButtonClick)(NSString *countString,BuyMachine *bMachine);
-@property (nonatomic, copy) void (^decreaseButtonClick)(NSString *countString,BuyMachine *bMachine);
-- (void)getDataWithModel:(id)model  index:(NSInteger)index count:(NSInteger)count;
+@property (nonatomic, copy) void (^buttonClick)(BOOL isClick);
+
+- (void)getDataWithModel:(BuyMachine *)model;
 
 @end

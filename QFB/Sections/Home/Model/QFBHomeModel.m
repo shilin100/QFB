@@ -11,16 +11,32 @@
 @implementation RootingModel
 
 @end
+
+
 @implementation MenuModel
 
 @end
 
 @implementation BuyMachine
-
+-(instancetype)init
+{
+    if (self = [super init]) {
+        [BuyMachine mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+            return @{
+                     @"ID" : @"id",
+                     };
+        }];
+    }
+    return self;
+}
 @end
+
+
 @implementation PosMachine
 
 @end
+
+
 @implementation FriendUpgrade
 
 @end
