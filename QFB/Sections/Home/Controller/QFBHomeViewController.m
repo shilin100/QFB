@@ -71,7 +71,7 @@
             BusinessInformationViewController * vc = [BusinessInformationViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
-        if ([temp isEqualToString:@"邀请盟友"]) {
+        if ([temp isEqualToString:@"邀请合伙人"]) {
             QFBInvitingAnAllyController * vc = [QFBInvitingAnAllyController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
@@ -83,11 +83,11 @@
             MachineActivateViewController * vc = [MachineActivateViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
-        if ([temp isEqualToString:@"盟友升级"]) {
+        if ([temp isEqualToString:@"合伙人升级"]) {
             FriendUpgradeViewController * vc = [FriendUpgradeViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
-        if ([temp isEqualToString:@"盟友通讯"]) {
+        if ([temp isEqualToString:@"合伙人通讯"]) {
             FriendContactViewController * vc = [FriendContactViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }

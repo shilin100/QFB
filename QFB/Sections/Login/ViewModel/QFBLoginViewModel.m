@@ -31,20 +31,21 @@
 
     RACSignal * signal = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/user/login.action",BASEURL] withParamater:parameter];
     [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"登录成功返回的数据：%@",x);
         NSDictionary * data = x[@"data"];
         [kDefault setObject:self.userName forKey:USERNAMEk];
         [kDefault setObject:self.password forKey:PASSWORDk];
-        [kDefault setObject:data[@"userPicture"] forKey:USER_HEAD_IMGk];
-        [kDefault setObject:data[@"nickName"]  forKey:NICK_NAMEk];
-        [kDefault setObject:data[@"id"]  forKey:USER_IDk];
-        [kDefault setObject:data[@"roleId"]  forKey:ROLE_IDk];
-        [kDefault setObject:data[@"blackAccountName"]  forKey:ALIPAY_NAMEk];
-        [kDefault setObject:data[@"blackNum"]  forKey:ALIPAY_ACCOUNTk];
-        [kDefault setObject:data[@"card"]  forKey:USER_IDCARDk];
-        [kDefault setObject:data[@"realName"]  forKey:USER_REALNAMEk];
-        [kDefault setObject:data[@"phone"]  forKey:USER_PHONE];
-        [kDefault setObject:data[@"blackAccountName"]  forKey:USER_BAN];
-        [kDefault setObject:data[@"blackNum"]  forKey:USER_BN];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"userPicture"]) forKey:USER_HEAD_IMGk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"nickName"])  forKey:NICK_NAMEk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"id"])  forKey:USER_IDk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"roleId"])  forKey:ROLE_IDk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackAccountName"])  forKey:ALIPAY_NAMEk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackNum"])  forKey:ALIPAY_ACCOUNTk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"card"])  forKey:USER_IDCARDk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"realName"])  forKey:USER_REALNAMEk];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"phone"])  forKey:USER_PHONE];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackAccountName"])  forKey:USER_BAN];
+        [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackNum"])  forKey:USER_BN];
 
         
         [kDefault setBool:YES forKey:IS_LOGIN];
