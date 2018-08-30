@@ -10,6 +10,24 @@
 
 @implementation DCSpeedy
 
++ (BOOL)isPrice:(NSString *) price {
+    NSString *format =@"([1-9]([0-9]+)?(.[0-9]{1,2})?$)|((0){1}$)|(^[0-9].0-9?$)";
+    NSPredicate *regextest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", format];
+    if ([regextest evaluateWithObject:price] == YES)
+        return YES;
+    else
+        return NO;
+}
+
+//获取当地时间
++ (int)getCurrentNumberTime
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd"];
+    NSString *dateTime = [formatter stringFromDate:[NSDate date]];
+    return [dateTime intValue];
+}
+
 #pragma mark - base64图片转编码
 + (NSString *)UIImageToBase64Str:(UIImage *) image
 {

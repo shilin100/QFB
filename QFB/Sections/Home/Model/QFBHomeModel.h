@@ -30,13 +30,14 @@
 @interface BuyMachine : NSObject
 @property(nonatomic,strong) NSString * roleId;
 @property(nonatomic,strong) NSString * remarks;
-@property(nonatomic,strong) NSString * id;
-@property(nonatomic,strong) NSString * price;
-@property(nonatomic,strong) NSString * count;
-@property(nonatomic,strong) NSString * remarksTwo;
+@property(nonatomic,strong) NSString * ID;
+@property(nonatomic,assign) double     price;           // 价格
+@property(nonatomic,assign) int        count;           // 激活数量
+@property(nonatomic,strong) NSString * remarksTwo;      // 图片
 @property(nonatomic,strong) NSString * posTypeId;
-@property(nonatomic,strong) NSString * remarksThree;
+@property(nonatomic,assign) double     remarksThree;    // 返现
 @property(nonatomic,strong) NSString * oBrandId;
+@property(nonatomic,assign) int        selectorCount;   // 已选数量
 @end
 
 @interface PosMachine : NSObject

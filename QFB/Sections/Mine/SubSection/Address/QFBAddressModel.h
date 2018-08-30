@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface QFBAddressModel : NSObject
-@property (nonatomic , assign) NSInteger              userId;
+@property (nonatomic , assign) NSInteger             userId;
 @property (nonatomic , copy) NSString              * address;
 @property (nonatomic , copy) NSString              * phone;
-@property (nonatomic , assign) NSInteger              ID;
-@property (nonatomic , assign) NSInteger              defaultAddress;
-@property (nonatomic , assign) NSInteger              isremove;
+@property (nonatomic , copy) NSString              * ID;
+@property (nonatomic , assign) NSInteger             defaultAddress;
+@property (nonatomic , assign) NSInteger             isremove;
 @property (nonatomic , copy) NSString              * remarks;
 @property (nonatomic , copy) NSString              * reserveOne;
 @property (nonatomic , copy) NSString              * reserve;

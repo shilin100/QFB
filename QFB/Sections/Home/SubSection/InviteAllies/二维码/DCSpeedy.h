@@ -11,6 +11,16 @@
 
 @interface DCSpeedy : NSObject
 
+/**
+ 判断是否是金额
+ */
++ (BOOL)isPrice:(NSString *) price;
+
+/**
+ 获取当前几号
+ */
++ (int)getCurrentNumberTime;
+
 #pragma mark - 图片转base64编码
 + (NSString *)UIImageToBase64Str:(UIImage *) image;
 

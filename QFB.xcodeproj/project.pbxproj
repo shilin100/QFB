@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18064314212E3E1E00EA718D /* QFBDrawMoneyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064313212E3E1E00EA718D /* QFBDrawMoneyLayout.m */; };
+		18064317212E4B0000EA718D /* QFBDrawMoneyBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064316212E4B0000EA718D /* QFBDrawMoneyBottomView.m */; };
+		1806431B212E4B2500EA718D /* QFBDrawMoneyBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1806431A212E4B2500EA718D /* QFBDrawMoneyBottomView.xib */; };
+		1806431E212E618900EA718D /* QFBDrawMoneyListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806431D212E618900EA718D /* QFBDrawMoneyListModel.m */; };
+		18064321212E66A200EA718D /* QFBDrawMoneyCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064320212E66A200EA718D /* QFBDrawMoneyCellModel.m */; };
+		18064325212EAF1200EA718D /* QFBDrawSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064323212EAF1200EA718D /* QFBDrawSuccessController.m */; };
+		18064326212EAF1200EA718D /* QFBDrawSuccessController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18064324212EAF1200EA718D /* QFBDrawSuccessController.xib */; };
+		18151547212FA49100BBBE4F /* FBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18151546212FA49100BBBE4F /* FBFramework.framework */; };
+		1815154B212FD0AA00BBBE4F /* QFBDistributionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815154A212FD0AA00BBBE4F /* QFBDistributionController.m */; };
+		18151552212FD13D00BBBE4F /* QFBDistributionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151550212FD13D00BBBE4F /* QFBDistributionCell.m */; };
+		18151553212FD13D00BBBE4F /* QFBDistributionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18151551212FD13D00BBBE4F /* QFBDistributionCell.xib */; };
+		18151556212FD33E00BBBE4F /* QFBDistributionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151555212FD33E00BBBE4F /* QFBDistributionHeaderView.m */; };
+		18151558212FD36B00BBBE4F /* QFBDistributionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18151557212FD36B00BBBE4F /* QFBDistributionHeaderView.xib */; };
+		1815155E212FD87400BBBE4F /* QFBAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815155D212FD87400BBBE4F /* QFBAddressModel.m */; };
+		18151561212FDA8E00BBBE4F /* QFBDistributionFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151560212FDA8E00BBBE4F /* QFBDistributionFootView.m */; };
+		18151563212FDA9E00BBBE4F /* QFBDistributionFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18151562212FDA9E00BBBE4F /* QFBDistributionFootView.xib */; };
+		18151566212FE73800BBBE4F /* QFBDistributionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151565212FE73800BBBE4F /* QFBDistributionModel.m */; };
+		18151569212FEA3B00BBBE4F /* QFBDistributionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151568212FEA3B00BBBE4F /* QFBDistributionCellModel.m */; };
+		182772F5212D65CE00E680DD /* QFBDrawMoneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182772F4212D65CE00E680DD /* QFBDrawMoneyController.m */; };
+		182772F8212D675900E680DD /* QFBDrawMoneyCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182772F7212D675900E680DD /* QFBDrawMoneyCollectionView.m */; };
+		182772FF212D67B200E680DD /* QFBDrawMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182772FD212D67B200E680DD /* QFBDrawMoneyCell.m */; };
+		18277300212D67B200E680DD /* QFBDrawMoneyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182772FE212D67B200E680DD /* QFBDrawMoneyCell.xib */; };
+		18415B252133A39B00CBC3FB /* QFBPaymentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18415B232133A39B00CBC3FB /* QFBPaymentController.m */; };
+		18415B262133A39B00CBC3FB /* QFBPaymentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18415B242133A39B00CBC3FB /* QFBPaymentController.xib */; };
+		18415B292133AE1A00CBC3FB /* QFBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18415B282133AE1A00CBC3FB /* QFBUserModel.m */; };
 		18CD0C8021251C0D00DECAA7 /* QFBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C6521251C0C00DECAA7 /* QFBHomeViewController.m */; };
 		18CD0C8121251C0D00DECAA7 /* QFBHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C6921251C0C00DECAA7 /* QFBHomeModel.m */; };
 		18CD0C8221251C0D00DECAA7 /* QFBHomeTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C6E21251C0C00DECAA7 /* QFBHomeTitleTableViewCell.xib */; };
@@ -84,7 +109,6 @@
 		18CD0DD3212D4B4C00DECAA7 /* AllianceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DD2212D4B4C00DECAA7 /* AllianceModel.m */; };
 		18CD0DD7212E427000DECAA7 /* AccounMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DD5212E427000DECAA7 /* AccounMessageCell.m */; };
 		18CD0DD8212E427000DECAA7 /* AccounMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DD6212E427000DECAA7 /* AccounMessageCell.xib */; };
-		18CD0DDA212E5C0400DECAA7 /* FBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CD0DD9212E5C0400DECAA7 /* FBFramework.framework */; };
 		18CD0DE4212E623600DECAA7 /* ConfirmPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DE2212E623600DECAA7 /* ConfirmPersonViewController.m */; };
 		18CD0DE5212E623600DECAA7 /* ConfirmPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0DE3212E623600DECAA7 /* ConfirmPersonViewController.xib */; };
 		18CD0DE9212E805500DECAA7 /* ConfirmAlipayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0DE7212E805500DECAA7 /* ConfirmAlipayViewController.m */; };
@@ -118,7 +142,6 @@
 		522B73F1212A56EE00500B03 /* QFBAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B73EF212A56EE00500B03 /* QFBAddressViewController.xib */; };
 		522B73F5212A57F900500B03 /* QFBAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 522B73F3212A57F900500B03 /* QFBAddressTableViewCell.m */; };
 		522B73F6212A57F900500B03 /* QFBAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B73F4212A57F900500B03 /* QFBAddressTableViewCell.xib */; };
-		522B73F9212A5E4200500B03 /* QFBAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 522B73F8212A5E4200500B03 /* QFBAddressModel.m */; };
 		522B7408212A637000500B03 /* QFBAddAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522B7406212A637000500B03 /* QFBAddAddressViewController.m */; };
 		522B7409212A637000500B03 /* QFBAddAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B7407212A637000500B03 /* QFBAddAddressViewController.xib */; };
 		522B740D212A652F00500B03 /* QFBAddAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 522B740B212A652F00500B03 /* QFBAddAddressTableViewCell.m */; };
@@ -204,6 +227,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18064312212E3E1E00EA718D /* QFBDrawMoneyLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyLayout.h; sourceTree = "<group>"; };
+		18064313212E3E1E00EA718D /* QFBDrawMoneyLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyLayout.m; sourceTree = "<group>"; };
+		18064315212E4B0000EA718D /* QFBDrawMoneyBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyBottomView.h; sourceTree = "<group>"; };
+		18064316212E4B0000EA718D /* QFBDrawMoneyBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyBottomView.m; sourceTree = "<group>"; };
+		1806431A212E4B2500EA718D /* QFBDrawMoneyBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBDrawMoneyBottomView.xib; sourceTree = "<group>"; };
+		1806431C212E618900EA718D /* QFBDrawMoneyListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyListModel.h; sourceTree = "<group>"; };
+		1806431D212E618900EA718D /* QFBDrawMoneyListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyListModel.m; sourceTree = "<group>"; };
+		1806431F212E66A200EA718D /* QFBDrawMoneyCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyCellModel.h; sourceTree = "<group>"; };
+		18064320212E66A200EA718D /* QFBDrawMoneyCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyCellModel.m; sourceTree = "<group>"; };
+		18064322212EAF1200EA718D /* QFBDrawSuccessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawSuccessController.h; sourceTree = "<group>"; };
+		18064323212EAF1200EA718D /* QFBDrawSuccessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawSuccessController.m; sourceTree = "<group>"; };
+		18064324212EAF1200EA718D /* QFBDrawSuccessController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBDrawSuccessController.xib; sourceTree = "<group>"; };
+		18151546212FA49100BBBE4F /* FBFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBFramework.framework; sourceTree = "<group>"; };
+		18151549212FD0AA00BBBE4F /* QFBDistributionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionController.h; sourceTree = "<group>"; };
+		1815154A212FD0AA00BBBE4F /* QFBDistributionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionController.m; sourceTree = "<group>"; };
+		1815154F212FD13D00BBBE4F /* QFBDistributionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionCell.h; sourceTree = "<group>"; };
+		18151550212FD13D00BBBE4F /* QFBDistributionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionCell.m; sourceTree = "<group>"; };
+		18151551212FD13D00BBBE4F /* QFBDistributionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBDistributionCell.xib; sourceTree = "<group>"; };
+		18151554212FD33E00BBBE4F /* QFBDistributionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionHeaderView.h; sourceTree = "<group>"; };
+		18151555212FD33E00BBBE4F /* QFBDistributionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionHeaderView.m; sourceTree = "<group>"; };
+		18151557212FD36B00BBBE4F /* QFBDistributionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBDistributionHeaderView.xib; sourceTree = "<group>"; };
+		1815155C212FD87400BBBE4F /* QFBAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBAddressModel.h; sourceTree = "<group>"; };
+		1815155D212FD87400BBBE4F /* QFBAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBAddressModel.m; sourceTree = "<group>"; };
+		1815155F212FDA8E00BBBE4F /* QFBDistributionFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionFootView.h; sourceTree = "<group>"; };
+		18151560212FDA8E00BBBE4F /* QFBDistributionFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionFootView.m; sourceTree = "<group>"; };
+		18151562212FDA9E00BBBE4F /* QFBDistributionFootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBDistributionFootView.xib; sourceTree = "<group>"; };
+		18151564212FE73800BBBE4F /* QFBDistributionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionModel.h; sourceTree = "<group>"; };
+		18151565212FE73800BBBE4F /* QFBDistributionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionModel.m; sourceTree = "<group>"; };
+		18151567212FEA3B00BBBE4F /* QFBDistributionCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionCellModel.h; sourceTree = "<group>"; };
+		18151568212FEA3B00BBBE4F /* QFBDistributionCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionCellModel.m; sourceTree = "<group>"; };
+		182772F3212D65CE00E680DD /* QFBDrawMoneyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyController.h; sourceTree = "<group>"; };
+		182772F4212D65CE00E680DD /* QFBDrawMoneyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyController.m; sourceTree = "<group>"; };
+		182772F6212D675900E680DD /* QFBDrawMoneyCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyCollectionView.h; sourceTree = "<group>"; };
+		182772F7212D675900E680DD /* QFBDrawMoneyCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyCollectionView.m; sourceTree = "<group>"; };
+		182772FC212D67B200E680DD /* QFBDrawMoneyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyCell.h; sourceTree = "<group>"; };
+		182772FD212D67B200E680DD /* QFBDrawMoneyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyCell.m; sourceTree = "<group>"; };
+		182772FE212D67B200E680DD /* QFBDrawMoneyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBDrawMoneyCell.xib; sourceTree = "<group>"; };
+		18415B222133A39B00CBC3FB /* QFBPaymentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBPaymentController.h; sourceTree = "<group>"; };
+		18415B232133A39B00CBC3FB /* QFBPaymentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBPaymentController.m; sourceTree = "<group>"; };
+		18415B242133A39B00CBC3FB /* QFBPaymentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBPaymentController.xib; sourceTree = "<group>"; };
+		18415B272133AE1A00CBC3FB /* QFBUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBUserModel.h; sourceTree = "<group>"; };
+		18415B282133AE1A00CBC3FB /* QFBUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBUserModel.m; sourceTree = "<group>"; };
 		18CD0C6521251C0C00DECAA7 /* QFBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBHomeViewController.m; sourceTree = "<group>"; };
 		18CD0C6621251C0C00DECAA7 /* QFBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeViewController.h; sourceTree = "<group>"; };
 		18CD0C6821251C0C00DECAA7 /* QFBHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBHomeModel.h; sourceTree = "<group>"; };
@@ -329,7 +394,6 @@
 		18CD0DD4212E427000DECAA7 /* AccounMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccounMessageCell.h; sourceTree = "<group>"; };
 		18CD0DD5212E427000DECAA7 /* AccounMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccounMessageCell.m; sourceTree = "<group>"; };
 		18CD0DD6212E427000DECAA7 /* AccounMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccounMessageCell.xib; sourceTree = "<group>"; };
-		18CD0DD9212E5C0400DECAA7 /* FBFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBFramework.framework; sourceTree = "<group>"; };
 		18CD0DE1212E623600DECAA7 /* ConfirmPersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmPersonViewController.h; sourceTree = "<group>"; };
 		18CD0DE2212E623600DECAA7 /* ConfirmPersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfirmPersonViewController.m; sourceTree = "<group>"; };
 		18CD0DE3212E623600DECAA7 /* ConfirmPersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmPersonViewController.xib; sourceTree = "<group>"; };
@@ -391,8 +455,6 @@
 		522B73F2212A57F900500B03 /* QFBAddressTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAddressTableViewCell.h; sourceTree = "<group>"; };
 		522B73F3212A57F900500B03 /* QFBAddressTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAddressTableViewCell.m; sourceTree = "<group>"; };
 		522B73F4212A57F900500B03 /* QFBAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBAddressTableViewCell.xib; sourceTree = "<group>"; };
-		522B73F7212A5E4200500B03 /* QFBAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAddressModel.h; sourceTree = "<group>"; };
-		522B73F8212A5E4200500B03 /* QFBAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAddressModel.m; sourceTree = "<group>"; };
 		522B7405212A637000500B03 /* QFBAddAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBAddAddressViewController.h; sourceTree = "<group>"; };
 		522B7406212A637000500B03 /* QFBAddAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBAddAddressViewController.m; sourceTree = "<group>"; };
 		522B7407212A637000500B03 /* QFBAddAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBAddAddressViewController.xib; sourceTree = "<group>"; };
@@ -521,7 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */,
-				18CD0DDA212E5C0400DECAA7 /* FBFramework.framework in Frameworks */,
+				18151547212FA49100BBBE4F /* FBFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +606,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18151548212FD08B00BBBE4F /* Distribution */ = {
+			isa = PBXGroup;
+			children = (
+				1815154E212FD0BD00BBBE4F /* C */,
+				1815154D212FD0B500BBBE4F /* V */,
+				1815154C212FD0AF00BBBE4F /* M */,
+			);
+			path = Distribution;
+			sourceTree = "<group>";
+		};
+		1815154C212FD0AF00BBBE4F /* M */ = {
+			isa = PBXGroup;
+			children = (
+				18151564212FE73800BBBE4F /* QFBDistributionModel.h */,
+				18151565212FE73800BBBE4F /* QFBDistributionModel.m */,
+				18151567212FEA3B00BBBE4F /* QFBDistributionCellModel.h */,
+				18151568212FEA3B00BBBE4F /* QFBDistributionCellModel.m */,
+				18415B272133AE1A00CBC3FB /* QFBUserModel.h */,
+				18415B282133AE1A00CBC3FB /* QFBUserModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		1815154D212FD0B500BBBE4F /* V */ = {
+			isa = PBXGroup;
+			children = (
+				1815154F212FD13D00BBBE4F /* QFBDistributionCell.h */,
+				18151550212FD13D00BBBE4F /* QFBDistributionCell.m */,
+				18151551212FD13D00BBBE4F /* QFBDistributionCell.xib */,
+				18151554212FD33E00BBBE4F /* QFBDistributionHeaderView.h */,
+				18151555212FD33E00BBBE4F /* QFBDistributionHeaderView.m */,
+				18151557212FD36B00BBBE4F /* QFBDistributionHeaderView.xib */,
+				1815155F212FDA8E00BBBE4F /* QFBDistributionFootView.h */,
+				18151560212FDA8E00BBBE4F /* QFBDistributionFootView.m */,
+				18151562212FDA9E00BBBE4F /* QFBDistributionFootView.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		1815154E212FD0BD00BBBE4F /* C */ = {
+			isa = PBXGroup;
+			children = (
+				18151549212FD0AA00BBBE4F /* QFBDistributionController.h */,
+				1815154A212FD0AA00BBBE4F /* QFBDistributionController.m */,
+				18415B222133A39B00CBC3FB /* QFBPaymentController.h */,
+				18415B232133A39B00CBC3FB /* QFBPaymentController.m */,
+				18415B242133A39B00CBC3FB /* QFBPaymentController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		182772EF212D653600E680DD /* 提现 */ = {
+			isa = PBXGroup;
+			children = (
+				182772F0212D654800E680DD /* C */,
+				182772F2212D655600E680DD /* V */,
+				182772F1212D654E00E680DD /* M */,
+			);
+			path = "提现";
+			sourceTree = "<group>";
+		};
+		182772F0212D654800E680DD /* C */ = {
+			isa = PBXGroup;
+			children = (
+				182772F3212D65CE00E680DD /* QFBDrawMoneyController.h */,
+				182772F4212D65CE00E680DD /* QFBDrawMoneyController.m */,
+				18064322212EAF1200EA718D /* QFBDrawSuccessController.h */,
+				18064323212EAF1200EA718D /* QFBDrawSuccessController.m */,
+				18064324212EAF1200EA718D /* QFBDrawSuccessController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		182772F1212D654E00E680DD /* M */ = {
+			isa = PBXGroup;
+			children = (
+				1806431C212E618900EA718D /* QFBDrawMoneyListModel.h */,
+				1806431D212E618900EA718D /* QFBDrawMoneyListModel.m */,
+				1806431F212E66A200EA718D /* QFBDrawMoneyCellModel.h */,
+				18064320212E66A200EA718D /* QFBDrawMoneyCellModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		182772F2212D655600E680DD /* V */ = {
+			isa = PBXGroup;
+			children = (
+				18064315212E4B0000EA718D /* QFBDrawMoneyBottomView.h */,
+				18064316212E4B0000EA718D /* QFBDrawMoneyBottomView.m */,
+				1806431A212E4B2500EA718D /* QFBDrawMoneyBottomView.xib */,
+				182772F6212D675900E680DD /* QFBDrawMoneyCollectionView.h */,
+				182772F7212D675900E680DD /* QFBDrawMoneyCollectionView.m */,
+				18064312212E3E1E00EA718D /* QFBDrawMoneyLayout.h */,
+				18064313212E3E1E00EA718D /* QFBDrawMoneyLayout.m */,
+				182772FC212D67B200E680DD /* QFBDrawMoneyCell.h */,
+				182772FD212D67B200E680DD /* QFBDrawMoneyCell.m */,
+				182772FE212D67B200E680DD /* QFBDrawMoneyCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 		18CD0C6421251C0C00DECAA7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -643,6 +806,7 @@
 		18CD0CC1212573C200DECAA7 /* SubSection */ = {
 			isa = PBXGroup;
 			children = (
+				18151548212FD08B00BBBE4F /* Distribution */,
 				18CD0DB9212D372D00DECAA7 /* FriendContact */,
 				18CD0DA3212D03C800DECAA7 /* Ally to upgra */,
 				18CD0D9D212D019300DECAA7 /* Real-name authentication */,
@@ -733,10 +897,10 @@
 		18CD0D64212C19BA00DECAA7 /* 二维码 */ = {
 			isa = PBXGroup;
 			children = (
+				18CD0D68212C19BA00DECAA7 /* DCSpeedy.h */,
 				18CD0D65212C19BA00DECAA7 /* DCSpeedy.m */,
 				18CD0D66212C19BA00DECAA7 /* UIView+DCExtension.m */,
 				18CD0D67212C19BA00DECAA7 /* UIView+DCExtension.h */,
-				18CD0D68212C19BA00DECAA7 /* DCSpeedy.h */,
 				18CD0D69212C19BA00DECAA7 /* M */,
 				18CD0D6C212C19BA00DECAA7 /* C */,
 				18CD0D6F212C19BA00DECAA7 /* V */,
@@ -765,19 +929,19 @@
 		18CD0D6F212C19BA00DECAA7 /* V */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0D70212C19BA00DECAA7 /* QFBInvitingBottomView.h */,
-				18CD0D71212C19BA00DECAA7 /* QFBInvitingBottomCell.h */,
-				18CD0D72212C19BA00DECAA7 /* QFBInvitingTitleView.xib */,
+				18CD0D7C212C19BA00DECAA7 /* QFBNavBarView.h */,
+				18CD0D75212C19BA00DECAA7 /* QFBNavBarView.m */,
 				18CD0D73212C19BA00DECAA7 /* QFBNavBarView.xib */,
 				18CD0D74212C19BA00DECAA7 /* QFBInvitingBackView.h */,
-				18CD0D75212C19BA00DECAA7 /* QFBNavBarView.m */,
-				18CD0D76212C19BA00DECAA7 /* QFBInvitingTitleView.m */,
-				18CD0D77212C19BA00DECAA7 /* QFBInvitingBottomCell.xib */,
-				18CD0D78212C19BA00DECAA7 /* QFBInvitingBottomView.m */,
-				18CD0D79212C19BA00DECAA7 /* QFBInvitingBottomCell.m */,
 				18CD0D7A212C19BA00DECAA7 /* QFBInvitingBackView.m */,
 				18CD0D7B212C19BA00DECAA7 /* QFBInvitingTitleView.h */,
-				18CD0D7C212C19BA00DECAA7 /* QFBNavBarView.h */,
+				18CD0D76212C19BA00DECAA7 /* QFBInvitingTitleView.m */,
+				18CD0D72212C19BA00DECAA7 /* QFBInvitingTitleView.xib */,
+				18CD0D70212C19BA00DECAA7 /* QFBInvitingBottomView.h */,
+				18CD0D78212C19BA00DECAA7 /* QFBInvitingBottomView.m */,
+				18CD0D71212C19BA00DECAA7 /* QFBInvitingBottomCell.h */,
+				18CD0D79212C19BA00DECAA7 /* QFBInvitingBottomCell.m */,
+				18CD0D77212C19BA00DECAA7 /* QFBInvitingBottomCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -1038,6 +1202,7 @@
 		520375982117FC450067316B /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				182772EF212D653600E680DD /* 提现 */,
 				527086D821269B09009FB9F0 /* SubSection */,
 				527086D721269AFC009FB9F0 /* ViewModel */,
 				527086D621269AEF009FB9F0 /* Controller */,
@@ -1112,8 +1277,8 @@
 				522B73F2212A57F900500B03 /* QFBAddressTableViewCell.h */,
 				522B73F3212A57F900500B03 /* QFBAddressTableViewCell.m */,
 				522B73F4212A57F900500B03 /* QFBAddressTableViewCell.xib */,
-				522B73F7212A5E4200500B03 /* QFBAddressModel.h */,
-				522B73F8212A5E4200500B03 /* QFBAddressModel.m */,
+				1815155C212FD87400BBBE4F /* QFBAddressModel.h */,
+				1815155D212FD87400BBBE4F /* QFBAddressModel.m */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1371,7 +1536,7 @@
 		52EEF94C211A854200D54153 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0DD9212E5C0400DECAA7 /* FBFramework.framework */,
+				18151546212FA49100BBBE4F /* FBFramework.framework */,
 				52EEF956211A871300D54153 /* TabbarConfig */,
 			);
 			path = Common;
@@ -1558,6 +1723,7 @@
 				522B73F1212A56EE00500B03 /* QFBAddressViewController.xib in Resources */,
 				18CD0D85212C19BA00DECAA7 /* QFBInvitingBottomCell.xib in Resources */,
 				5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */,
+				18151563212FDA9E00BBBE4F /* QFBDistributionFootView.xib in Resources */,
 				18CD0D54212C191000DECAA7 /* AuthenticationViewController.xib in Resources */,
 				527086E42126A6FA009FB9F0 /* QFBOrderTableViewCell.xib in Resources */,
 				527086C6212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.xib in Resources */,
@@ -1570,6 +1736,7 @@
 				18CD0DB2212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.xib in Resources */,
 				18CD0D81212C19BA00DECAA7 /* QFBInvitingTitleView.xib in Resources */,
 				18CD0C8221251C0D00DECAA7 /* QFBHomeTitleTableViewCell.xib in Resources */,
+				18151553212FD13D00BBBE4F /* QFBDistributionCell.xib in Resources */,
 				522B7409212A637000500B03 /* QFBAddAddressViewController.xib in Resources */,
 				527086DD21269B20009FB9F0 /* QFBMyOrderViewController.xib in Resources */,
 				18CD0DBE212D374300DECAA7 /* FriendContactViewController.xib in Resources */,
@@ -1577,13 +1744,18 @@
 				18CD0C8821251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.xib in Resources */,
 				520375672117F4BA0067316B /* Assets.xcassets in Resources */,
 				520375652117F4B90067316B /* Main.storyboard in Resources */,
+				18415B262133A39B00CBC3FB /* QFBPaymentController.xib in Resources */,
 				527086BE2123FEA6009FB9F0 /* QFBPersonalEarnViewController.xib in Resources */,
+				18277300212D67B200E680DD /* QFBDrawMoneyCell.xib in Resources */,
 				18CD0D9C212C1AA900DECAA7 /* SubmitView.xib in Resources */,
 				522B73F6212A57F900500B03 /* QFBAddressTableViewCell.xib in Resources */,
 				52C701F4212181C60055C607 /* QFBUpgradeRuleTableViewCell.xib in Resources */,
+				1806431B212E4B2500EA718D /* QFBDrawMoneyBottomView.xib in Resources */,
+				18151558212FD36B00BBBE4F /* QFBDistributionHeaderView.xib in Resources */,
 				18CD0C8C21251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.xib in Resources */,
 				18CD0DE5212E623600DECAA7 /* ConfirmPersonViewController.xib in Resources */,
 				18CD0CA921251C1C00DECAA7 /* QFBAllianceDirectlyTableViewCell.xib in Resources */,
+				18064326212EAF1200EA718D /* QFBDrawSuccessController.xib in Resources */,
 				18CD0C8921251C0D00DECAA7 /* QFBHomeFunctionalCollectionViewCell.xib in Resources */,
 				18CD0D99212C1AA900DECAA7 /* MachineActivateViewController.xib in Resources */,
 				18CD0D62212C196600DECAA7 /* ShopMessageTableViewCell.xib in Resources */,
@@ -1707,9 +1879,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18151561212FDA8E00BBBE4F /* QFBDistributionFootView.m in Sources */,
 				18CD0DD3212D4B4C00DECAA7 /* AllianceModel.m in Sources */,
 				18CD0CE12125913C00DECAA7 /* QFBMineTableView.m in Sources */,
 				18CD0CE02125911400DECAA7 /* QFBMineView.m in Sources */,
+				182772F8212D675900E680DD /* QFBDrawMoneyCollectionView.m in Sources */,
 				18CD0C8121251C0D00DECAA7 /* QFBHomeModel.m in Sources */,
 				18CD0DA7212D040100DECAA7 /* FriendUpgradeViewController.m in Sources */,
 				18CD0CFB212BA83500DECAA7 /* ZZCircleProgress.m in Sources */,
@@ -1719,6 +1893,7 @@
 				524907A3211D852400D1317F /* PNPieChart+InnerRadius80Percent.m in Sources */,
 				18CD0DE4212E623600DECAA7 /* ConfirmPersonViewController.m in Sources */,
 				52490793211D42E500D1317F /* QFBForgetPswViewController.m in Sources */,
+				18064314212E3E1E00EA718D /* QFBDrawMoneyLayout.m in Sources */,
 				5203756D2117F4BA0067316B /* main.m in Sources */,
 				5203755F2117F4B90067316B /* AppDelegate.m in Sources */,
 				18CD0D53212C191000DECAA7 /* AuthenticationViewController.m in Sources */,
@@ -1756,7 +1931,12 @@
 				52EEF94B2119A38F00D54153 /* QFBNetTool.m in Sources */,
 				522B741A212A6CC200500B03 /* UIButton+CZHExtension.m in Sources */,
 				527086C1212400ED009FB9F0 /* QFBPersonalEarnModel.m in Sources */,
+				1806431E212E618900EA718D /* QFBDrawMoneyListModel.m in Sources */,
+				1815155E212FD87400BBBE4F /* QFBAddressModel.m in Sources */,
+				18415B292133AE1A00CBC3FB /* QFBUserModel.m in Sources */,
 				52C701F8212181DB0055C607 /* QFBUpgradeRuleViewController.m in Sources */,
+				18151552212FD13D00BBBE4F /* QFBDistributionCell.m in Sources */,
+				182772F5212D65CE00E680DD /* QFBDrawMoneyController.m in Sources */,
 				527086DC21269B20009FB9F0 /* QFBMyOrderViewController.m in Sources */,
 				18CD0DB8212D335B00DECAA7 /* NSTimer+addition.m in Sources */,
 				52EEF952211A86BB00D54153 /* CustomTabbarTool.m in Sources */,
@@ -1769,6 +1949,7 @@
 				520375BB21196F790067316B /* NSString+Extension.m in Sources */,
 				18CD0D86212C19BA00DECAA7 /* QFBInvitingBottomView.m in Sources */,
 				52C701E121217D720055C607 /* QFBTeamEarnViewController.m in Sources */,
+				18064321212E66A200EA718D /* QFBDrawMoneyCellModel.m in Sources */,
 				52EEF9482119A2CF00D54153 /* RegularHelperUtil.m in Sources */,
 				527086C5212406C5009FB9F0 /* QFBPersonalEarnTableViewCell.m in Sources */,
 				52EEF9452119975B00D54153 /* QFBBaseNaviViewController.m in Sources */,
@@ -1777,15 +1958,19 @@
 				18CD0C8021251C0D00DECAA7 /* QFBHomeViewController.m in Sources */,
 				520375BD21196F790067316B /* UIView+Extension.m in Sources */,
 				5249078E211D273200D1317F /* QFBRegisterStepTwoViewController.m in Sources */,
+				18415B252133A39B00CBC3FB /* QFBPaymentController.m in Sources */,
 				520375AE211823930067316B /* QFBLoginViewController.m in Sources */,
+				18064317212E4B0000EA718D /* QFBDrawMoneyBottomView.m in Sources */,
 				522B73F0212A56EE00500B03 /* QFBAddressViewController.m in Sources */,
 				18CD0C8321251C0D00DECAA7 /* QFBHomeFunctionButtonView.m in Sources */,
 				522B7419212A6CC200500B03 /* CZHAddressPickerView.m in Sources */,
 				18CD0CA621251C1C00DECAA7 /* QFBAllianceViewController.m in Sources */,
 				527086CA2124239F009FB9F0 /* QFBPersonEarnTitleTableViewCell.m in Sources */,
+				18151566212FE73800BBBE4F /* QFBDistributionModel.m in Sources */,
 				18CD0C8621251C0D00DECAA7 /* QFBHomeHotRecommendedTableViewCell.m in Sources */,
 				18CD0D61212C196600DECAA7 /* ShopMessageTableViewCell.m in Sources */,
 				18CD0CC02125484700DECAA7 /* QFBAllianceViewModel.m in Sources */,
+				1815154B212FD0AA00BBBE4F /* QFBDistributionController.m in Sources */,
 				18CD0D5E212C196600DECAA7 /* NoDataView.m in Sources */,
 				5203759D211823150067316B /* QFBTool.m in Sources */,
 				18CD0DBD212D374300DECAA7 /* FriendContactViewController.m in Sources */,
@@ -1802,6 +1987,7 @@
 				5249079D211D6E0B00D1317F /* QFBEarningViewModel.m in Sources */,
 				18CD0CB121251CD100DECAA7 /* NSArray+jlExtension.m in Sources */,
 				18CD0CFA212BA83500DECAA7 /* ZZCountingLabel.m in Sources */,
+				182772FF212D67B200E680DD /* QFBDrawMoneyCell.m in Sources */,
 				52C701EC21217E0E0055C607 /* TeamTradeTableViewCell.m in Sources */,
 				18CD0DAC212D05BA00DECAA7 /* FriendUpgradeViewCell.m in Sources */,
 				527086BD2123FEA6009FB9F0 /* QFBPersonalEarnViewController.m in Sources */,
@@ -1809,6 +1995,7 @@
 				18CD0D9B212C1AA900DECAA7 /* SubmitView.m in Sources */,
 				522B7408212A637000500B03 /* QFBAddAddressViewController.m in Sources */,
 				52C702012123C7FB0055C607 /* QFBBrandEarnViewController.m in Sources */,
+				18064325212EAF1200EA718D /* QFBDrawSuccessController.m in Sources */,
 				52EEF976211C3EB300D54153 /* QFBRegisterViewController.m in Sources */,
 				18CD0DF8212E91A700DECAA7 /* ResetIdCardViewController.m in Sources */,
 				18CD0DE9212E805500DECAA7 /* ConfirmAlipayViewController.m in Sources */,
@@ -1817,10 +2004,11 @@
 				520375BE21196F790067316B /* NSDate+Extension.m in Sources */,
 				520375C42119732B0067316B /* QFBLoginViewModel.m in Sources */,
 				18CD0DB1212D0C5E00DECAA7 /* FriendUpgradeRuleViewController.m in Sources */,
-				522B73F9212A5E4200500B03 /* QFBAddressModel.m in Sources */,
 				18CD0CA721251C1C00DECAA7 /* QFBAllianceTableView.m in Sources */,
 				52C701D221211B4B0055C607 /* QFBEarningCellModel.m in Sources */,
+				18151556212FD33E00BBBE4F /* QFBDistributionHeaderView.m in Sources */,
 				18CD0CCC21257B2400DECAA7 /* InviteAlliesViewController.m in Sources */,
+				18151569212FEA3B00BBBE4F /* QFBDistributionCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

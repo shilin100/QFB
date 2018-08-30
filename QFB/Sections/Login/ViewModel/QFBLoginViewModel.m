@@ -33,6 +33,7 @@
     [signal subscribeNext:^(id  _Nullable x) {
         NSLog(@"登录成功返回的数据：%@",x);
         NSDictionary * data = x[@"data"];
+        
         [kDefault setObject:self.userName forKey:USERNAMEk];
         [kDefault setObject:self.password forKey:PASSWORDk];
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"userPicture"]) forKey:USER_HEAD_IMGk];
