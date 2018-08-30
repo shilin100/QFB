@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *label_name;
 @property (weak, nonatomic) IBOutlet UILabel *label_address;
 @property (weak, nonatomic) IBOutlet UILabel *label_phone;
-
+@property (weak, nonatomic) IBOutlet UILabel *label_prompt;
+@property (nonatomic, strong) QFBAddressModel *addModel;
 
 @end
 
@@ -29,11 +30,31 @@
 
 - (void)loadAddressModel:(QFBAddressModel *)model
 {
+    if (model) {
+        _label_prompt.hidden = YES;
+        _label_name.hidden = NO;
+        _label_phone.hidden = NO;
+        _label_address.hidden = NO;
+    }else{
+        _label_prompt.hidden = NO;
+        _label_name.hidden = YES;
+        _label_phone.hidden = YES;
+        _label_address.hidden = YES;
+    }
     _label_name.text = model.name;
     _label_phone.text = model.phone;
     _label_address.text = model.address;
+    _addModel = model;
 }
 
+- (QFBAddressModel *)getSelelctorAddress
+{
+    return _addModel;
+}
+
+/**
+ 修改地址
+ */
 - (IBAction)pressClick:(id)sender {
     
 }

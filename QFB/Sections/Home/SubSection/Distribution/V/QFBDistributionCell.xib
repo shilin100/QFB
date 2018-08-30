@@ -57,7 +57,7 @@
                 <outlet property="label_left" destination="BCS-g2-X2N" id="E0y-AH-WdP"/>
                 <outlet property="label_right" destination="Jmv-ZX-paB" id="Aea-Jw-36p"/>
             </connections>
-            <point key="canvasLocation" x="-100" y="-46"/>
+            <point key="canvasLocation" x="40" y="-53"/>
         </tableViewCell>
     </objects>
 </document>

@@ -67,6 +67,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="button_sure" destination="Fb4-1x-6r6" id="Vu9-JQ-ojA"/>
                 <outlet property="textField" destination="zMb-9s-d6r" id="O72-Kn-DWV"/>
             </connections>
             <point key="canvasLocation" x="-73.5" y="-126"/>

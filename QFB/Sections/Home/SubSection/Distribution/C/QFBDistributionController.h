@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "QFBDistributionModel.h"
+#import "QFBHomeModel.h"
 
 @interface QFBDistributionController : UIViewController
 
-@property (nonatomic, strong) QFBDistributionModel *distributionModel;
+@property (nonatomic, strong) NSMutableArray<BuyMachine *> *productsArray;    //    产品array
+@property (nonatomic, assign) BOOL isFree;                                    //    是否免费领取
 
 @end

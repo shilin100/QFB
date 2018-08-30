@@ -17,4 +17,22 @@ typedef void(^blockPress)(BOOL isClick);
 + (instancetype)initWithFrame:(CGRect)frame;
 
 
+/**
+ 改变按钮字样显示
+
+ @param money > 0 确认支付 反而 确认领取
+ */
+- (void)changeBtnTitleState:(double)money;
+
+
+/**
+ 获取留言
+ */
+- (NSString *)getNote;
+
 @end
+
+
+
+
+

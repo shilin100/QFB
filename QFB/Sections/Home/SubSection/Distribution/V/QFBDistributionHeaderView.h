@@ -13,4 +13,8 @@
 
 + (instancetype)initWithFrame:(CGRect)frame model:(QFBAddressModel *)addressModel;
 
+- (void)loadAddressModel:(QFBAddressModel *)model;
+
+- (QFBAddressModel *)getSelelctorAddress;
+
 @end

@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label_bottom;
 @property (strong, nonatomic) NSMutableArray<BuyMachine *> *dataSource;
+@property (strong, nonatomic) NSMutableArray<BuyMachine *> *products;
 @property (nonatomic, strong) NoDataView * noDataView;
 @property (nonatomic, assign) BOOL isFirstGetMachines;  // 是否是第一次领取机器
 @property (nonatomic, assign) BOOL isHasOrder;          // 是否有未完成的订单
@@ -58,6 +59,7 @@
             [array addObject:model];
         }
     }
+    _products = array;
     if (array.count == 0) {  // 没有选择机器
         [SVProgressHUD showInfoWithStatus:@"亲，请添加您要购买的机器"];
         [SVProgressHUD dismissWithDelay:0.5];
@@ -79,7 +81,7 @@
             [SVProgressHUD showInfoWithStatus:showStr];
             [SVProgressHUD dismissWithDelay:0.5];
         }else{
-            [self getDefaultAddress:YES];
+            [self goToPay:YES];
         }
         return ;
     }
@@ -90,40 +92,25 @@
             [SVProgressHUD showInfoWithStatus:showStr];
             [SVProgressHUD dismissWithDelay:0.5];
         }else{              // 没有免费名额 全部出钱买
-            [self getDefaultAddress:NO];
+            [self goToPay:NO];
         }
     }else{
-        [self getDefaultAddress:YES];
+        [self goToPay:YES];
     }
-//    getActiveCount    返回 数量
+}
+
+/**
+ 去购买
+ */
+- (void)goToPay:(BOOL)isFree
+{
+    QFBDistributionController *cv = [[QFBDistributionController alloc] init];
+    cv.isFree = isFree;
+    cv.productsArray = self.products;
+    [self.navigationController pushViewController:cv animated:YES];
 }
 
 #pragma mark - 网络请求
-
-/**
- 获取默认地址 isFree: 是否免费
- */
-- (void)getDefaultAddress:(BOOL)isFree
-{
-    WEAKSELF;
-    NSMutableDictionary * dic = [NSMutableDictionary dictionary];
-    dic[@"userId"]    = [kDefault objectForKey:USER_IDk];
-    [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/address/findDefault.action",BASEURL] withDic:dic Succeed:^(NSDictionary *responseObject) {
-        QFBDistributionController *cv = [[QFBDistributionController alloc] init];
-        QFBDistributionModel *model = [[QFBDistributionModel alloc] init];
-        model.addressModel = [QFBAddressModel mj_objectWithKeyValues:responseObject[@"data"]];
-        model.number = weakSelf.selectorCount;
-        model.price = isFree ? 0 : weakSelf.selectorPrice;
-        model.addressType = @"普通快递";
-        model.addressTime = @"7个工作日内安排发货";
-        cv.distributionModel = model;
-        [weakSelf.navigationController pushViewController:cv animated:YES];
-    } andFaild:^(NSError *error) {
-        [SVProgressHUD showInfoWithStatus:@"网络出错"];
-        [SVProgressHUD dismissWithDelay:0.5];
-    }];
-}
-
 /**
  获取是否是第一次免费领取
  */

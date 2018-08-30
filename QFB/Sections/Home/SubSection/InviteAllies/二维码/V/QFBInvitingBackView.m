@@ -68,7 +68,6 @@
     dic1[@"userId"] = [kDefault objectForKey:USER_IDk];
     [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/pic/selectPicById.action",BASEURL] withDic:dic1 Succeed:^(NSDictionary *responseObject) {
         NSLog(@"01 - %@",responseObject);
-        
     } andFaild:^(NSError *error) {
         
     }];

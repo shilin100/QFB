@@ -55,14 +55,25 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请添加收货地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVR-Y4-Efn">
+                    <rect key="frame" x="50" y="54" width="93" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ExL-O5-vjE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
                 <constraint firstItem="wIv-lZ-bOW" firstAttribute="leading" secondItem="6Fo-ov-hCr" secondAttribute="trailing" constant="5" id="0fl-2a-xK3"/>
                 <constraint firstItem="FdK-qs-67A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1lg-uT-nXd"/>
                 <constraint firstItem="w9p-Q1-XJN" firstAttribute="centerY" secondItem="FdK-qs-67A" secondAttribute="centerY" id="4Jt-yM-iOQ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="w9p-Q1-XJN" secondAttribute="trailing" constant="5" id="5lt-Nd-Hug"/>
+                <constraint firstItem="BVR-Y4-Efn" firstAttribute="centerY" secondItem="6Fo-ov-hCr" secondAttribute="centerY" id="B5X-ug-zTN"/>
                 <constraint firstItem="sge-ch-HDy" firstAttribute="height" secondItem="wIv-lZ-bOW" secondAttribute="height" id="F0P-6Q-OWL"/>
                 <constraint firstItem="sge-ch-HDy" firstAttribute="centerY" secondItem="wIv-lZ-bOW" secondAttribute="centerY" id="FqC-PD-pZE"/>
+                <constraint firstItem="BVR-Y4-Efn" firstAttribute="leading" secondItem="6Fo-ov-hCr" secondAttribute="trailing" constant="5" id="MaU-Xi-tzC"/>
                 <constraint firstItem="5xl-6s-gOA" firstAttribute="leading" secondItem="6Fo-ov-hCr" secondAttribute="trailing" constant="5" id="PFq-Fg-zx2"/>
                 <constraint firstItem="6Fo-ov-hCr" firstAttribute="centerY" secondItem="FdK-qs-67A" secondAttribute="centerY" id="VJB-hI-S80"/>
                 <constraint firstItem="FdK-qs-67A" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="Y9h-00-B2F"/>
@@ -81,8 +92,9 @@
                 <outlet property="label_address" destination="5xl-6s-gOA" id="ay9-hK-8kh"/>
                 <outlet property="label_name" destination="wIv-lZ-bOW" id="oOO-H6-8M4"/>
                 <outlet property="label_phone" destination="sge-ch-HDy" id="QEp-MR-jUK"/>
+                <outlet property="label_prompt" destination="BVR-Y4-Efn" id="j6j-xT-9qP"/>
             </connections>
-            <point key="canvasLocation" x="351" y="-26"/>
+            <point key="canvasLocation" x="-9" y="-35"/>
         </view>
     </objects>
     <resources>
