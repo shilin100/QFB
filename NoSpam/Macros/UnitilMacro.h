@@ -47,6 +47,8 @@
 #define Diary_Document @"diaryDocument" //日记保存目录
 
 #define OBJ_EMPTY_OR_OBJ(obj) IS_OBJECT_EMPTY(obj) ? @"" : obj
+
+
 #define Magic_Number 1000000000
 
 //#define UserHeadKey @"user_head"

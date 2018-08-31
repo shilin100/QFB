@@ -31,6 +31,7 @@
 
     RACSignal * signal = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/user/login.action",BASEURL] withParamater:parameter];
     [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"登录成功返回的数据：%@",x);
         NSDictionary * data = x[@"data"];
         
         [kDefault setObject:self.userName forKey:USERNAMEk];
@@ -46,6 +47,8 @@
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"phone"])  forKey:USER_PHONE];
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackAccountName"])  forKey:USER_BAN];
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackNum"])  forKey:USER_BN];
+
+        
         [kDefault setBool:YES forKey:IS_LOGIN];
     }];
     return signal;

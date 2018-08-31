@@ -20,7 +20,7 @@
             
             //获取累计盟友数、直接盟友、间接盟友
             NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
-            parameter[@"parentId"] = @"18804";
+            parameter[@"parentId"] = [kDefault objectForKey:USER_IDk];
             parameter[@"startTime"] = [self getCurrentTimes];
             parameter[@"endTime"] = [self getNextCurrentTimes];
             RACSignal * signal = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/transaction/selectByPos.action",BASEURL] withParamater:parameter];

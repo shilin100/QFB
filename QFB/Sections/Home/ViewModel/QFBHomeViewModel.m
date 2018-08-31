@@ -40,7 +40,7 @@
             
             //18804余额
             NSMutableDictionary * parameter1 = [NSMutableDictionary dictionary];
-            parameter1[@"id"] = @"18804";
+            parameter1[@"id"] = [kDefault objectForKey:USER_IDk];
             RACSignal * signal2 = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/user/findById.action",BASEURL] withParamater:parameter1];
             
             [signal2 subscribeNext:^(id  _Nullable x) {
@@ -48,7 +48,7 @@
                 [containerView getBalanceStr:x[@"data"][@"remarks"]];
             }];
             //收益
-            parameter[@"userId"] = @"18804";
+            parameter[@"userId"] = [kDefault objectForKey:USER_IDk];
             RACSignal * signal3 = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/profit/findProfitByUserId.action",BASEURL] withParamater:parameter];
             
             [signal3 subscribeNext:^(id  _Nullable x) {
@@ -57,7 +57,7 @@
             }];
             //盟友
             NSMutableDictionary * parameter4 = [NSMutableDictionary dictionary];
-            parameter4[@"userId"] = @"18804";
+            parameter4[@"userId"] = [kDefault objectForKey:USER_IDk];
             RACSignal * signal4 = [QFBNetTool postWithURL:[NSString stringWithFormat:@"%@/user/findUserInfoByIndex.action",BASEURL] withParamater:parameter4];
             
             [signal4 subscribeNext:^(id  _Nullable x) {
