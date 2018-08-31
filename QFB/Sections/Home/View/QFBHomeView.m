@@ -140,7 +140,7 @@
         [contentView addSubview:balance];
         self.balance = balance;
         [balance mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(contentView).with.offset(-97);
+            make.centerX.equalTo(mybalance).mas_offset(10);
             make.top.mas_equalTo(contentView).with.offset(56);
         }];
         
