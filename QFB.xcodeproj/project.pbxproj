@@ -25,6 +25,21 @@
 		18151563212FDA9E00BBBE4F /* QFBDistributionFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18151562212FDA9E00BBBE4F /* QFBDistributionFootView.xib */; };
 		18151566212FE73800BBBE4F /* QFBDistributionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151565212FE73800BBBE4F /* QFBDistributionModel.m */; };
 		18151569212FEA3B00BBBE4F /* QFBDistributionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18151568212FEA3B00BBBE4F /* QFBDistributionCellModel.m */; };
+		18246AAC2138DF7B001BEC01 /* QFBPaymentSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18246AAA2138DF7B001BEC01 /* QFBPaymentSuccessController.m */; };
+		18246AAD2138DF7B001BEC01 /* QFBPaymentSuccessController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18246AAB2138DF7B001BEC01 /* QFBPaymentSuccessController.xib */; };
+		18246B6D2138ECDA001BEC01 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B6C2138ECD9001BEC01 /* SystemConfiguration.framework */; };
+		18246B6F2138ECE7001BEC01 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B6E2138ECE7001BEC01 /* CoreTelephony.framework */; };
+		18246B712138ECF1001BEC01 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B702138ECF1001BEC01 /* QuartzCore.framework */; };
+		18246B732138ECFB001BEC01 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B722138ECFA001BEC01 /* CoreText.framework */; };
+		18246B752138ED15001BEC01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B742138ED15001BEC01 /* CoreGraphics.framework */; };
+		18246B772138ED26001BEC01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B762138ED26001BEC01 /* UIKit.framework */; };
+		18246B792138ED3B001BEC01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B782138ED3B001BEC01 /* Foundation.framework */; };
+		18246B7B2138ED52001BEC01 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B7A2138ED52001BEC01 /* CFNetwork.framework */; };
+		18246B7D2138ED5C001BEC01 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B7C2138ED5C001BEC01 /* CoreMotion.framework */; };
+		18246B7E2138EE2E001BEC01 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B682138ECC2001BEC01 /* libc++.tbd */; };
+		18246B7F2138EE39001BEC01 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B6A2138ECCC001BEC01 /* libz.tbd */; };
+		18246B832138EEA2001BEC01 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18246B812138EEA2001BEC01 /* AlipaySDK.bundle */; };
+		18246B842138EEB7001BEC01 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18246B802138EEA1001BEC01 /* AlipaySDK.framework */; };
 		182772F5212D65CE00E680DD /* QFBDrawMoneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182772F4212D65CE00E680DD /* QFBDrawMoneyController.m */; };
 		182772F8212D675900E680DD /* QFBDrawMoneyCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182772F7212D675900E680DD /* QFBDrawMoneyCollectionView.m */; };
 		182772FF212D67B200E680DD /* QFBDrawMoneyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182772FD212D67B200E680DD /* QFBDrawMoneyCell.m */; };
@@ -257,6 +272,22 @@
 		18151565212FE73800BBBE4F /* QFBDistributionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionModel.m; sourceTree = "<group>"; };
 		18151567212FEA3B00BBBE4F /* QFBDistributionCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDistributionCellModel.h; sourceTree = "<group>"; };
 		18151568212FEA3B00BBBE4F /* QFBDistributionCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDistributionCellModel.m; sourceTree = "<group>"; };
+		18246AA92138DF7B001BEC01 /* QFBPaymentSuccessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBPaymentSuccessController.h; sourceTree = "<group>"; };
+		18246AAA2138DF7B001BEC01 /* QFBPaymentSuccessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBPaymentSuccessController.m; sourceTree = "<group>"; };
+		18246AAB2138DF7B001BEC01 /* QFBPaymentSuccessController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBPaymentSuccessController.xib; sourceTree = "<group>"; };
+		18246B682138ECC2001BEC01 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		18246B6A2138ECCC001BEC01 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		18246B6C2138ECD9001BEC01 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18246B6E2138ECE7001BEC01 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		18246B702138ECF1001BEC01 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18246B722138ECFA001BEC01 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		18246B742138ED15001BEC01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18246B762138ED26001BEC01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18246B782138ED3B001BEC01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18246B7A2138ED52001BEC01 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18246B7C2138ED5C001BEC01 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18246B802138EEA1001BEC01 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		18246B812138EEA2001BEC01 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		182772F3212D65CE00E680DD /* QFBDrawMoneyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyController.h; sourceTree = "<group>"; };
 		182772F4212D65CE00E680DD /* QFBDrawMoneyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyController.m; sourceTree = "<group>"; };
 		182772F6212D675900E680DD /* QFBDrawMoneyCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyCollectionView.h; sourceTree = "<group>"; };
@@ -582,6 +613,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18246B842138EEB7001BEC01 /* AlipaySDK.framework in Frameworks */,
+				18246B7F2138EE39001BEC01 /* libz.tbd in Frameworks */,
+				18246B7E2138EE2E001BEC01 /* libc++.tbd in Frameworks */,
+				18246B7D2138ED5C001BEC01 /* CoreMotion.framework in Frameworks */,
+				18246B7B2138ED52001BEC01 /* CFNetwork.framework in Frameworks */,
+				18246B792138ED3B001BEC01 /* Foundation.framework in Frameworks */,
+				18246B772138ED26001BEC01 /* UIKit.framework in Frameworks */,
+				18246B752138ED15001BEC01 /* CoreGraphics.framework in Frameworks */,
+				18246B732138ECFB001BEC01 /* CoreText.framework in Frameworks */,
+				18246B712138ECF1001BEC01 /* QuartzCore.framework in Frameworks */,
+				18246B6F2138ECE7001BEC01 /* CoreTelephony.framework in Frameworks */,
+				18246B6D2138ECDA001BEC01 /* SystemConfiguration.framework in Frameworks */,
 				4FA45BB5DB9CDBBB9D16DCAE /* libPods-QFB.a in Frameworks */,
 				18151547212FA49100BBBE4F /* FBFramework.framework in Frameworks */,
 			);
@@ -648,13 +691,25 @@
 		1815154E212FD0BD00BBBE4F /* C */ = {
 			isa = PBXGroup;
 			children = (
-				18151549212FD0AA00BBBE4F /* QFBDistributionController.h */,
-				1815154A212FD0AA00BBBE4F /* QFBDistributionController.m */,
 				18415B222133A39B00CBC3FB /* QFBPaymentController.h */,
 				18415B232133A39B00CBC3FB /* QFBPaymentController.m */,
 				18415B242133A39B00CBC3FB /* QFBPaymentController.xib */,
+				18151549212FD0AA00BBBE4F /* QFBDistributionController.h */,
+				1815154A212FD0AA00BBBE4F /* QFBDistributionController.m */,
+				18246AA92138DF7B001BEC01 /* QFBPaymentSuccessController.h */,
+				18246AAA2138DF7B001BEC01 /* QFBPaymentSuccessController.m */,
+				18246AAB2138DF7B001BEC01 /* QFBPaymentSuccessController.xib */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		18246B0B2138EC6D001BEC01 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				18246B812138EEA2001BEC01 /* AlipaySDK.bundle */,
+				18246B802138EEA1001BEC01 /* AlipaySDK.framework */,
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 		182772EF212D653600E680DD /* 提现 */ = {
@@ -849,12 +904,12 @@
 		18CD0CCE21257CAD00DECAA7 /* WantMachine */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0D89212C1A1B00DECAA7 /* BuyMachineTableViewCell.h */,
-				18CD0D8E212C1A1C00DECAA7 /* BuyMachineTableViewCell.m */,
-				18CD0D8B212C1A1B00DECAA7 /* BuyMachineTableViewCell.xib */,
 				18CD0D8A212C1A1B00DECAA7 /* WantMachineViewController.h */,
 				18CD0D8C212C1A1C00DECAA7 /* WantMachineViewController.m */,
 				18CD0D8D212C1A1C00DECAA7 /* WantMachineViewController.xib */,
+				18CD0D89212C1A1B00DECAA7 /* BuyMachineTableViewCell.h */,
+				18CD0D8E212C1A1C00DECAA7 /* BuyMachineTableViewCell.m */,
+				18CD0D8B212C1A1B00DECAA7 /* BuyMachineTableViewCell.xib */,
 			);
 			path = WantMachine;
 			sourceTree = "<group>";
@@ -897,10 +952,6 @@
 		18CD0D64212C19BA00DECAA7 /* 二维码 */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0D68212C19BA00DECAA7 /* DCSpeedy.h */,
-				18CD0D65212C19BA00DECAA7 /* DCSpeedy.m */,
-				18CD0D66212C19BA00DECAA7 /* UIView+DCExtension.m */,
-				18CD0D67212C19BA00DECAA7 /* UIView+DCExtension.h */,
 				18CD0D69212C19BA00DECAA7 /* M */,
 				18CD0D6C212C19BA00DECAA7 /* C */,
 				18CD0D6F212C19BA00DECAA7 /* V */,
@@ -1027,6 +1078,17 @@
 		46774BB17D9726CEDFAC14CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18246B7C2138ED5C001BEC01 /* CoreMotion.framework */,
+				18246B7A2138ED52001BEC01 /* CFNetwork.framework */,
+				18246B782138ED3B001BEC01 /* Foundation.framework */,
+				18246B762138ED26001BEC01 /* UIKit.framework */,
+				18246B742138ED15001BEC01 /* CoreGraphics.framework */,
+				18246B722138ECFA001BEC01 /* CoreText.framework */,
+				18246B702138ECF1001BEC01 /* QuartzCore.framework */,
+				18246B6E2138ECE7001BEC01 /* CoreTelephony.framework */,
+				18246B6C2138ECD9001BEC01 /* SystemConfiguration.framework */,
+				18246B6A2138ECCC001BEC01 /* libz.tbd */,
+				18246B682138ECC2001BEC01 /* libc++.tbd */,
 				2DDA0C1F4644B1CE5C842044 /* libPods-QFB.a */,
 				D69FECB831DB5070567FFBBE /* libPods-QFBTests.a */,
 				A5D82A00451EA7523D322ADB /* libPods-QFBUITests.a */,
@@ -1060,6 +1122,7 @@
 		5203755C2117F4B90067316B /* QFB */ = {
 			isa = PBXGroup;
 			children = (
+				18246B0B2138EC6D001BEC01 /* ThirdParty */,
 				52EEF94C211A854200D54153 /* Common */,
 				52EEF9422119972700D54153 /* Base */,
 				520375922117FA790067316B /* Tools */,
@@ -1135,6 +1198,10 @@
 				18CD0CAD21251CD100DECAA7 /* NSArray+jlExtension.m */,
 				18CD0CAE21251CD100DECAA7 /* NSDictionary+jlExtension.h */,
 				18CD0CB021251CD100DECAA7 /* NSDictionary+jlExtension.m */,
+				18CD0D68212C19BA00DECAA7 /* DCSpeedy.h */,
+				18CD0D65212C19BA00DECAA7 /* DCSpeedy.m */,
+				18CD0D66212C19BA00DECAA7 /* UIView+DCExtension.m */,
+				18CD0D67212C19BA00DECAA7 /* UIView+DCExtension.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1720,6 +1787,7 @@
 				18CD0D63212C196600DECAA7 /* BusinessInformationViewController.xib in Resources */,
 				18CD0D91212C1A1C00DECAA7 /* WantMachineViewController.xib in Resources */,
 				522B740E212A652F00500B03 /* QFBAddAddressTableViewCell.xib in Resources */,
+				18246B832138EEA2001BEC01 /* AlipaySDK.bundle in Resources */,
 				522B73F1212A56EE00500B03 /* QFBAddressViewController.xib in Resources */,
 				18CD0D85212C19BA00DECAA7 /* QFBInvitingBottomCell.xib in Resources */,
 				5249078F211D273200D1317F /* QFBRegisterStepTwoViewController.xib in Resources */,
@@ -1761,6 +1829,7 @@
 				18CD0D62212C196600DECAA7 /* ShopMessageTableViewCell.xib in Resources */,
 				18CD0DD8212E427000DECAA7 /* AccounMessageCell.xib in Resources */,
 				52EEF977211C3EB300D54153 /* QFBRegisterViewController.xib in Resources */,
+				18246AAD2138DF7B001BEC01 /* QFBPaymentSuccessController.xib in Resources */,
 				52C702022123C7FB0055C607 /* QFBBrandEarnViewController.xib in Resources */,
 				18CD0DEF212E8D0C00DECAA7 /* CertificationMessageViewController.xib in Resources */,
 				18CD0DAD212D05BA00DECAA7 /* FriendUpgradeViewCell.xib in Resources */,
@@ -1979,6 +2048,7 @@
 				18CD0D80212C19BA00DECAA7 /* QFBInvitingAnAllyController.m in Sources */,
 				520375A2211823650067316B /* QFBMineViewController.m in Sources */,
 				18CD0D92212C1A1C00DECAA7 /* BuyMachineTableViewCell.m in Sources */,
+				18246AAC2138DF7B001BEC01 /* QFBPaymentSuccessController.m in Sources */,
 				18CD0C8721251C0D00DECAA7 /* QFBHomeRecentActivitiesTableViewCell.m in Sources */,
 				522B741F212AA20A00500B03 /* QFBMyProtocolViewController.m in Sources */,
 				18CD0DCE212D4AF300DECAA7 /* DetailTableViewCell.m in Sources */,
@@ -2183,6 +2253,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QFB/Common",
+					"$(PROJECT_DIR)/QFB/ThirdPart/AliPay",
+					"$(PROJECT_DIR)/QFB/ThirdParty/AliPay",
+					"$(PROJECT_DIR)/QFB/ThirdParty",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NOSpam/Config/PrefixHeader.pch";
@@ -2191,6 +2264,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QFB/ThirdPart/AliPay",
+					"$(PROJECT_DIR)/QFB/ThirdParty/AliPay",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quanfu.bao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2208,6 +2286,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QFB/Common",
+					"$(PROJECT_DIR)/QFB/ThirdPart/AliPay",
+					"$(PROJECT_DIR)/QFB/ThirdParty/AliPay",
+					"$(PROJECT_DIR)/QFB/ThirdParty",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NOSpam/Config/PrefixHeader.pch";
@@ -2216,6 +2297,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QFB/ThirdPart/AliPay",
+					"$(PROJECT_DIR)/QFB/ThirdParty/AliPay",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quanfu.bao;
 				PRODUCT_NAME = "$(TARGET_NAME)";

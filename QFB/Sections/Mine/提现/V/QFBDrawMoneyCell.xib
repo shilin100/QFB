@@ -153,7 +153,7 @@
                 <outlet property="label_money" destination="jxV-cK-fZP" id="d5l-pB-pOw"/>
                 <outlet property="label_top" destination="qF3-52-M3u" id="6eg-XI-Pov"/>
             </connections>
-            <point key="canvasLocation" x="-581" y="-121"/>
+            <point key="canvasLocation" x="-816" y="-150"/>
         </collectionViewCell>
     </objects>
 </document>

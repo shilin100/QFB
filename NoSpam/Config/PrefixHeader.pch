@@ -24,7 +24,7 @@
 #import "RegularHelperUtil.h"
 #import "QFBTool.h"
 #import "QFBNetTool.h"
-
+#import "DCSpeedy.h"
 
 //第三方库
 
