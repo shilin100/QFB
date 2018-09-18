@@ -45,7 +45,12 @@
     _address.text = model.address;
     _tel.text = model.phone;
     _defaultBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [_defaultBtn setImage:[UIImage imageNamed:model.defaultAddress == 0 ? @"unpay_point_icon-1" : @"unpay_point_icon"] forState:UIControlStateNormal];
+    [_defaultBtn setImage:[UIImage imageNamed:model.defaultAddress == 0 ? @"pay_point_icon" : @"unpay_point_icon"] forState:UIControlStateNormal];
     self.model = model;
 }
 @end
+
+
+
+
+

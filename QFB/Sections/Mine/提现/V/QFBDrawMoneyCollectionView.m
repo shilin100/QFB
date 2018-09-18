@@ -65,11 +65,12 @@
     model0.returnMode   = @"激活返现";
     model0.setMode      = model.activeStatus;
     model0.allMoney     = model.allActive;
+    model0.number = model.activeTime;
     if (model.activeStatus == 0) {  //  妙结
         model0.frozenMoney  = 0;
         model0.useMoney     = model.active;
     }else{
-        if (model.activeTime >= [DCSpeedy getCurrentNumberTime]) {  //  过了月结时间可以提款
+        if (model.activeTime <= [DCSpeedy getCurrentNumberTime]) {  //  过了月结时间可以提款
             model0.frozenMoney  = 0;
             model0.useMoney     = model.active;
         }else{
@@ -82,11 +83,12 @@
     model1.returnMode   = @"升级代理返现";
     model1.setMode      = model.recommendStatus;
     model1.allMoney     = model.allRecommend;
+    model1.number = model.recommendTime;
     if (model.recommendStatus == 0) {  //  妙结
         model1.frozenMoney  = 0;
         model1.useMoney     = model.recommend;
     }else{
-        if (model.recommendTime >= [DCSpeedy getCurrentNumberTime]) {  //  过了月结时间可以提款
+        if (model.recommendTime <= [DCSpeedy getCurrentNumberTime]) {  //  过了月结时间可以提款
             model1.frozenMoney  = 0;
             model1.useMoney     = model.recommend;
         }else{
@@ -99,11 +101,12 @@
     model2.returnMode   = @"分润返现";
     model2.setMode      = model.profitStatus;
     model2.allMoney     = model.allProfit;
+    model2.number = model.profitTime;
     if (model.profitStatus == 0) {  //  妙结
         model2.frozenMoney  = 0;
         model2.useMoney     = model.profit;
     }else{
-        if (model.profitTime >= [DCSpeedy getCurrentNumberTime]) {  //  过了月结时间可以提款
+        if (model.profitTime <= [DCSpeedy getCurrentNumberTime]) {  //  过了月结时间可以提款
             model2.frozenMoney  = 0;
             model2.useMoney     = model.profit;
         }else{

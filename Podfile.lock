@@ -28,6 +28,21 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.3)
+  - mob_sharesdk (4.1.3):
+    - mob_sharesdk/ShareSDK (= 4.1.3)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.1.3):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKExtension (4.1.3):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.1.3):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKUI (4.1.3):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.1.6)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
   - ReactiveObjC (3.1.0)
@@ -40,7 +55,6 @@ PODS:
   - TXScrollLabelView (1.3.2)
   - UICKeyChainStore (2.1.1)
   - UICountingLabel (1.2.0)
-  - WechatOpenSDK (1.8.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -58,6 +72,10 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKExtension
+  - mob_sharesdk/ShareSDKPlatforms/WeChat
+  - mob_sharesdk/ShareSDKUI
   - PNChart
   - ReactiveObjC
   - SDCycleScrollView
@@ -65,11 +83,10 @@ DEPENDENCIES:
   - SVProgressHUD
   - TXScrollLabelView
   - UICKeyChainStore
-  - WechatOpenSDK
   - YYKit
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/cocoapods/specs.git:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - CYLTabBarController
     - DXPopover
@@ -81,6 +98,8 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
     - PNChart
     - ReactiveObjC
     - SDCycleScrollView
@@ -89,7 +108,6 @@ SPEC REPOS:
     - TXScrollLabelView
     - UICKeyChainStore
     - UICountingLabel
-    - WechatOpenSDK
     - YYKit
 
 SPEC CHECKSUMS:
@@ -104,6 +122,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  mob_sharesdk: 78acada345f61bd1c9d6a4a85a7eb9f19bc1c345
+  MOBFoundation: a87c5f11fb87f873337189c3ec0add4d3ec6221a
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
@@ -112,9 +132,8 @@ SPEC CHECKSUMS:
   TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
-  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 67371621942c80e5cf2300bb7ba0e6a9f6e3571a
+PODFILE CHECKSUM: e0f7e2544833a76126811628ce16303b5252f750
 
 COCOAPODS: 1.5.3

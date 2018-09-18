@@ -27,9 +27,10 @@ static NSString * TeamTradeTableViewCellIdentifier = @"TeamTradeTableViewCellIde
     self.dataArray = [NSMutableArray array];
     
     [self.tableview registerNib:[UINib nibWithNibName:@"TeamTradeTableViewCell" bundle:nil] forCellReuseIdentifier:TeamTradeTableViewCellIdentifier];
-    [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(-SafeAreaTopHeight, 0, 0, 0));
-    }];
+    self.headView.frame = CGRectMake(0, 0, ScreenWidth, 160 + (SafeAreaTopHeight - 64));
+    [self.view addSubview:self.headView];
+    self.tableview.frame = CGRectMake(0, CGRectGetMaxY(self.headView.frame), ScreenWidth, ScreenHeight - CGRectGetMaxY(self.headView.frame) - (SafeAreaBottomHeight - 49));
+
     self.tableview.tableFooterView = [UIView new];
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -42,7 +43,6 @@ static NSString * TeamTradeTableViewCellIdentifier = @"TeamTradeTableViewCellIde
 -(void)requestData{
     NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
     parameter[@"userId"] = [kDefault objectForKey:USER_IDk];
-    
     [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/transaction/selectTeamReturns.action",BASEURL] withDic:parameter Succeed:^(NSDictionary *responseObject) {
         NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
         if ([status isEqualToString:@"1"]) {
@@ -72,12 +72,6 @@ static NSString * TeamTradeTableViewCellIdentifier = @"TeamTradeTableViewCellIde
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_image"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:nil];
-}
-
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -89,20 +83,10 @@ static NSString * TeamTradeTableViewCellIdentifier = @"TeamTradeTableViewCellIde
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     TeamTradeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:TeamTradeTableViewCellIdentifier forIndexPath:indexPath];
-    
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     QFBTeamEarnModel * model = self.dataArray[indexPath.row];
     [cell setEarnCellWithModel:model];
-    
     return cell;
-}
-
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return self.headView;
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 160;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -110,8 +94,10 @@ static NSString * TeamTradeTableViewCellIdentifier = @"TeamTradeTableViewCellIde
 }
 
 
-
-
-
-
 @end
+
+
+
+
+
+

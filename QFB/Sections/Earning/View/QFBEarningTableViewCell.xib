@@ -20,41 +20,41 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="收益方块" translatesAutoresizingMaskIntoConstraints="NO" id="kP0-0c-lH2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
+                        <rect key="frame" x="15" y="0.0" width="290" height="40.5"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ra8-cS-qeD">
-                        <rect key="frame" x="15" y="10.5" width="20" height="20"/>
+                        <rect key="frame" x="30" y="10.5" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="fg5-Sc-ufG"/>
                             <constraint firstAttribute="width" constant="20" id="pqi-OB-nZ9"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="收益更多" translatesAutoresizingMaskIntoConstraints="NO" id="h9N-bh-x4X">
-                        <rect key="frame" x="300" y="12.5" width="9" height="17"/>
+                        <rect key="frame" x="286" y="12.5" width="9" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="9bE-mQ-vmF"/>
                             <constraint firstAttribute="width" constant="9" id="Z3a-YY-ifj"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="654-62-zni">
-                        <rect key="frame" x="46" y="10.5" width="214" height="20.5"/>
+                        <rect key="frame" x="61" y="10.5" width="185" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="h9N-bh-x4X" secondAttribute="trailing" constant="11" id="1en-m7-n1d"/>
+                    <constraint firstAttribute="trailing" secondItem="h9N-bh-x4X" secondAttribute="trailing" constant="25" id="1en-m7-n1d"/>
                     <constraint firstAttribute="bottom" secondItem="kP0-0c-lH2" secondAttribute="bottom" constant="3" id="63K-X6-f9D"/>
-                    <constraint firstAttribute="trailing" secondItem="kP0-0c-lH2" secondAttribute="trailing" id="7So-GJ-aB8"/>
+                    <constraint firstAttribute="trailing" secondItem="kP0-0c-lH2" secondAttribute="trailing" constant="15" id="7So-GJ-aB8"/>
                     <constraint firstItem="654-62-zni" firstAttribute="leading" secondItem="Ra8-cS-qeD" secondAttribute="trailing" constant="11" id="L5C-PK-85n"/>
                     <constraint firstItem="Ra8-cS-qeD" firstAttribute="centerY" secondItem="kP0-0c-lH2" secondAttribute="centerY" id="SjB-uk-ZNB"/>
                     <constraint firstItem="654-62-zni" firstAttribute="centerY" secondItem="Ra8-cS-qeD" secondAttribute="centerY" id="aiL-nS-BYx"/>
                     <constraint firstItem="kP0-0c-lH2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fXe-jv-I8p"/>
                     <constraint firstItem="h9N-bh-x4X" firstAttribute="leading" secondItem="654-62-zni" secondAttribute="trailing" constant="40" id="kQj-la-W3R"/>
                     <constraint firstItem="h9N-bh-x4X" firstAttribute="centerY" secondItem="654-62-zni" secondAttribute="centerY" id="tyj-pT-BzA"/>
-                    <constraint firstItem="kP0-0c-lH2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xo4-Og-aVd"/>
-                    <constraint firstItem="Ra8-cS-qeD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yhY-So-w41"/>
+                    <constraint firstItem="kP0-0c-lH2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xo4-Og-aVd"/>
+                    <constraint firstItem="Ra8-cS-qeD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="yhY-So-w41"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -62,6 +62,7 @@
                 <outlet property="titleIcon" destination="Ra8-cS-qeD" id="OId-es-nUs"/>
                 <outlet property="titleLabel" destination="654-62-zni" id="Lz9-rH-t0J"/>
             </connections>
+            <point key="canvasLocation" x="-71" y="-14"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -15,12 +15,12 @@
 @property (nonatomic , copy) NSString              * billDate;
 @property (nonatomic , copy) NSString              * psamId;
 @property (nonatomic , copy) NSString              * billType;
-@property (nonatomic , assign) NSInteger              userId;
+@property (nonatomic , copy) NSString              * userId;
 @property (nonatomic , copy) NSString              * billDetail;
 @property (nonatomic , copy) NSString              * price;
 @property (nonatomic , copy) NSString              * taxRate;
 @property (nonatomic , copy) NSString              * posTypeId;
-@property (nonatomic , assign) NSInteger              lowerId;
+@property (nonatomic , copy) NSString              * lowerId;
 @property (nonatomic , copy) NSString              * remarks;
 @property (nonatomic , copy) NSString              * reserve;
 

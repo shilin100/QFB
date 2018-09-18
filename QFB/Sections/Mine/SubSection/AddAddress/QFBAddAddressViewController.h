@@ -9,14 +9,15 @@
 #import <UIKit/UIKit.h>
 @class QFBAddressModel;
 typedef enum {
-    TYPE_EDIT=0, //返回一个对象
-    TYPE_ADD=1, //返回一个数组
-    TYPE_OTHER ,  //专门正对那些不规范的后台解码而设
+    TYPE_EDIT=0, // 编辑地址
+    TYPE_ADD=1,  // 添加地址
+    TYPE_OTHER , // 其他
 }AddressType;
 
 @interface QFBAddAddressViewController : UIViewController
 
 -(void)setVCEditStyleWithModel:(QFBAddressModel*)model;
+
 @property(nonatomic,assign)AddressType addressType;
 
 @end

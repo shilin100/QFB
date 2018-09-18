@@ -19,15 +19,17 @@
     }
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     viewController.navigationItem.backBarButtonItem = item;
-//    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.1506 green:0.1506 blue:0.1506 alpha:1.0]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-
     [super pushViewController:viewController animated:animated];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

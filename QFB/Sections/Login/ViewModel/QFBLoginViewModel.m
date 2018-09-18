@@ -47,9 +47,10 @@
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"phone"])  forKey:USER_PHONE];
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackAccountName"])  forKey:USER_BAN];
         [kDefault setObject:OBJ_EMPTY_OR_OBJ(data[@"blackNum"])  forKey:USER_BN];
-
         
         [kDefault setBool:YES forKey:IS_LOGIN];
+        
+        [PublicData sharePublic].userModel = [QFBUserModel mj_objectWithKeyValues:data];
     }];
     return signal;
 }

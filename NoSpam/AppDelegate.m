@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "QFBLoginViewController.h"
 #import "QFBTabbarControllerConfig.h"
-#import <AlipaySDK/AlipaySDK.h>
 
 @interface AppDelegate ()
 
@@ -22,14 +21,12 @@
     
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-
-    
     if ([kDefault boolForKey:IS_LOGIN]) {
         //已登陆
         self.window.rootViewController = [QFBTabbarControllerConfig initRootVCWithModules:[QFBTool getDefaultModules]];
+        [ShareSDKTool initShareSDK];
     }else{
         //未登陆
-        
         //引导页。。。
         if ([kDefault boolForKey:IS_FIRST_TOUCH]){
             
@@ -37,10 +34,8 @@
             
             
         }
-        
         QFBLoginViewController *vc = [[QFBLoginViewController alloc] init];
-        QFBBaseNaviViewController * loginNav = [[QFBBaseNaviViewController alloc]initWithRootViewController:vc];
-        
+        QFBBaseNaviViewController * loginNav = [[QFBBaseNaviViewController alloc] initWithRootViewController:vc];
         self.window.rootViewController = loginNav;
     }
     
@@ -50,16 +45,13 @@
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD setMaximumDismissTimeInterval:1.8];
     IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = YES;
-    
-    
+
     return YES;
 }
 
 
 - (void)setUpNavigationBarAppearance {
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
-
-    
     UIImage *backgroundImage = nil;
     NSDictionary *textAttributes = nil;
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
@@ -68,7 +60,7 @@
                            NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
                            NSForegroundColorAttributeName : [UIColor whiteColor],
                            };
-        backgroundImage = [UIImage imageNamed:@"navigationbar_image"];
+        backgroundImage = [QFBResourcesTool tool_getNavigationBarBackImage];
 
     } else {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
@@ -78,7 +70,7 @@
                            UITextAttributeTextShadowColor : [UIColor clearColor],
                            UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetZero],
                            };
-        backgroundImage = [UIImage imageNamed:@"navigationbar_image"];
+        backgroundImage = [QFBResourcesTool tool_getNavigationBarBackImage];
 
 #endif
     }

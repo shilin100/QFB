@@ -25,7 +25,7 @@
                             <constraint firstAttribute="width" constant="100" id="Dh7-9t-esc"/>
                             <constraint firstAttribute="height" constant="15" id="jST-gU-pmq"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -45,7 +45,7 @@
                             <constraint firstAttribute="height" constant="30" id="cSF-cL-14w"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIV-Sg-RmA">
@@ -56,12 +56,12 @@
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTi-ba-mWE">
-                        <rect key="frame" x="20" y="87" width="76" height="27"/>
+                        <rect key="frame" x="20" y="87" width="80" height="27"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="76" id="9LA-vK-k2v"/>
+                            <constraint firstAttribute="width" constant="80" id="9LA-vK-k2v"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <state key="normal" title="默认地址" image="unpay_point_icon">
+                        <state key="normal" title=" 默认地址" image="unpay_point_icon">
                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                         <state key="selected" image="pay_point_icon"/>
@@ -137,13 +137,13 @@
                 <outlet property="name" destination="aUA-sp-PXa" id="75O-XB-PbL"/>
                 <outlet property="tel" destination="l19-9k-VhI" id="fIW-bA-DnX"/>
             </connections>
-            <point key="canvasLocation" x="48.5" y="94"/>
+            <point key="canvasLocation" x="-313" y="5"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="address_edite_icon" width="20" height="18"/>
         <image name="delete_address_icon" width="17" height="17"/>
-        <image name="pay_point_icon" width="22" height="22"/>
-        <image name="unpay_point_icon" width="22" height="22"/>
+        <image name="pay_point_icon" width="15" height="15"/>
+        <image name="unpay_point_icon" width="15" height="15"/>
     </resources>
 </document>

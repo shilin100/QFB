@@ -101,11 +101,6 @@ static NSString * PersonalEarnTitleCellIdentifier = @"QFBPersonalEarnTitleCellId
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_image"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:nil];
-}
 
 
 - (void)didReceiveMemoryWarning {
@@ -151,7 +146,7 @@ static NSString * PersonalEarnTitleCellIdentifier = @"QFBPersonalEarnTitleCellId
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 160;
+    return 160 + (SafeAreaTopHeight - 64);
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 

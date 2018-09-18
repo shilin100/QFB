@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QFBAddressModel.h"
+
+typedef void(^block)(QFBAddressModel *model);
 
 @interface QFBAddressViewController : UIViewController
+
+@property (nonatomic, strong) block blockAddress;
+@property (nonatomic, strong) NSString *addressID; // 外面传过来的地址 删除后传nil过去
 
 @end

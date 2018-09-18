@@ -41,20 +41,22 @@
     } else {
         _nameLabel.text = model.reserve;
     }
-
     _tradeMoneyLabel.text = [NSString stringWithFormat:@"%@",model.transactionPrice];
     _makeMoneyLabel.text = [NSString stringWithFormat:@"%@",model.level];
     NSString *userId = [NSString stringWithFormat:@"%@",[kDefault objectForKey:USER_IDk]];
-    NSString *parentId = [NSString stringWithFormat:@"%d",(int)model.psamId];
-    
-    if ([parentId isEqualToString:userId]) {
-        _connectLabel.text = @"直接好友";
-        _connectLabel.textColor = HEXCOLOR(0xFF943C);
-    } else {
-        _connectLabel.text = @"间接好友";
-        _connectLabel.textColor = HEXCOLOR(0x3F84C5);
+    NSString *parentId = [NSString stringWithFormat:@"%@",model.psamId];
+    if ([userId isEqualToString:model.userId]) {
+        _connectLabel.text = @"本人";
+        _connectLabel.textColor = [UIColor redColor];
+    }else{
+        if ([parentId isEqualToString:userId]) {
+            _connectLabel.text = @"直接好友";
+            _connectLabel.textColor = HEXCOLOR(0xFF943C);
+        } else {
+            _connectLabel.text = @"间接好友";
+            _connectLabel.textColor = HEXCOLOR(0x3F84C5);
+        }
     }
-
 }
 
 -(void)setBrandCellWithModel:(QFBBrandEarnModel*)model{
@@ -64,13 +66,18 @@
         _nameLabel.text = model.reserve;
     }
     NSString *userId = [NSString stringWithFormat:@"%@",[kDefault objectForKey:USER_IDk]];
-    NSString *parentId = [NSString stringWithFormat:@"%@",model.psamId];
-    if ([parentId isEqualToString:userId]) {
-        _connectLabel.text = @"直接好友";
-        _connectLabel.textColor = HEXCOLOR(0xFF943C);
-    } else {
-        _connectLabel.text = @"间接好友";
-        _connectLabel.textColor = HEXCOLOR(0x3F84C5);
+    NSString *parentId = [NSString stringWithFormat:@"%@",model.userId];
+    if ([userId isEqualToString:model.lowerId]) {
+        _connectLabel.text = @"本人";
+        _connectLabel.textColor = [UIColor redColor];
+    }else{
+        if ([parentId isEqualToString:userId]) {
+            _connectLabel.text = @"直接好友";
+            _connectLabel.textColor = HEXCOLOR(0xFF943C);
+        } else {
+            _connectLabel.text = @"间接好友";
+            _connectLabel.textColor = HEXCOLOR(0x3F84C5);
+        }
     }
     _tradeMoneyLabel.text = @"";
     _makeMoneyLabel.text = model.price;
@@ -78,3 +85,9 @@
 }
 
 @end
+
+
+
+
+
+

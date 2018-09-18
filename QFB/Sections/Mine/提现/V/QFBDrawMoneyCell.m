@@ -29,8 +29,13 @@
 - (void)loadDrawMoneyCellModel:(QFBDrawMoneyCellModel *)model
 {
     _label_top.text     = model.returnMode;
-    _label_method.text  = [NSString stringWithFormat:@"结算方式：%@",model.setMode ? @"月结" : @"妙结"];
-    _label_all.text     = [NSString stringWithFormat:@"%g",model.allMoney];
+    if (model.setMode) {
+        _label_method.text  = [NSString stringWithFormat:@"结算方式：%@(%d)号",model.setMode ? @"月结" : @"秒结",model.number];
+    }else{
+        _label_method.text  = [NSString stringWithFormat:@"结算方式：%@",model.setMode ? @"月结" : @"秒结"];
+    }
+    
+    _label_all.text     = [NSString stringWithFormat:@"收益（元）  %g",model.allMoney];
     _label_Frozen.text  = [NSString stringWithFormat:@"冻结资金(元) %g",model.frozenMoney];
     _label_money.text   = [NSString stringWithFormat:@"%g",model.useMoney];
 }

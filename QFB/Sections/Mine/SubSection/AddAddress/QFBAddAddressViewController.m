@@ -12,12 +12,12 @@
 #import "QFBAddressModel.h"
 
 @interface QFBAddAddressViewController (){
-    NSInteger ID;
+    NSString *ID;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (strong, nonatomic)  NSMutableArray *dataArray;
-
+@property (strong, nonatomic)  NSMutableArray *placeholderArray;
 
 @end
 
@@ -27,11 +27,11 @@ static NSString * AddAddressTableViewCellIdentifier = @"AddAddressTableViewCellI
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.dataArray == nil) {
-        self.dataArray = [NSMutableArray arrayWithArray:@[@"请输入收货人姓名",@"请输入收货人手机号",@"选择所在地区",@"请输入详细地址"]];
-        
+        self.dataArray = [NSMutableArray arrayWithArray:@[@"",@"",@"",@""]];
+        self.placeholderArray = [NSMutableArray arrayWithArray:@[@"请输入收货人姓名",@"请输入收货人手机号",@"选择所在地区",@"请输入详细地址"]];
     }
     
-    if (self.addressType == nil) {
+    if (self.addressType == TYPE_OTHER) {
         self.addressType = TYPE_ADD;
         self.navigationItem.title = @"添加收货地址";
     }
@@ -39,19 +39,15 @@ static NSString * AddAddressTableViewCellIdentifier = @"AddAddressTableViewCellI
     UIBarButtonItem * addButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(clickSaveBtn)];
     self.navigationItem.rightBarButtonItem = addButtonItem;
     
-    
-    
     [self.tableview registerNib:[UINib nibWithNibName:@"QFBAddAddressTableViewCell" bundle:nil] forCellReuseIdentifier:AddAddressTableViewCellIdentifier];
     self.tableview.tableFooterView = [UIView new];
-//    self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
-
 }
 
+#pragma mark - 保存收货地址
 -(void)clickSaveBtn{
     NSMutableArray * cells = [NSMutableArray array];
     for (int i = 0; i < self.dataArray.count; i++) {
         QFBAddAddressTableViewCell * cell = [self.tableview cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
-        
         [cells addObject:IS_STR_EMPTY(cell.input.text) ? @"" : cell.input.text];
     }
     NSString * name = cells[0];
@@ -74,20 +70,18 @@ static NSString * AddAddressTableViewCellIdentifier = @"AddAddressTableViewCellI
     parameter[@"address"] = [NSString stringWithFormat:@"%@-%@",area,address];
 
     NSString * url;
-    if (self.addressType == TYPE_EDIT) {
+    if (self.addressType == TYPE_EDIT) {    // 编辑修改地址
         url =@"/address/updateAddress.action";
-        parameter[@"id"] = @(ID);
-    }else{
+        parameter[@"id"] = ID;
+    }else{                                  // 添加地址
         url = @"/address/addAddress.action";
     }
     
     [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@%@",BASEURL,url] withDic:parameter Succeed:^(NSDictionary *responseObject) {
         NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
         if ([status isEqualToString:@"1"]) {
-
             [self.navigationController popViewControllerAnimated:YES];
             [SVProgressHUD showSuccessWithStatus:@"保存成功"];
-
         } else {
             [SVProgressHUD showErrorWithStatus:@"请求失败,请稍后再试"];
         }
@@ -124,15 +118,11 @@ static NSString * AddAddressTableViewCellIdentifier = @"AddAddressTableViewCellI
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     QFBAddAddressTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:AddAddressTableViewCellIdentifier forIndexPath:indexPath];
-    
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     if (self.addressType == TYPE_EDIT) {
         cell.input.text = self.dataArray[indexPath.row];
-        
-    }else{
-        cell.input.placeholder = self.dataArray[indexPath.row];
     }
-    
+    cell.input.placeholder = self.placeholderArray[indexPath.row];
     if (indexPath.row == 2) {
         cell.input.userInteractionEnabled = NO;
     }

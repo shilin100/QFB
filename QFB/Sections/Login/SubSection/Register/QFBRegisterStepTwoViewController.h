@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 typedef enum {
-    TYPE_REGISTER=0, //返回一个对象
-    TYPE_FORGET_PSW=1, //返回一个数组
-    TYPE_OTHER ,  //专门正对那些不规范的后台解码而设
+    TYPE_REGISTER=0,
+    TYPE_FORGET_PSW=1,
+    TYPE_OTHER ,  
 }VCType;
 
 @interface QFBRegisterStepTwoViewController : UIViewController

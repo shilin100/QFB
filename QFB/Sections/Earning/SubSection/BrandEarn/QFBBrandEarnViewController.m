@@ -30,17 +30,17 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
     self.navigationItem.title = @"品牌收益";
     self.dataArray = [NSMutableArray array];
     self.brandArray = [NSMutableArray array];
-
     [self.tableview registerNib:[UINib nibWithNibName:@"TeamTradeTableViewCell" bundle:nil] forCellReuseIdentifier:BrandTradeTableViewCellIdentifier];
-    [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(-SafeAreaTopHeight, 0, 0, 0));
-    }];
+    self.headView.frame = CGRectMake(0, 0, ScreenWidth, 195 + (SafeAreaTopHeight - 64));
+    [self.view addSubview:self.headView];
+    self.tableview.frame = CGRectMake(0, CGRectGetMaxY(self.headView.frame), ScreenWidth, ScreenHeight - CGRectGetMaxY(self.headView.frame) - (SafeAreaBottomHeight - 49));
     self.tableview.tableFooterView = [UIView new];
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self requestData];
     }];
     [self requestBrandList];
+    AdjustsScrollViewInsetNever(self, self.tableview);
 }
 
 -(void)requestBrandList{
@@ -76,7 +76,13 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
         NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
         if ([status isEqualToString:@"1"]) {
             [self.dataArray removeAllObjects];
-            [self.dataArray addObjectsFromArray:[QFBBrandEarnModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"][@"details"]]];
+            NSMutableArray *modelArr = [QFBBrandEarnModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"][@"details"]];
+            for (int i = 0; i < modelArr.count; i++) {
+                QFBBrandEarnModel *model = modelArr[i];
+                if ([model.price doubleValue] > 0) {
+                    [self.dataArray addObject:model];
+                }
+            }
             [self.tableview reloadData];
             self.EarnLabel.text = [NSString stringWithFormat:@"%@",responseObject[@"data"][@"sumprice"]];
 
@@ -91,10 +97,8 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
 }
 
 -(void)creatSegment{
-
-    
     HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:self.brandArray];
-    segmentedControl.frame = CGRectMake(0, 135, kSCREEN_WIDTH, 35);
+    segmentedControl.frame = CGRectMake(0, 135 + (SafeAreaTopHeight - 64), kSCREEN_WIDTH, 35);
     segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
     //    segmentedControl.verticalDividerEnabled = YES;
     //    segmentedControl.verticalDividerColor = RGBCOLOR(235, 235, 235);
@@ -128,14 +132,6 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_image"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:nil];
-}
-
-
-
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -151,29 +147,28 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     QFBBrandEarnModel * model = self.dataArray[indexPath.row];
     [cell setBrandCellWithModel:model];
-    
     return cell;
 }
 
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return self.headView;
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 195;
-}
+//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    return self.headView;
+//}
+//
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 195 + (SafeAreaTopHeight - 64);
+//}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 61;
 }
 
 
-
-
-
-
-
-
-
-
 @end
+
+
+
+
+
+
+
+

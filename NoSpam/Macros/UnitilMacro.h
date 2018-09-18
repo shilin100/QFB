@@ -15,7 +15,15 @@
 #define CXLog(...)
 #endif
 
+#define logDealloc DLog(@"%@释放了。。。",[self class]);
 
+//是否是空对象
+#define LMJIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+#define URLADD(_url)  [NSString stringWithFormat:@"%@%@",BASEURL,_url]
 
 #define kSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define kSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -104,6 +112,8 @@
 
 #define rgbaColor(r,g,b,a) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:a]
 
+#define backColor rgbaColor(230,230,230,1)
+
 #define WEAKSELF typeof(self) __weak weakSelf = self
 
 //判断iphone4/4s
@@ -115,12 +125,14 @@
 //判断iphone6P
 #define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 //判断iphoneX
-#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhoneX ([[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? YES : NO)
+
 
 #define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
 
-#define SafeAreaTopHeight ([UIScreen mainScreen].bounds.size.height == 812.0 ? 88 : 64)
-#define SafeAreaBottomHeight ([UIScreen mainScreen].bounds.size.height == 812.0 ? 83 : 49)
+#define SafeAreaTopHeight (iPhoneX ? 88 : 64)
+#define SafeAreaBottomHeight (iPhoneX ? 83 : 49)
 
 ///weakSelf
 #define CZHWeakSelf(type)  __weak typeof(type) weak##type = type;

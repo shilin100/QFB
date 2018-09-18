@@ -8,6 +8,7 @@
 
 #import "QFBRegisterViewController.h"
 #import "QFBRegisterStepTwoViewController.h"
+#import "QFBRegisterStepViewController.h"
 
 @interface QFBRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *recommandTextField;
@@ -40,7 +41,8 @@
         NSString * status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"msg"]];
         if ([status isEqualToString:@"1"]) {
             if (!IS_OBJECT_EMPTY([responseObject objectForKey:@"data"])) {
-                QFBRegisterStepTwoViewController * vc = [QFBRegisterStepTwoViewController new];
+//                QFBRegisterStepTwoViewController * vc = [QFBRegisterStepTwoViewController new];
+                QFBRegisterStepViewController *vc = [[QFBRegisterStepViewController alloc] init];
                 vc.parentId = responseObject[@"data"][@"parentId"];
                 [self.navigationController pushViewController:vc animated:YES];
             }else{

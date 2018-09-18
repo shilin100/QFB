@@ -130,10 +130,10 @@
     dic[@"code"]   = self.messageCode;
     dic[@"clientid"] = [QFBTool getUUID];
     [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/pay/zfbtx.action",BASEURL] withDic:dic Succeed:^(NSDictionary *responseObject) {
-        NSLog(@"loadDrawMoney - %@",responseObject);
+        DLog(@"loadDrawMoney - %@",responseObject);
+        [SVProgressHUD dismiss];
         if ([responseObject[@"msg"] isEqualToString:@"提现成功！"]) {
             [weakSelf showSuccessViewControllerWithPrice:[NSString stringWithFormat:@"%g",money] name:weakSelf.drawMoneyListModel.blackAccountName phone:weakSelf.drawMoneyListModel.blackNum];
-            [SVProgressHUD dismiss];
         }else{
             [SVProgressHUD showInfoWithStatus:responseObject[@"msg"]];
             [SVProgressHUD dismissWithDelay: 0.5];

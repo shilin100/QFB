@@ -47,27 +47,7 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
 
 }
 - (IBAction)logoutBtnAction:(id)sender {
-    NSString * username = [kDefault objectForKey:USERNAMEk];
-    NSString * psw = [kDefault objectForKey:PASSWORDk];
-    BOOL isFirstTouch = [kDefault boolForKey:IS_FIRST_TOUCH];
-
-    NSDictionary * dict = [kDefault dictionaryRepresentation];
-    
-    for (id key in dict) {
-        
-        [kDefault removeObjectForKey:key];
-        
-    }
-    
-    [kDefault synchronize];
-    [kDefault setObject:username forKey:USERNAMEk];
-    [kDefault setObject:psw forKey:PASSWORDk];
-    [kDefault setBool:isFirstTouch forKey:IS_FIRST_TOUCH];
-
-    QFBLoginViewController *vc = [[QFBLoginViewController alloc] init];
-    QFBBaseNaviViewController * loginNav = [[QFBBaseNaviViewController alloc]initWithRootViewController:vc];
-    APPLication.keyWindow.rootViewController = loginNav;
-
+    [PublicData logInAgain];
 }
 
 - (void)showActionSheetView
@@ -228,15 +208,9 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 @end
+
+
+
+
+

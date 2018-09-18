@@ -17,6 +17,8 @@
 #import "InviteAlliesViewController.h"
 #import "WantMachineViewController.h"
 
+#import "QFBActivateMachineController.h"
+#import "QFBInvitingAnAllyController.h"
 
 
 @interface QFBEarningViewController ()
@@ -30,60 +32,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"收益";
-    
-//    UIBarButtonItem * doneButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"升级规则" style:UIBarButtonItemStyleDone target:self action:@selector(clickRuleBtn)];
-//    self.navigationItem.rightBarButtonItem = doneButtonItem;
-
     [self setupUI];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     [self bind];
-    
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[QFBResourcesTool tool_getNavigationBarBackImage] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
 }
 
 -(void)clickRuleBtn{
-    
     QFBUpgradeRuleViewController * vc = [QFBUpgradeRuleViewController new];
     [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 -(void)setupUI{
     self.view.backgroundColor = [UIColor whiteColor];
     
-    QFBEarningView * containerView = [[QFBEarningView alloc]init];
+    QFBEarningView * containerView = [[QFBEarningView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - SafeAreaBottomHeight)];
     [self.view addSubview:containerView];
-    [containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
-    }];
     self.containerView = containerView;
     [containerView setTableViewModel:self.viewModel];
-    AdjustsScrollViewInsetNever(self, containerView.scrollview)
-    
-    
-    
-    
-}
-
--(void)bind{
-//    @weakify(self)
-    
-    [[self.containerView.extendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        MachineActivateViewController * vc = [MachineActivateViewController new];
-        [self.navigationController pushViewController:vc animated:YES];
-    }];
-
-    [[self.containerView.inviteBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        InviteAlliesViewController * vc = [InviteAlliesViewController new];
-        [self.navigationController pushViewController:vc animated:YES];
-    }];
-
-    [[self.containerView.buyDeviceBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        WantMachineViewController * vc = [WantMachineViewController new];
-        [self.navigationController pushViewController:vc animated:YES];
-    }];
-    
-    
-    
-    [self.viewModel.getDataCommand execute:self.containerView];
+    AdjustsScrollViewInsetNever(self, containerView.tableView);
     
     [self.viewModel.earningCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         NSString * temp  = x ;
@@ -99,9 +77,26 @@
             QFBBrandEarnViewController * vc = [QFBBrandEarnViewController new];
             [self.navigationController pushViewController:vc animated:YES];
         }
-
     }];
+    [[self.containerView.extendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        QFBActivateMachineController * vc = [[QFBActivateMachineController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [[self.containerView.inviteBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        QFBInvitingAnAllyController * vc = [[QFBInvitingAnAllyController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [[self.containerView.buyDeviceBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        WantMachineViewController * vc = [WantMachineViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+}
 
+-(void)bind
+{
+    [self.viewModel.getDataCommand execute:self.containerView];
 }
 
 -(QFBEarningViewModel *)viewModel{
@@ -109,18 +104,7 @@
         _viewModel = [[QFBEarningViewModel alloc]init];
     }
     return _viewModel;
-}
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-}
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_image"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:nil];
-}
-
+} 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

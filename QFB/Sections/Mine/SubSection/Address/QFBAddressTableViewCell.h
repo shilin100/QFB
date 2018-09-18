@@ -36,3 +36,9 @@ typedef void(^DeleteBlock)(id model);
 -(void)setCellWithModel:(QFBAddressModel*)model;
 
 @end
+
+
+
+
+
+

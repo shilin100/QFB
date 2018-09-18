@@ -15,5 +15,6 @@
 @property (nonatomic, assign) double allMoney;          // 总金额
 @property (nonatomic, assign) double frozenMoney;       // 冻结金额
 @property (nonatomic, assign) double useMoney;          // 可使用金额
+@property (nonatomic, assign) int number;              // 结算方式 0:妙结 1月结
 
 @end

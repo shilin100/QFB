@@ -89,11 +89,8 @@ static NSString * orderTableViewCellIdentifier = @"OrderTableViewCellIdentifier"
 
 
 -(void)creatSegment{
-    
-    
-    
     HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:orderStatus];
-    segmentedControl.frame = CGRectMake(0, 0, kSCREEN_WIDTH, 28);
+    segmentedControl.frame = CGRectMake(0, 0, self.view.mj_w, 28);
     segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
     //    segmentedControl.verticalDividerEnabled = YES;
     //    segmentedControl.verticalDividerColor = RGBCOLOR(235, 235, 235);
@@ -106,7 +103,6 @@ static NSString * orderTableViewCellIdentifier = @"OrderTableViewCellIdentifier"
     self.segmentView = segmentedControl;
     [segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
     [self.segmentContent addSubview:segmentedControl];
-    
 }
 
 - (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
