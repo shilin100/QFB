@@ -54,6 +54,7 @@
 {
     if (!_view_back) {
         _view_back = [[QFBInvitingBackView alloc]initWithFrame:CGRectMake(0, SafeAreaTopHeight, self.view.mj_w, self.view.mj_h - (SafeAreaBottomHeight - 49) - SafeAreaTopHeight)];
+//        _view_back = [[QFBInvitingBackView alloc]initWithFrame:self.view.bounds];
     }
     return _view_back;
 }

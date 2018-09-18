@@ -198,6 +198,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    _imagev_back.frame = self.bounds;
     _label_explain.frame = CGRectMake(0, self.mj_h * 250 / 2650, self.mj_w, 20);
     _view_white.frame = CGRectMake(30, self.mj_h * 950 / 2650, self.mj_w - 60, self.mj_h * 1250 / 2650);
     _imagev_QRcode.frame = CGRectMake(0, self.mj_h * 550 / 2650, self.mj_h * 866 / 2650, self.mj_h * 866 / 2650);

@@ -46,6 +46,11 @@
             [btn removeFromSuperview];
         }
         for (int i = 0; i < listArray.count; i++) {
+            if ([PublicData sharePublic].appModel == model_online) {
+                if (i == listArray.count - 1 || i == listArray.count - 2) {
+                    continue ;
+                }
+            }
             CGFloat w = 60;
             CGFloat h = w * 4 / 3;
             CGFloat jw = (ScreenWidth - 4 * 60) / 4;

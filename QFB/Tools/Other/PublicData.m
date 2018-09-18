@@ -9,6 +9,12 @@
 #import "PublicData.h"
 #import "QFBLoginViewController.h"
 
+@interface PublicData()
+
+@property (nonatomic, assign) BOOL currentAPPMode;
+
+@end
+
 @implementation PublicData
 
 @synthesize userModel = _userModel;
@@ -84,6 +90,31 @@
     QFBLoginViewController *vc = [[QFBLoginViewController alloc] init];
     QFBBaseNaviViewController * loginNav = [[QFBBaseNaviViewController alloc] initWithRootViewController:vc];
     APPLication.keyWindow.rootViewController = loginNav;
+}
+
+/**
+ 判断当前模式
+ */
++ (void)judgecurrentAPPMode:(void(^)(BOOL isSucceed))succeed
+{
+    if ([PublicData sharePublic].currentAPPMode == YES) {
+        succeed(YES);
+    }
+    NSMutableDictionary * dic = [NSMutableDictionary dictionary];
+    dic[@"oBrandId"]  = O_BRAND_ID;
+    [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/obrand/selectById.action",BASEURL] withDic:dic Succeed:^(NSDictionary *responseObject) {
+        NSString *str = [NSString stringWithFormat:@"%@",responseObject[@"data"][@"reserve"]];
+        if ([@"0" isEqualToString:str]) {   // 0 正常
+            [PublicData sharePublic].appModel = model_normal;
+        } else {
+            [PublicData sharePublic].appModel = model_online;
+        }
+        [PublicData sharePublic].currentAPPMode = YES;
+        succeed(YES);
+    } andFaild:^(NSError *error) {
+        [PublicData sharePublic].appModel = model_online;
+        succeed(NO);
+    }];
 }
 
 @end

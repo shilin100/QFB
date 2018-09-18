@@ -35,10 +35,9 @@ static NSString * const EarningTableViewCellIdentifier = @"earningTableViewCell"
 -(void)configView{
     self.delegate               = self;
     self.dataSource             = self;
-    self.tableFooterView = [UIView new];
-    self.scrollEnabled = NO;
+//    self.tableFooterView = [UIView new];
+//    self.scrollEnabled = NO;
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    [self registerClass:[QFBEarningTableViewCell class] forCellReuseIdentifier:EarningTableViewCellIdentifier];
     [self registerNib:[UINib nibWithNibName:@"QFBEarningTableViewCell" bundle:nil] forCellReuseIdentifier:EarningTableViewCellIdentifier];
     
 }

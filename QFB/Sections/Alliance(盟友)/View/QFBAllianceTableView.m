@@ -32,7 +32,7 @@
     self.delegate               = self;
     self.dataSource             = self;
     self.tableFooterView = [UIView new];
-    self.scrollEnabled = NO;
+//    self.scrollEnabled = NO;
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.backgroundColor = [UIColor clearColor];
 }

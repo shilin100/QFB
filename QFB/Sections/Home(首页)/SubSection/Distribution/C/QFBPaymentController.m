@@ -152,15 +152,13 @@
         }
         WEAKSELF;
         NSMutableDictionary * dic = [NSMutableDictionary dictionary];
-        NSString *role;
         dic[@"userId"]    = [kDefault objectForKey:USER_IDk];
-        if (self.payType == 1) {    // 购买会员
-            role = self.roleID;
-        }
-        if (role) {
-            dic[@"roleId"]  = role;
-        }
         dic[@"price"]   = [NSNumber numberWithDouble:self.amountOfPayment];
+        if (self.payType == 1) {    // 购买会员
+            dic[@"roleId"] = self.roleID;
+        }else {                     // 买机器
+            dic[@"orderNum"] = _orderNumber;
+        }
         [QFBNetTool PostRequestWithUrlString:[NSString stringWithFormat:@"%@/user/updateUserPrice.action",BASEURL] withDic:dic Succeed:^(NSDictionary *responseObject) {
              [SVProgressHUD dismiss];
             //  成功  跳转成功页面

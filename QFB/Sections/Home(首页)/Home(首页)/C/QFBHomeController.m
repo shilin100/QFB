@@ -50,7 +50,15 @@
             [PublicData logInAgain];
             return ;
         }
-        [self loadData];
+        [PublicData judgecurrentAPPMode:^(BOOL isSucceed) {
+            if (isSucceed) {
+                [self loadData];
+            }else{
+                [self endHeaderFooterRefreshing];
+                [SVProgressHUD showInfoWithStatus:@"网络异常！"];
+                [SVProgressHUD dismissWithDelay:1.5];
+            }
+        }];
     }];
 }
 
