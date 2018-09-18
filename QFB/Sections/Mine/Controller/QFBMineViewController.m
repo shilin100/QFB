@@ -53,13 +53,8 @@
     //    @weakify(self)
     
     [[self.containerView.withdrawBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-//        [SVProgressHUD showErrorWithStatus:@"暂未开放"];
-        
         QFBDrawMoneyController *vc = [[QFBDrawMoneyController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-        
-//        WantMachineViewController * vc = [WantMachineViewController new];
-//        [self.navigationController pushViewController:vc animated:YES];
     }];
     self.containerView.accountBtn.rac_command = self.viewModel.accountCommand;
     [[self.viewModel.accountCommand executionSignals]
@@ -71,9 +66,6 @@
 
          }];
      }];
-
-    
-    
     [self.viewModel.mineCellCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         NSString * temp  = x ;
         if ([temp isEqualToString:@"我的收货地址"]) {
@@ -110,8 +102,6 @@
         self.servicePhone = dic[@"data"][@"oBrandPhone"];
         
     }];
-
-    
 }
 
 -(void)checkVersion{
@@ -165,13 +155,13 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
     [self.viewModel.getDataCommand execute:self.containerView];
 
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
     [self.navigationController.navigationBar setBackgroundImage:[QFBResourcesTool tool_getNavigationBarBackImage] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:nil];
 }

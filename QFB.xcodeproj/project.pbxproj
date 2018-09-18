@@ -177,6 +177,11 @@
 		52383460214A15C10032EE94 /* PublicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5238345F214A15C10032EE94 /* PublicData.m */; };
 		52383463214A452E0032EE94 /* QFBFriendPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52383462214A452E0032EE94 /* QFBFriendPopView.m */; };
 		523950BC215087070092BFCF /* QFBRegisterStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523950BB215087070092BFCF /* QFBRegisterStepViewController.m */; };
+		523950C12150CD920092BFCF /* QFBMyMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523950BF2150CD920092BFCF /* QFBMyMessageController.m */; };
+		523950C22150CD920092BFCF /* QFBMyMessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523950C02150CD920092BFCF /* QFBMyMessageController.xib */; };
+		523950C62150D00B0092BFCF /* QFBMyMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 523950C42150D00B0092BFCF /* QFBMyMessageCell.m */; };
+		523950C72150D00B0092BFCF /* QFBMyMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523950C52150D00B0092BFCF /* QFBMyMessageCell.xib */; };
+		523950CA2150D6250092BFCF /* QFBMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 523950C92150D6250092BFCF /* QFBMessageModel.m */; };
 		5243E6C821474A6800000953 /* QFBDrawMoneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243E6B421474A6800000953 /* QFBDrawMoneyController.m */; };
 		5243E6C921474A6800000953 /* QFBDrawSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5243E6B621474A6800000953 /* QFBDrawSuccessController.m */; };
 		5243E6CA21474A6800000953 /* QFBDrawSuccessController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5243E6B721474A6800000953 /* QFBDrawSuccessController.xib */; };
@@ -593,6 +598,14 @@
 		52383462214A452E0032EE94 /* QFBFriendPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBFriendPopView.m; sourceTree = "<group>"; };
 		523950BA215087070092BFCF /* QFBRegisterStepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBRegisterStepViewController.h; sourceTree = "<group>"; };
 		523950BB215087070092BFCF /* QFBRegisterStepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBRegisterStepViewController.m; sourceTree = "<group>"; };
+		523950BE2150CD920092BFCF /* QFBMyMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMyMessageController.h; sourceTree = "<group>"; };
+		523950BF2150CD920092BFCF /* QFBMyMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMyMessageController.m; sourceTree = "<group>"; };
+		523950C02150CD920092BFCF /* QFBMyMessageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBMyMessageController.xib; sourceTree = "<group>"; };
+		523950C32150D00B0092BFCF /* QFBMyMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMyMessageCell.h; sourceTree = "<group>"; };
+		523950C42150D00B0092BFCF /* QFBMyMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMyMessageCell.m; sourceTree = "<group>"; };
+		523950C52150D00B0092BFCF /* QFBMyMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QFBMyMessageCell.xib; sourceTree = "<group>"; };
+		523950C82150D6250092BFCF /* QFBMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFBMessageModel.h; sourceTree = "<group>"; };
+		523950C92150D6250092BFCF /* QFBMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFBMessageModel.m; sourceTree = "<group>"; };
 		5243E6B321474A6800000953 /* QFBDrawMoneyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBDrawMoneyController.h; sourceTree = "<group>"; };
 		5243E6B421474A6800000953 /* QFBDrawMoneyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFBDrawMoneyController.m; sourceTree = "<group>"; };
 		5243E6B521474A6800000953 /* QFBDrawSuccessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFBDrawSuccessController.h; sourceTree = "<group>"; };
@@ -1407,6 +1420,7 @@
 		520375982117FC450067316B /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				523950BD2150CCDD0092BFCF /* News(消息) */,
 				5243E6B121474A6800000953 /* 提现 */,
 				527086D821269B09009FB9F0 /* SubSection */,
 				527086D721269AFC009FB9F0 /* ViewModel */,
@@ -1632,6 +1646,21 @@
 				52383462214A452E0032EE94 /* QFBFriendPopView.m */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		523950BD2150CCDD0092BFCF /* News(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				523950BE2150CD920092BFCF /* QFBMyMessageController.h */,
+				523950BF2150CD920092BFCF /* QFBMyMessageController.m */,
+				523950C02150CD920092BFCF /* QFBMyMessageController.xib */,
+				523950C32150D00B0092BFCF /* QFBMyMessageCell.h */,
+				523950C42150D00B0092BFCF /* QFBMyMessageCell.m */,
+				523950C52150D00B0092BFCF /* QFBMyMessageCell.xib */,
+				523950C82150D6250092BFCF /* QFBMessageModel.h */,
+				523950C92150D6250092BFCF /* QFBMessageModel.m */,
+			);
+			path = "News(消息)";
 			sourceTree = "<group>";
 		};
 		5243E6B121474A6800000953 /* 提现 */ = {
@@ -2308,7 +2337,9 @@
 				52C80073212BA57B00D321E5 /* QFBAccountTextTableViewCell.xib in Resources */,
 				5243E76F2147A78A00000953 /* QFBActivateCell.xib in Resources */,
 				52490794211D42E500D1317F /* QFBForgetPswViewController.xib in Resources */,
+				523950C22150CD920092BFCF /* QFBMyMessageController.xib in Resources */,
 				5205C153214660A1003F6C0C /* QFBBusinessInfoCell.xib in Resources */,
+				523950C72150D00B0092BFCF /* QFBMyMessageCell.xib in Resources */,
 				5243E6CE21474A6800000953 /* QFBDrawMoneyBottomView.xib in Resources */,
 				525DE74C21435E36003B59E4 /* QFBHomeProfitCell.xib in Resources */,
 				18CD0DEA212E805500DECAA7 /* ConfirmAlipayViewController.xib in Resources */,
@@ -2520,6 +2551,7 @@
 				527086E32126A6FA009FB9F0 /* QFBOrderTableViewCell.m in Sources */,
 				18CD0D7D212C19BA00DECAA7 /* DCSpeedy.m in Sources */,
 				18CD0D84212C19BA00DECAA7 /* QFBInvitingTitleView.m in Sources */,
+				523950C62150D00B0092BFCF /* QFBMyMessageCell.m in Sources */,
 				18CD0CAA21251C1C00DECAA7 /* QFBAllianceTeamTableViewCell.m in Sources */,
 				52C80068212AB79C00D321E5 /* QFBAccountViewController.m in Sources */,
 				526190E5214F40B7004A5E0B /* QFBAllianceModel.m in Sources */,
@@ -2537,6 +2569,7 @@
 				18CD0D5F212C196600DECAA7 /* BusinessInformationViewController.m in Sources */,
 				5205C0FD21461E59003F6C0C /* QFBHomeInfoCell.m in Sources */,
 				52EEF955211A871100D54153 /* TabbarItemAttributesModel.m in Sources */,
+				523950CA2150D6250092BFCF /* QFBMessageModel.m in Sources */,
 				52589B5B214253350081F14A /* LMJBaseResponse.m in Sources */,
 				527086B82123F88E009FB9F0 /* QFBBrandEarnModel.m in Sources */,
 				5243E6D221474A6800000953 /* QFBDrawMoneyLayout.m in Sources */,
@@ -2549,6 +2582,7 @@
 				5243E7662147948B00000953 /* WMScrollView.m in Sources */,
 				5205C152214660A1003F6C0C /* QFBBusinessInfoCell.m in Sources */,
 				527086C1212400ED009FB9F0 /* QFBPersonalEarnModel.m in Sources */,
+				523950C12150CD920092BFCF /* QFBMyMessageController.m in Sources */,
 				1815155E212FD87400BBBE4F /* QFBAddressModel.m in Sources */,
 				5243E6DE214757C400000953 /* QFBBusinessDetailsCell.m in Sources */,
 				18415B292133AE1A00CBC3FB /* QFBUserModel.m in Sources */,

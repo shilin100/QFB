@@ -126,7 +126,6 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -150,13 +149,6 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
     return cell;
 }
 
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    return self.headView;
-//}
-//
-//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//    return 195 + (SafeAreaTopHeight - 64);
-//}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 61;
@@ -164,6 +156,11 @@ static NSString * BrandTradeTableViewCellIdentifier = @"BrandTradeTableViewCellI
 
 
 @end
+
+
+
+
+
 
 
 

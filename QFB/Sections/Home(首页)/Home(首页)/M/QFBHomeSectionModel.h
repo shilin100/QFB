@@ -17,7 +17,7 @@
 #import "QFBBusinessDetailsModel.h"
 #import "QFBMachineModel.h"
 #import "QFBHomeModel.h"
-
+#import "QFBMessageModel.h"
 
 @interface QFBHomeSectionModel : QFBBaseModel
 

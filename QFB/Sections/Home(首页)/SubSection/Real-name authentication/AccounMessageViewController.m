@@ -131,8 +131,7 @@
     if (indexPath.section == 0) {
         ConfirmPersonViewController * c_vc = [[ConfirmPersonViewController alloc] init];
         [self.navigationController pushViewController:c_vc animated:YES];
-    }else
-    {
+    }else{
         ConfirmAlipayViewController * c_vc = [[ConfirmAlipayViewController alloc] init];
         [self.navigationController pushViewController:c_vc animated:YES];
     }

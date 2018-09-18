@@ -8,6 +8,7 @@
 
 #import "QFBMineView.h"
 #import "QFBMineTableView.h"
+#import "QFBMyMessageController.h"
 
 @implementation QFBMineView
 
@@ -21,8 +22,20 @@
         
         [bgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.left.right.mas_equalTo(@0);
-            make.height.mas_equalTo(227);
+            make.height.mas_equalTo(@(227 + (SafeAreaTopHeight - 64)));
         }];
+        
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, SafeAreaTopHeight - 44, ScreenWidth, 44)];
+        titleLabel.textAlignment = 1;
+        titleLabel.font = [UIFont boldSystemFontOfSize:17];
+        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.text = @"盟友";
+        [self addSubview:titleLabel];
+        
+        UIButton *messageBtn = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 50, SafeAreaTopHeight - 42, 40, 40)];
+        [messageBtn setImage:[UIImage imageNamed:@"home_have_msg"] forState:UIControlStateNormal];
+        [messageBtn addTarget:self action:@selector(pressMessage) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:messageBtn];
         
         UIImageView * userIcon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
         userIcon.contentMode = UIViewContentModeScaleAspectFill;
@@ -40,7 +53,7 @@
         [userIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(userIconHeight, userIconHeight));
             make.left.mas_equalTo(@24);
-            make.top.mas_equalTo(@77);
+            make.top.mas_equalTo(@(77 + (SafeAreaTopHeight - 64)));
         }];
 
         UILabel * levelLabel = [UILabel new];
@@ -254,7 +267,7 @@
         [MoneyBgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.mas_equalTo(@0);
             make.height.mas_equalTo(64);
-            make.top.equalTo(bgImgView.mas_bottom).offset(10);
+            make.top.equalTo(bgImgView.mas_bottom).offset(0);
         }];
 
         UIButton * withdrawBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -269,7 +282,7 @@
         
         [withdrawBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(64);
-            make.top.equalTo(bgImgView.mas_bottom).offset(10);
+            make.top.equalTo(bgImgView.mas_bottom).offset(0);
             make.width.mas_equalTo(59);
             make.right.mas_equalTo(-24);
         }];
@@ -344,6 +357,12 @@
         
     }
     return self;
+}
+
+- (void)pressMessage
+{
+    QFBMyMessageController *vc = [[QFBMyMessageController alloc] init];
+    [[DCSpeedy dc_getCurrentVC].navigationController pushViewController:vc animated:YES];
 }
 
 

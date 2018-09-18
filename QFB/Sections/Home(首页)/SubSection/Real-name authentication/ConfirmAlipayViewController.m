@@ -19,8 +19,9 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:YES];
-    
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[QFBResourcesTool tool_getNavigationBarBackImage] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
     self.navigationItem.title = @"支付宝账号绑定";
     if ([VerifyHelper isEmpty:[kDefault objectForKey:ALIPAY_ACCOUNTk]]) {
         _aliPayAccountTextField.text = @"";

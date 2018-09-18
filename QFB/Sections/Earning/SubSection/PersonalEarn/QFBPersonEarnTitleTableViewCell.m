@@ -30,7 +30,6 @@
         _monthLabel.text = [NSString stringWithFormat:@"%@月",model.month];
     }
     _priceLabel.text = [NSString stringWithFormat:@"%@",model.countprice];
-    
 }
 
 

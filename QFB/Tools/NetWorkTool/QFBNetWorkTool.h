@@ -128,6 +128,12 @@ typedef NS_ENUM(NSInteger, RequestState) {
  */
 - (void)net_getAllFriendsRoleBlockRequest:(void(^)(NSMutableArray<QFBRoleModel *> *roleArray, RequestState state))block;
 
+#pragma mark - **************** 我的消息 ****************
+/**
+ 获取我的消息
+ */
+- (void)net_getNewsBlockRequest:(void(^)(NSMutableArray<QFBMessageModel *> *messageArray, RequestState state))block;
+
 
 @end
 

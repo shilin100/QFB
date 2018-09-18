@@ -401,6 +401,25 @@ static NSString *SuccessCode = @"1";
     }];
 }
 
+/**
+ 获取我的消息
+ */
+- (void)net_getNewsBlockRequest:(void(^)(NSMutableArray<QFBMessageModel *> *messageArray, RequestState state))block
+{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    dic[@"userId"]    = [kDefault objectForKey:USER_IDk];
+    dic[@"oBrandId"]  = O_BRAND_ID;
+    NSString *urlStr = URLADD(@"/news/findNews.action");
+    [self POST:urlStr parameters:dic completion:^(LMJBaseResponse *response) {
+        NSDictionary *dic = response.responseObject;
+        if ([SuccessCode isEqualToString:dic[@"msg"]]) {
+            NSMutableArray<QFBMessageModel *> *arr = [QFBMessageModel mj_objectArrayWithKeyValuesArray:dic[@"data"]];
+            block(arr, net_succes);
+        }else{
+            block(nil, net_fail);
+        }
+    }];
+}
 
 @end
 

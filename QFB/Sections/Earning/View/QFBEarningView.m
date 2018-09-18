@@ -49,7 +49,7 @@
         titleLabel.textAlignment = 1;
         titleLabel.font = [UIFont boldSystemFontOfSize:17];
         titleLabel.textColor = [UIColor whiteColor];
-        titleLabel.text = @"盟友";
+        titleLabel.text = @"收益";
         [contentView addSubview:titleLabel];
         
         // 图标试图
@@ -202,9 +202,9 @@
 //    [self.pieChart recompute];
     [self.pieChart strokeChart];
     float totalSum = personal + team + brand;
-    [_personalEarning setTitle:@"个人收益" andPercent:[NSString stringWithFormat:@"%%%.2f",personal/totalSum*100]];
-    [_teamEarning setTitle:@"团队收益" andPercent:[NSString stringWithFormat:@"%%%.2f",team/totalSum*100]];
-    [_brandEarning setTitle:@"品牌收益" andPercent:[NSString stringWithFormat:@"%%%.2f",brand/totalSum*100]];
+    [_personalEarning setTitle:@"个人收益" andPercent:[NSString stringWithFormat:@"%.2f%@",personal/totalSum*100,@"%"]];
+    [_teamEarning setTitle:@"团队收益" andPercent:[NSString stringWithFormat:@"%.2f%@",team/totalSum*100,@"%"]];
+    [_brandEarning setTitle:@"品牌收益" andPercent:[NSString stringWithFormat:@"%.2f%@",brand/totalSum*100,@"%"]];
 }
 
 

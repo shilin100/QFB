@@ -168,14 +168,9 @@ static NSString * AccountTextTableViewCellIdentifier = @"AccountTextTableViewCel
         NSString * detail = temp[@"detail"];
         cell.mydetail.text = IS_STR_EMPTY(detail) ? @"尚未实名认证" : detail;
         cell.mytitile.text = temp[@"title"];
-
-        
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         return cell;
-
     }
-    
-    
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

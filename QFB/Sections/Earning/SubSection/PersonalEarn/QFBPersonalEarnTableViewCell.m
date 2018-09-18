@@ -32,7 +32,6 @@
     _activityLabel.text = [NSString stringWithFormat:@"%@",model.activation];
     _recommandLabel.text = [NSString stringWithFormat:@"%@",model.recommend];
     _priceLabel.text = [NSString stringWithFormat:@"%@",model.countprice];
-    //    [self getDetailDataWithMonth:_month];
 }
 
 

@@ -17,7 +17,9 @@
 @implementation ConfirmPersonViewController
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:YES];
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[QFBResourcesTool tool_getNavigationBarBackImage] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
     self.navigationItem.title = @"身份认证";
     if ([VerifyHelper isEmpty:[kDefault objectForKey:USER_IDCARDk]]) {
         [_submitButton setTitle:@"确认提交" forState:UIControlStateNormal];
